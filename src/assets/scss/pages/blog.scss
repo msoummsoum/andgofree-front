@@ -24,7 +24,7 @@
             }
         }
 	}
-    
+
     .pagination {
         @include margin-padding(25px 0 0, null);
         @include respond-below(custom991) {
@@ -83,10 +83,10 @@
             }
         }
         .blog-title {
-            @include margin-padding(0 0 20px, null);            
+            @include margin-padding(0 0 20px, null);
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
+            -webkit-box-orient: vertical;
             overflow: hidden;
             a {
                 font-weight: $__bold;
@@ -107,7 +107,7 @@
             @include margin-padding(0 0 25px, null);
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
+            -webkit-box-orient: vertical;
             overflow: hidden;
         }
         .meta-item {
@@ -140,7 +140,7 @@
                         }
                     }
                 }
-            }            
+            }
             .date-icon {
                 i {
                     color: $__gray;
@@ -180,7 +180,7 @@
                             }
                         }
                     }
-                }            
+                }
                 .date-icon {
                     i {
                         @include margin-padding(0 7px 0, null);
@@ -190,8 +190,8 @@
                         font-size: $__font__size__14;
                     }
                 }
-            } 
-        }        
+            }
+        }
         .viewlink {
             display: $__inline__flex;
             align-items: center;
@@ -295,7 +295,7 @@
                         transform: scale(1.15);
                     }
                     .article-content {
-                        h5 {      
+                        h5 {
                             a {
                                 color: $__primarycolor;
                             }
@@ -339,7 +339,7 @@
                     -moz-transition: 0.7s;
                     -o-transition: 0.7s;
                     transition: 0.7s;
-                    h5 {                        
+                    h5 {
                         margin-bottom: 10px;
                         a {
                             font-weight: $__semibold;
@@ -378,7 +378,7 @@
     @include margin-padding(0px 0 0, null);
         @include respond-below(custom991) {
             min-height: 350px;
-        } 
+        }
 	&:after {
 		content: '';
 		background: linear-gradient(0deg, #000000 16.31%, rgba(0, 0, 0, 0) 100%);
@@ -389,7 +389,7 @@
 		height: 100%;
 		z-index: -1;
 	}
-    
+
 }
 .blog-description {
     p {
@@ -673,7 +673,7 @@
 .extra-service {
     padding-bottom: 24px !important;
 }
-.listing-review {
+.vehicle-review {
     padding-bottom: 9px !important;
 }
 .review-sec {
@@ -683,7 +683,7 @@
     border: 0;
     box-shadow: 0px 4px 24px rgba(225, 225, 225, 0.25);
     border-radius: 10px;
-    @include respond-below(custom767) { 
+    @include respond-below(custom767) {
         padding: 20px;
     }
     .review-header {
@@ -750,18 +750,18 @@
         }
     }
     .review-card {
-        border: 1px solid #F4F4F4;         
+        border: 1px solid #F4F4F4;
         padding: 15px;
-        margin-bottom: 24px; 
+        margin-bottom: 24px;
         border-radius: 10px;
-        .review-header-group {            
-            margin-bottom: 10px;    
-            @extend %display-flex-between; 
-            @extend %display-flex-center; 
-            @include respond-below(custom767) { 
+        .review-header-group {
+            margin-bottom: 10px;
+            @extend %display-flex-between;
+            @extend %display-flex-center;
+            @include respond-below(custom767) {
                 display: block;
-            }    
-            .review-widget-header {                        
+            }
+            .review-widget-header {
                 @extend %display-flex-center;
                 .review-widget-img {
                     display: $__flex;
@@ -770,14 +770,14 @@
                         height: 60px;
                         border-radius: 10px;
                     }
-                }                
+                }
                 .review-design {
                     margin-left: 15px;
                     .h6 {
                         font-weight: $__medium;
                         font-size: $__font__size__20;
                         color: $__light__smokey-grays;
-                    }                
+                    }
                     p {
                         font-weight: $__medium;
                         font-size: $__font__size__14;
@@ -786,12 +786,12 @@
                 }
             }
             .reviewbox-list-rating {
-                
-                p {                    
-                    @include respond-below(custom767) { 
+
+                p {
+                    @include respond-below(custom767) {
                         display: block;
                         margin-top: 10px;
-                    } 
+                    }
                 }
             }
         }
@@ -799,20 +799,20 @@
     .search-btn {
         .search-button {
             background-color: $__primarycolor;
-            border: 1px solid $__primarycolor;                
-            box-shadow: inset 0 0 0 $__white;                
-            color: $__white;             
-            @include margin-padding(null, 12px 20px);           
+            border: 1px solid $__primarycolor;
+            box-shadow: inset 0 0 0 $__white;
+            color: $__white;
+            @include margin-padding(null, 12px 20px);
             @extend %animation-effect;
                 @include respond-below(custom991) {
                     width: 250px;
-                } 
+                }
                 @include respond-below(custom991) {
                     @include margin-padding(null, 12px 8px);
                 }
                 @include respond-below(custom1199) {
                     @include margin-padding(null, 12px 12px);
-                }                
+                }
             &:hover {
                 background-color: $__white;
                 border: 1px solid $__gray__dark;
@@ -825,7 +825,7 @@
     .column-group-last {
         -ms-flex: 100%;
         flex: 100%;
-        max-width: 100%;    
+        max-width: 100%;
         &:last-child {
             padding-right: 0;
         }
@@ -835,7 +835,7 @@
             }
         }
     }
-    .column-group-main {         
+    .column-group-main {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;

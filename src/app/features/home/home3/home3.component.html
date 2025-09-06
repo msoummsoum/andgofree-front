@@ -9,7 +9,7 @@
           <h4>We prioritizes customer satisfaction</h4>
           <div class="banner-search">
             <form
-              
+
               class="form-block d-flex align-items-center"
             >
               <div class="search-input">
@@ -109,12 +109,12 @@
             </div>
             <div class="view-all">
               <a
-                [routerLink]="routes.listingGrid"
+                [routerLink]="routes.vehicleGrid"
                 class="btn btn-view d-inline-flex align-items-center"
                 >Rent a Bike</a
               >
               <a
-                [routerLink]="routes.listingGrid"
+                [routerLink]="routes.vehicleGrid"
                 class="btn btn-secondary d-inline-flex align-items-center"
                 ><i class="bx bxs-plus-circle"></i>Add a Bike
               </a>
@@ -327,7 +327,7 @@
         <!-- /Category List -->
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-          <a [routerLink]="routes.listingGrid" class="btn btn-secondary"
+          <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary"
             >View all Categories</a
           >
         </div>
@@ -355,13 +355,13 @@
           <owl-carousel-o [options]="bikefeatureOwlOptions">
             <ng-template carouselSlide>
               <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
+                <div class="vehicle-item bike-list">
+                  <div class="vehicle-img">
                     <div class="image-slider">
                       <owl-carousel-o [options]="carimagesliderOwlOptions">
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-01.png"
                                 class="img-fluid"
@@ -372,7 +372,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-02.png"
                                 class="img-fluid"
@@ -383,7 +383,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-03.png"
                                 class="img-fluid"
@@ -394,7 +394,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-04.png"
                                 class="img-fluid"
@@ -417,9 +417,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="listing-content">
+                  <div class="vehicle-content">
                     <div
-                      class="listing-features d-flex align-items-center justify-content-between"
+                      class="vehicle-features d-flex align-items-center justify-content-between"
                     >
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -430,8 +430,8 @@
                           <i class="fas fa-star"></i>
                           <span>138 Reviews</span>
                         </div>
-                        <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Harley Davidson</a>
+                        <h3 class="vehicle-title">
+                          <a [routerLink]="routes.vehicleDetails">Harley Davidson</a>
                         </h3>
                       </div>
                       <div class="list-km">
@@ -443,7 +443,7 @@
                         >
                       </div>
                     </div>
-                    <div class="listing-details-group">
+                    <div class="vehicle-details-group">
                       <ul>
                         <li>
                           <span
@@ -479,8 +479,8 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="listing-button">
-                      <div class="listing-price">
+                    <div class="vehicle-button">
+                      <div class="vehicle-price">
                         <h6>$160 <span>/ Day</span></h6>
                       </div>
                       <div class="d-flex align-items-center">
@@ -490,7 +490,7 @@
                         [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                           >Book Now</a
                         >
                       </div>
@@ -504,13 +504,13 @@
             </ng-template>
             <ng-template carouselSlide>
               <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
+                <div class="vehicle-item bike-list">
+                  <div class="vehicle-img">
                     <div class="image-slider">
                       <owl-carousel-o [options]="carimagesliderOwlOptions">
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike2-slide-01.png"
                                 class="img-fluid"
@@ -521,7 +521,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike2-slide-02.png"
                                 class="img-fluid"
@@ -532,7 +532,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike2-slide-03.png"
                                 class="img-fluid"
@@ -543,7 +543,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike2-slide-04.png"
                                 class="img-fluid"
@@ -566,9 +566,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="listing-content">
+                  <div class="vehicle-content">
                     <div
-                      class="listing-features d-flex align-items-center justify-content-between"
+                      class="vehicle-features d-flex align-items-center justify-content-between"
                     >
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -579,8 +579,8 @@
                           <i class="fas fa-star"></i>
                           <span>150 Reviews</span>
                         </div>
-                        <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">KTM RC 390</a>
+                        <h3 class="vehicle-title">
+                          <a [routerLink]="routes.vehicleDetails">KTM RC 390</a>
                         </h3>
                       </div>
                       <div class="list-km">
@@ -592,7 +592,7 @@
                         >
                       </div>
                     </div>
-                    <div class="listing-details-group">
+                    <div class="vehicle-details-group">
                       <ul>
                         <li>
                           <span
@@ -628,8 +628,8 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="listing-button">
-                      <div class="listing-price">
+                    <div class="vehicle-button">
+                      <div class="vehicle-price">
                         <h6>$180 <span>/ Day</span></h6>
                       </div>
                       <div class="d-flex align-items-center">
@@ -639,7 +639,7 @@
                         [ngClass]="{ selected: isClassAdded[1] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                           >Book Now</a
                         >
                       </div>
@@ -653,8 +653,8 @@
             </ng-template>
             <ng-template carouselSlide>
               <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
+                <div class="vehicle-item bike-list">
+                  <div class="vehicle-img">
                     <div class="image-slider">
                       <owl-carousel-o
                         [options]="carimagesliderOwlOptions"
@@ -662,7 +662,7 @@
                       >
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike3-slide-01.png"
                                 class="img-fluid"
@@ -673,7 +673,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike3-slide-02.png"
                                 class="img-fluid"
@@ -684,7 +684,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike3-slide-03.png"
                                 class="img-fluid"
@@ -695,7 +695,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike3-slide-04.png"
                                 class="img-fluid"
@@ -718,9 +718,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="listing-content">
+                  <div class="vehicle-content">
                     <div
-                      class="listing-features d-flex align-items-center justify-content-between"
+                      class="vehicle-features d-flex align-items-center justify-content-between"
                     >
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -731,8 +731,8 @@
                           <i class="fas fa-star"></i>
                           <span>110 Reviews</span>
                         </div>
-                        <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Ducati Hypermotard</a>
+                        <h3 class="vehicle-title">
+                          <a [routerLink]="routes.vehicleDetails">Ducati Hypermotard</a>
                         </h3>
                       </div>
                       <div class="list-km">
@@ -744,7 +744,7 @@
                         >
                       </div>
                     </div>
-                    <div class="listing-details-group">
+                    <div class="vehicle-details-group">
                       <ul>
                         <li>
                           <span
@@ -780,8 +780,8 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="listing-button">
-                      <div class="listing-price">
+                    <div class="vehicle-button">
+                      <div class="vehicle-price">
                         <h6>$190 <span>/ Day</span></h6>
                       </div>
                       <div class="d-flex align-items-center">
@@ -791,7 +791,7 @@
                         [ngClass]="{ selected: isClassAdded[2] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                           >Book Now</a
                         >
                       </div>
@@ -805,13 +805,13 @@
             </ng-template>
             <ng-template carouselSlide>
               <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
+                <div class="vehicle-item bike-list">
+                  <div class="vehicle-img">
                     <div class="image-slider">
                       <owl-carousel-o [options]="carimagesliderOwlOptions">
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike4-slide-01.png"
                                 class="img-fluid"
@@ -822,7 +822,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike4-slide-02.png"
                                 class="img-fluid"
@@ -833,7 +833,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike4-slide-03.png"
                                 class="img-fluid"
@@ -844,7 +844,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike4-slide-04.png"
                                 class="img-fluid"
@@ -867,9 +867,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="listing-content">
+                  <div class="vehicle-content">
                     <div
-                      class="listing-features d-flex align-items-center justify-content-between"
+                      class="vehicle-features d-flex align-items-center justify-content-between"
                     >
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -880,8 +880,8 @@
                           <i class="fas fa-star filled"></i>
                           <span>180 Reviews</span>
                         </div>
-                        <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">TVS Apache RR BS6</a>
+                        <h3 class="vehicle-title">
+                          <a [routerLink]="routes.vehicleDetails">TVS Apache RR BS6</a>
                         </h3>
                       </div>
                       <div class="list-km">
@@ -893,7 +893,7 @@
                         >
                       </div>
                     </div>
-                    <div class="listing-details-group">
+                    <div class="vehicle-details-group">
                       <ul>
                         <li>
                           <span
@@ -929,8 +929,8 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="listing-button">
-                      <div class="listing-price">
+                    <div class="vehicle-button">
+                      <div class="vehicle-price">
                         <h6>$120 <span>/ Day</span></h6>
                       </div>
                       <div class="d-flex align-items-center">
@@ -940,7 +940,7 @@
                         [ngClass]="{ selected: isClassAdded[3] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                           >Book Now</a
                         >
                       </div>
@@ -954,13 +954,13 @@
             </ng-template>
             <ng-template carouselSlide>
               <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
+                <div class="vehicle-item bike-list">
+                  <div class="vehicle-img">
                     <div class="image-slider">
                       <owl-carousel-o [options]="carimagesliderOwlOptions">
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-01.png"
                                 class="img-fluid"
@@ -971,7 +971,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-02.png"
                                 class="img-fluid"
@@ -982,7 +982,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-03.png"
                                 class="img-fluid"
@@ -993,7 +993,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/bike/bike1-slide-04.png"
                                 class="img-fluid"
@@ -1016,9 +1016,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="listing-content">
+                  <div class="vehicle-content">
                     <div
-                      class="listing-features d-flex align-items-center justify-content-between"
+                      class="vehicle-features d-flex align-items-center justify-content-between"
                     >
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -1029,8 +1029,8 @@
                           <i class="fas fa-star"></i>
                           <span>100 Reviews</span>
                         </div>
-                        <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Harley X220</a>
+                        <h3 class="vehicle-title">
+                          <a [routerLink]="routes.vehicleDetails">Harley X220</a>
                         </h3>
                       </div>
                       <div class="list-km">
@@ -1042,7 +1042,7 @@
                         >
                       </div>
                     </div>
-                    <div class="listing-details-group">
+                    <div class="vehicle-details-group">
                       <ul>
                         <li>
                           <span
@@ -1078,8 +1078,8 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="listing-button">
-                      <div class="listing-price">
+                    <div class="vehicle-button">
+                      <div class="vehicle-price">
                         <h6>$77 <span>/ Day</span></h6>
                       </div>
                       <div class="d-flex align-items-center">
@@ -1089,7 +1089,7 @@
                         [ngClass]="{ selected: isClassAdded[4] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                           >Book Now</a
                         >
                       </div>
@@ -1102,7 +1102,7 @@
         </div>
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-          <a [routerLink]="routes.listingGrid" class="btn btn-secondary"
+          <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary"
             >View all Bikes</a
           >
         </div>
@@ -1396,13 +1396,13 @@
         <!-- /Heading title -->
         <div class="row">
           <div class="col-lg-6">
-            <div class="listing-item bike-list">
-              <div class="listing-img">
+            <div class="vehicle-item bike-list">
+              <div class="vehicle-img">
                 <div class="img-slider">
                   <owl-carousel-o [options]="imageOwlOptions">
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike5-slide-01.png"
                             class="img-fluid"
@@ -1413,7 +1413,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike5-slide-02.png"
                             class="img-fluid"
@@ -1424,7 +1424,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike5-slide-03.png"
                             class="img-fluid"
@@ -1435,7 +1435,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike5-slide-04.png"
                             class="img-fluid"
@@ -1452,8 +1452,8 @@
                   </a>
                 </div>
               </div>
-              <div class="listing-content">
-                <div class="listing-features d-flex justify-content-between">
+              <div class="vehicle-content">
+                <div class="vehicle-features d-flex justify-content-between">
                   <div class="list-rating">
                     <div class="list-ratings">
                       <i class="fas fa-star filled"></i>
@@ -1463,8 +1463,8 @@
                       <i class="fas fa-star"></i>
                       <span>140 Reviews</span>
                     </div>
-                    <h3 class="listing-title">
-                      <a [routerLink]="routes.listingDetails">Royal Enfield</a>
+                    <h3 class="vehicle-title">
+                      <a [routerLink]="routes.vehicleDetails">Royal Enfield</a>
                     </h3>
                   </div>
                   <div class="list-km">
@@ -1476,7 +1476,7 @@
                     >
                   </div>
                 </div>
-                <div class="listing-details-group">
+                <div class="vehicle-details-group">
                   <ul>
                     <li>
                       <span
@@ -1504,8 +1504,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="listing-button">
-                  <div class="listing-price">
+                <div class="vehicle-button">
+                  <div class="vehicle-price">
                     <h6>$110 <span>/ Day</span></h6>
                   </div>
                   <div class="d-flex align-items-center">
@@ -1515,7 +1515,7 @@
                     [ngClass]="{ selected: isClassAdded[5] }">
                       <i class="feather icon-heart"></i>
                     </a>
-                    <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                    <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                       >Book Now</a
                     >
                   </div>
@@ -1524,13 +1524,13 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="listing-item bike-list">
-              <div class="listing-img">
+            <div class="vehicle-item bike-list">
+              <div class="vehicle-img">
                 <div class="img-slider">
                   <owl-carousel-o [options]="imageOwlOptions">
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike6-slide-01.png"
                             class="img-fluid"
@@ -1541,7 +1541,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike6-slide-02.png"
                             class="img-fluid"
@@ -1552,7 +1552,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike6-slide-03.png"
                             class="img-fluid"
@@ -1563,7 +1563,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike6-slide-02.png"
                             class="img-fluid"
@@ -1580,8 +1580,8 @@
                   </a>
                 </div>
               </div>
-              <div class="listing-content">
-                <div class="listing-features d-flex justify-content-between">
+              <div class="vehicle-content">
+                <div class="vehicle-features d-flex justify-content-between">
                   <div class="list-rating">
                     <div class="list-ratings">
                       <i class="fas fa-star filled"></i>
@@ -1591,8 +1591,8 @@
                       <i class="fas fa-star"></i>
                       <span>140 Reviews</span>
                     </div>
-                    <h3 class="listing-title">
-                      <a [routerLink]="routes.listingDetails">Ducati Street fighter</a>
+                    <h3 class="vehicle-title">
+                      <a [routerLink]="routes.vehicleDetails">Ducati Street fighter</a>
                     </h3>
                   </div>
                   <div class="list-km">
@@ -1604,7 +1604,7 @@
                     >
                   </div>
                 </div>
-                <div class="listing-details-group">
+                <div class="vehicle-details-group">
                   <ul>
                     <li>
                       <span
@@ -1632,8 +1632,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="listing-button">
-                  <div class="listing-price">
+                <div class="vehicle-button">
+                  <div class="vehicle-price">
                     <h6>$150 <span>/ Day</span></h6>
                   </div>
                   <div class="d-flex align-items-center">
@@ -1643,7 +1643,7 @@
                     [ngClass]="{ selected: isClassAdded[6] }">
                       <i class="feather icon-heart"></i>
                     </a>
-                    <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                    <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                       >Book Now</a
                     >
                   </div>
@@ -1652,13 +1652,13 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="listing-item bike-list">
-              <div class="listing-img">
+            <div class="vehicle-item bike-list">
+              <div class="vehicle-img">
                 <div class="img-slider">
                   <owl-carousel-o [options]="imageOwlOptions">
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike7-slide-01.png"
                             class="img-fluid"
@@ -1669,7 +1669,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike7-slide-02.png"
                             class="img-fluid"
@@ -1680,7 +1680,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike7-slide-03.png"
                             class="img-fluid"
@@ -1691,7 +1691,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike7-slide-04.png"
                             class="img-fluid"
@@ -1708,8 +1708,8 @@
                   </a>
                 </div>
               </div>
-              <div class="listing-content">
-                <div class="listing-features d-flex justify-content-between">
+              <div class="vehicle-content">
+                <div class="vehicle-features d-flex justify-content-between">
                   <div class="list-rating">
                     <div class="list-ratings">
                       <i class="fas fa-star filled"></i>
@@ -1719,8 +1719,8 @@
                       <i class="fas fa-star filled"></i>
                       <span>180 Reviews</span>
                     </div>
-                    <h3 class="listing-title">
-                      <a [routerLink]="routes.listingDetails">TVS Apache RR 310</a>
+                    <h3 class="vehicle-title">
+                      <a [routerLink]="routes.vehicleDetails">TVS Apache RR 310</a>
                     </h3>
                   </div>
                   <div class="list-km">
@@ -1732,7 +1732,7 @@
                     >
                   </div>
                 </div>
-                <div class="listing-details-group">
+                <div class="vehicle-details-group">
                   <ul>
                     <li>
                       <span
@@ -1760,8 +1760,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="listing-button">
-                  <div class="listing-price">
+                <div class="vehicle-button">
+                  <div class="vehicle-price">
                     <h6>$120 <span>/ Day</span></h6>
                   </div>
                   <div class="d-flex align-items-center">
@@ -1771,7 +1771,7 @@
                     [ngClass]="{ selected: isClassAdded[7] }">
                       <i class="feather icon-heart"></i>
                     </a>
-                    <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                    <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                       >Book Now</a
                     >
                   </div>
@@ -1780,13 +1780,13 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="listing-item bike-list">
-              <div class="listing-img">
+            <div class="vehicle-item bike-list">
+              <div class="vehicle-img">
                 <div class="img-slider">
                   <owl-carousel-o [options]="imageOwlOptions">
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike8-slide-01.png"
                             class="img-fluid"
@@ -1797,7 +1797,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike8-slide-02.png"
                             class="img-fluid"
@@ -1808,7 +1808,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike8-slide-03.png"
                             class="img-fluid"
@@ -1819,7 +1819,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
                       <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
+                        <a [routerLink]="routes.vehicleDetails">
                           <img
                             src="assets/img/bike/bike8-slide-04.png"
                             class="img-fluid"
@@ -1836,8 +1836,8 @@
                   </a>
                 </div>
               </div>
-              <div class="listing-content">
-                <div class="listing-features d-flex justify-content-between">
+              <div class="vehicle-content">
+                <div class="vehicle-features d-flex justify-content-between">
                   <div class="list-rating">
                     <div class="list-ratings">
                       <i class="fas fa-star filled"></i>
@@ -1847,8 +1847,8 @@
                       <i class="fas fa-star"></i>
                       <span>180 Reviews</span>
                     </div>
-                    <h3 class="listing-title">
-                      <a [routerLink]="routes.listingDetails">Kawasaki Ninja 400</a>
+                    <h3 class="vehicle-title">
+                      <a [routerLink]="routes.vehicleDetails">Kawasaki Ninja 400</a>
                     </h3>
                   </div>
                   <div class="list-km">
@@ -1860,7 +1860,7 @@
                     >
                   </div>
                 </div>
-                <div class="listing-details-group">
+                <div class="vehicle-details-group">
                   <ul>
                     <li>
                       <span
@@ -1888,8 +1888,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="listing-button">
-                  <div class="listing-price">
+                <div class="vehicle-button">
+                  <div class="vehicle-price">
                     <h6>$120 <span>/ Day</span></h6>
                   </div>
                   <div class="d-flex align-items-center">
@@ -1899,7 +1899,7 @@
                     [ngClass]="{ selected: isClassAdded[8] }">
                       <i class="feather icon-heart"></i>
                     </a>
-                    <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                    <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                       >Book Now</a
                     >
                   </div>
@@ -2128,9 +2128,9 @@
         <div class="recommend-slider">
           <owl-carousel-o [options]="recommendOwlOptions">
             <ng-template carouselSlide>
-              <div class="listing-item bike-list">
-                <div class="listing-img">
-                  <a [routerLink]="routes.listingDetails">
+              <div class="vehicle-item bike-list">
+                <div class="vehicle-img">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/bike/bike-01.png"
                       class="img-fluid"
@@ -2138,8 +2138,8 @@
                     />
                   </a>
                 </div>
-                <div class="listing-content">
-                  <div class="listing-features d-flex justify-content-between">
+                <div class="vehicle-content">
+                  <div class="vehicle-features d-flex justify-content-between">
                     <div class="list-rating">
                       <div class="list-ratings">
                         <i class="fas fa-star filled"></i>
@@ -2149,8 +2149,8 @@
                         <i class="fas fa-star"></i>
                         <span>138 Reviews</span>
                       </div>
-                      <h3 class="listing-title">
-                        <a [routerLink]="routes.listingDetails"
+                      <h3 class="vehicle-title">
+                        <a [routerLink]="routes.vehicleDetails"
                           >KTM 1290 Super Duke R EVO</a
                         >
                       </h3>
@@ -2164,7 +2164,7 @@
                       >
                     </div>
                   </div>
-                  <div class="listing-details-group">
+                  <div class="vehicle-details-group">
                     <ul>
                       <li>
                         <span
@@ -2200,8 +2200,8 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="listing-button">
-                    <div class="listing-price">
+                  <div class="vehicle-button">
+                    <div class="vehicle-price">
                       <h6>$160 <span>/ Day</span></h6>
                     </div>
                     <div class="d-flex align-items-center">
@@ -2211,7 +2211,7 @@
                       [ngClass]="{ selected: isClassAdded[9] }">
                         <i class="feather icon-heart"></i>
                       </a>
-                      <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                      <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                         >Book Now</a
                       >
                     </div>
@@ -2220,9 +2220,9 @@
               </div>
             </ng-template>
             <ng-template carouselSlide>
-              <div class="listing-item bike-list">
-                <div class="listing-img">
-                  <a [routerLink]="routes.listingDetails">
+              <div class="vehicle-item bike-list">
+                <div class="vehicle-img">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/bike/bike-03.png"
                       class="img-fluid"
@@ -2230,8 +2230,8 @@
                     />
                   </a>
                 </div>
-                <div class="listing-content">
-                  <div class="listing-features d-flex justify-content-between">
+                <div class="vehicle-content">
+                  <div class="vehicle-features d-flex justify-content-between">
                     <div class="list-rating">
                       <div class="list-ratings">
                         <i class="fas fa-star filled"></i>
@@ -2241,8 +2241,8 @@
                         <i class="fas fa-star"></i>
                         <span>112 Reviews</span>
                       </div>
-                      <h3 class="listing-title">
-                        <a [routerLink]="routes.listingDetails">Honda Rebel 300</a>
+                      <h3 class="vehicle-title">
+                        <a [routerLink]="routes.vehicleDetails">Honda Rebel 300</a>
                       </h3>
                     </div>
                     <div class="list-km">
@@ -2254,7 +2254,7 @@
                       >
                     </div>
                   </div>
-                  <div class="listing-details-group">
+                  <div class="vehicle-details-group">
                     <ul>
                       <li>
                         <span
@@ -2290,8 +2290,8 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="listing-button">
-                    <div class="listing-price">
+                  <div class="vehicle-button">
+                    <div class="vehicle-price">
                       <h6>$150 <span>/ Day</span></h6>
                     </div>
                     <div class="d-flex align-items-center">
@@ -2301,7 +2301,7 @@
                       [ngClass]="{ selected: isClassAdded[10] }">
                         <i class="feather icon-heart"></i>
                       </a>
-                      <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                      <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                         >Book Now</a
                       >
                     </div>
@@ -2310,9 +2310,9 @@
               </div>
             </ng-template>
             <ng-template carouselSlide>
-              <div class="listing-item bike-list">
-                <div class="listing-img">
-                  <a [routerLink]="routes.listingDetails">
+              <div class="vehicle-item bike-list">
+                <div class="vehicle-img">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/bike/bike-02.png"
                       class="img-fluid"
@@ -2320,8 +2320,8 @@
                     />
                   </a>
                 </div>
-                <div class="listing-content">
-                  <div class="listing-features d-flex justify-content-between">
+                <div class="vehicle-content">
+                  <div class="vehicle-features d-flex justify-content-between">
                     <div class="list-rating">
                       <div class="list-ratings">
                         <i class="fas fa-star filled"></i>
@@ -2331,8 +2331,8 @@
                         <i class="fas fa-star"></i>
                         <span>125 Reviews</span>
                       </div>
-                      <h3 class="listing-title">
-                        <a [routerLink]="routes.listingDetails">Kawasaki z900</a>
+                      <h3 class="vehicle-title">
+                        <a [routerLink]="routes.vehicleDetails">Kawasaki z900</a>
                       </h3>
                     </div>
                     <div class="list-km">
@@ -2344,7 +2344,7 @@
                       >
                     </div>
                   </div>
-                  <div class="listing-details-group">
+                  <div class="vehicle-details-group">
                     <ul>
                       <li>
                         <span
@@ -2380,8 +2380,8 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="listing-button">
-                    <div class="listing-price">
+                  <div class="vehicle-button">
+                    <div class="vehicle-price">
                       <h6>$180 <span>/ Day</span></h6>
                     </div>
                     <div class="d-flex align-items-center">
@@ -2391,7 +2391,7 @@
                       [ngClass]="{ selected: isClassAdded[11] }">
                         <i class="feather icon-heart"></i>
                       </a>
-                      <a [routerLink]="routes.listingDetails" class="btn btn-order"
+                      <a [routerLink]="routes.vehicleDetails" class="btn btn-order"
                         >Book Now</a
                       >
                     </div>
@@ -3024,7 +3024,7 @@
                   </div>
                   <p><i class="bx bxs-check-circle"></i>Verified</p>
                 </div>
-                
+
               </div>
               <div class="testimonial-content">
                 <h3>{{testimonial.title}}</h3>
@@ -3247,7 +3247,7 @@
       <div class="rental-content">
         <h2>We Make Finding The Right Bike Simple</h2>
         <div class="btn-item">
-          <a [routerLink]="routes.listingGrid" class="btn btn-theme">View all Bikes</a>
+          <a [routerLink]="routes.vehicleGrid" class="btn btn-theme">View all Bikes</a>
         </div>
       </div>
     </div>
@@ -3278,8 +3278,8 @@
 </section>
 <!-- /Best Section -->
 <!-- Footer -->
-<footer class="footer footer-three">	
-    <!-- Footer Top -->	
+<footer class="footer footer-three">
+    <!-- Footer Top -->
     <div class="footer-top aos" data-aos="fade-up">
         <div class="container">
             <div class="row">
@@ -3300,7 +3300,7 @@
                                     <a href="mailto:support&#64;example.com"><i class="bx bxs-envelope"></i>support&#64;example.com</a>
                                 </div>
                             </div>
-                        </div>	
+                        </div>
                         <ul class="store-icon">
                             <li>
                                 <a href="javascript:void(0);">
@@ -3334,7 +3334,7 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)">Dreams rent Category</a>
-                            </li>									
+                            </li>
                         </ul>
                     </div>
                     <!-- /Footer Widget -->
@@ -3358,7 +3358,7 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)">Off-road</a>
-                            </li>							
+                            </li>
                         </ul>
                     </div>
                     <!-- /Footer Widget -->
@@ -3382,11 +3382,11 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)">Financial Services</a>
-                            </li>							
+                            </li>
                         </ul>
                     </div>
                     <!-- /Footer Widget -->
-                </div>	
+                </div>
                 <div class="col-lg-2 col-md-6">
                     <!-- Footer Widget -->
                     <div class="footer-widget footer-menu">
@@ -3406,11 +3406,11 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)">Preferences</a>
-                            </li>							
+                            </li>
                         </ul>
                     </div>
                     <!-- /Footer Widget -->
-                </div>	
+                </div>
                 <div class="col-lg-2 col-md-6">
                     <!-- Footer Widget -->
                     <div class="footer-widget footer-menu">
@@ -3430,12 +3430,12 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)">Elements</a>
-                            </li>							
+                            </li>
                         </ul>
                     </div>
                     <!-- /Footer Widget -->
                 </div>
-            </div>					
+            </div>
         </div>
     </div>
     <!-- /Footer Top -->
@@ -3515,7 +3515,7 @@
             <!-- /Copyright -->
         </div>
     </div>
-    <!-- /Footer Bottom -->			
+    <!-- /Footer Bottom -->
 </footer>
 <!-- /Footer -->
 

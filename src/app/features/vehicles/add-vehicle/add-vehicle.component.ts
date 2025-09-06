@@ -4,12 +4,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-add-listing',
+  selector: 'app-add-vehicle',
   imports: [MatSelectModule,RouterLink],
-  templateUrl: './add-listing.component.html',
-  styleUrl: './add-listing.component.scss'
+  templateUrl: './add-vehicle.component.html',
+  styleUrl: './add-vehicle.component.scss'
 })
-export class AddListingComponent {
+export class AddVehicleComponent {
 routes=routes
   tabs = [
     { id: 'info', label: 'Basic Info' },

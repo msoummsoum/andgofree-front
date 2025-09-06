@@ -1,8 +1,8 @@
 <!-- Banner -->
-<section class="banner-section-four">		
+<section class="banner-section-four">
     <div class="container">
-           <div class="home-banner">		
-           <div class="row align-items-center">					    
+           <div class="home-banner">
+           <div class="row align-items-center">
                    <div class="col-lg-5" data-aos="fade-down">
                     <div class="banner-content">
                         <h1>Explore our <span>Verified & Professional</span> Cars</h1>
@@ -27,13 +27,13 @@
                                 </div>
                             </div>
                             <div class="view-all d-flex align-items-center gap-3">
-                                <a [routerLink]="routes.listingGrid" class="btn btn-primary d-inline-flex align-items-center">Rent a Car<i class="bx bx-right-arrow-alt ms-1"></i></a>
-                                <a [routerLink]="routes.addListing" class="btn btn-secondary d-inline-flex align-items-center"><i class="bx bxs-plus-circle me-1"></i>Add Your Car</a>
+                                <a [routerLink]="routes.vehicleGrid" class="btn btn-primary d-inline-flex align-items-center">Rent a Car<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                                <a [routerLink]="routes.addVehicle" class="btn btn-secondary d-inline-flex align-items-center"><i class="bx bxs-plus-circle me-1"></i>Add Your Car</a>
                             </div>
-                        </div>	
-                    </div>	
+                        </div>
+                    </div>
                    </div>
-                <div class="col-lg-7">							
+                <div class="col-lg-7">
                     <div class="banner-image">
                         <div class="banner-img" data-aos="fade-down">
                             <div class="amount-icon">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                </div>
-           </div>	
+           </div>
         <div class="banner-search">
                <form (ngSubmit)="directePage()" class="form-block d-flex align-items-center">
                    <div class="search-input">
@@ -107,9 +107,9 @@
 
 <!-- Category  Section -->
 <section class="category-section-four">
-    <div class="container">	
-        <div class="row">	
-            <div class="col-md-12">	
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
 
                 <!-- Heading title-->
                 <div class="section-heading heading-four" data-aos="fade-down">
@@ -119,16 +119,16 @@
                 <!-- /Heading title -->
 
                 <div class="row row-gap-4">
-                    
+
                     <!-- Category Item -->
                     <div class="col-xl-2 col-md-4 col-sm-6 d-flex">
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Sports Coupe</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Sports Coupe</a></h6>
                                     <p>14 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-01.png" alt="img" class="img-fluid">
@@ -142,10 +142,10 @@
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Sedan</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Sedan</a></h6>
                                     <p>12 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-02.png" alt="img" class="img-fluid">
@@ -159,10 +159,10 @@
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Sports Car</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Sports Car</a></h6>
                                     <p>35 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-03.png" alt="img" class="img-fluid">
@@ -176,10 +176,10 @@
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Pickup</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Pickup</a></h6>
                                     <p>35 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-04.png" alt="img" class="img-fluid">
@@ -193,10 +193,10 @@
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Family MPV</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Family MPV</a></h6>
                                     <p>35 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-05.png" alt="img" class="img-fluid">
@@ -210,10 +210,10 @@
                         <div class="category-item flex-fill">
                             <div class="category-info d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h6 class="title"><a [routerLink]="routes.listingGrid">Crossover</a></h6>
+                                    <h6 class="title"><a [routerLink]="routes.vehicleGrid">Crossover</a></h6>
                                     <p>30 Cars</p>
                                 </div>
-                                <a [routerLink]="routes.listingGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
+                                <a [routerLink]="routes.vehicleGrid" class="link-icon"><i class="bx bx-right-arrow-alt"></i></a>
                             </div>
                             <div class="category-img">
                                 <img src="assets/img/category/category-06.png" alt="img" class="img-fluid">
@@ -225,7 +225,7 @@
                 </div>
 
                 <div class="view-all-btn text-center aos" data-aos="fade-down">
-                    <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View All<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                    <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary">View All<i class="bx bx-right-arrow-alt ms-1"></i></a>
                 </div>
             </div>
         </div>
@@ -235,9 +235,9 @@
 
 <!-- Feature Section -->
 <section class="feature-section pt-0">
-    <div class="container">	
-        <div class="row align-items-center">	
-            <div class="col-lg-6">	
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
 
                 <div class="feature-img">
                     <div class="section-heading heading-four text-start" data-aos="fade-down">
@@ -249,9 +249,9 @@
 
             </div>
 
-            <div class="col-lg-6">	
+            <div class="col-lg-6">
                 <div class="row row-gap-4">
-                    
+
                     <!-- Feature Item -->
                     <div class="col-md-6 d-flex">
                         <div class="feature-item flex-fill">
@@ -346,7 +346,7 @@
 
 <!-- Car Section -->
 <section class="car-section">
-    <div class="container">	
+    <div class="container">
 
         <div class="section-heading heading-four" data-aos="fade-down">
             <h2>Explore Most Popular Cars</h2>
@@ -357,27 +357,27 @@
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
                         <div class="img-slider">
                             <owl-carousel-o [options]="imgSlider">
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-11.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
                                 </ng-template>
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-12.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
                                 </ng-template>
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-11.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
@@ -391,17 +391,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="isSelected[1]?'':'selected'" (click)="selected(1)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Lasvegas</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">Toyota Camry SE 350</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">Toyota Camry SE 350</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -413,8 +413,8 @@
                             <div>
                                 <h4 class="price">$160 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -430,20 +430,20 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2018</p>	
+                                    <p>2018</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
-                        <a [routerLink]="routes.listingDetails">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
+                        <a [routerLink]="routes.vehicleDetails">
                             <img src="assets/img/cars/car-12.jpg" class="img-fluid" alt="Toyota">
                         </a>
                         <div class="fav-item">
@@ -453,17 +453,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="isSelected[0]?'':'selected'" (click)="selected(0)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Lasvegas</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">Audi A3 2019 new</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">Audi A3 2019 new</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -475,8 +475,8 @@
                             <div>
                                 <h4 class="price">$45 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -492,20 +492,20 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2019</p>	
+                                    <p>2019</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
-                        <a [routerLink]="routes.listingDetails">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
+                        <a [routerLink]="routes.vehicleDetails">
                             <img src="assets/img/cars/car-13.jpg" class="img-fluid" alt="Toyota">
                         </a>
                         <div class="fav-item">
@@ -515,17 +515,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="toSelect[0]?'selected':''" (click)="toSelected(0)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Lasvegas</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">Ford Mustang 4.0 AT</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">Ford Mustang 4.0 AT</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -537,8 +537,8 @@
                             <div>
                                 <h4 class="price">$90 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -554,38 +554,38 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2021</p>	
+                                    <p>2021</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
                         <div class="img-slider">
                             <owl-carousel-o [options]="imgSlider">
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-14.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
                                 </ng-template>
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-13.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
                                 </ng-template>
                                 <ng-template carouselSlide>
                                     <div class="slide-images">
-                                        <a [routerLink]="routes.listingDetails">
+                                        <a [routerLink]="routes.vehicleDetails">
                                             <img src="assets/img/cars/car-16.jpg" class="img-fluid" alt="Toyota">
                                         </a>
                                     </div>
@@ -599,17 +599,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="toSelect[1]?'selected':''" (click)="toSelected(1)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Spain</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">Chevrolet Picker</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">Chevrolet Picker</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -621,8 +621,8 @@
                             <div>
                                 <h4 class="price">$48 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -638,20 +638,20 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2018</p>	
+                                    <p>2018</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
-                        <a [routerLink]="routes.listingDetails">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
+                        <a [routerLink]="routes.vehicleDetails">
                             <img src="assets/img/cars/car-15.jpg" class="img-fluid" alt="Toyota">
                         </a>
                         <div class="fav-item">
@@ -661,17 +661,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="toSelect[2]?'selected':''" (click)="toSelected(2)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Lasvegas</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">Ferrari 458 MM Special</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">Ferrari 458 MM Special</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -683,8 +683,8 @@
                             <div>
                                 <h4 class="price">$95 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -700,20 +700,20 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2021</p>	
+                                    <p>2021</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
             <!-- Car List -->
             <div class="col-lg-4 col-md-6">
-                <div class="listing-item listing-item-two">										
-                    <div class="listing-img">
-                        <a [routerLink]="routes.listingDetails">
+                <div class="vehicle-item vehicle-item-two">
+                    <div class="vehicle-img">
+                        <a [routerLink]="routes.vehicleDetails">
                             <img src="assets/img/cars/car-16.jpg" class="img-fluid" alt="Toyota">
                         </a>
                         <div class="fav-item">
@@ -723,17 +723,17 @@
                             </div>
                             <a href="javascript:void(0)" class="fav-icon" [ngClass]="toSelect[3]?'selected':''" (click)="toSelected(3)">
                                 <i class="feather icon-heart"></i>
-                            </a>										
-                        </div>									
+                            </a>
+                        </div>
                         <span class="location"><i class="bx bx-map me-1"></i>Newyork, USA</span>
-                    </div>										
-                    <div class="listing-content">
-                        <div class="listing-features d-flex align-items-center justify-content-between">
+                    </div>
+                    <div class="vehicle-content">
+                        <div class="vehicle-features d-flex align-items-center justify-content-between">
                             <div class="list-rating">
-                                <h3 class="listing-title">
-                                    <a [routerLink]="routes.listingDetails">2018 Chevrolet Camaro</a>
-                                </h3>																	  
-                                <div class="list-rating">							
+                                <h3 class="vehicle-title">
+                                    <a [routerLink]="routes.vehicleDetails">2018 Chevrolet Camaro</a>
+                                </h3>
+                                <div class="list-rating">
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -745,8 +745,8 @@
                             <div>
                                 <h4 class="price">$120 <span>/ Day</span></h4>
                             </div>
-                        </div> 
-                        <div class="listing-details-group">
+                        </div>
+                        <div class="vehicle-details-group">
                             <ul>
                                 <li>
                                     <img src="assets/img/icons/car-parts-01.svg" alt="Auto">
@@ -762,19 +762,19 @@
                                 </li>
                                 <li>
                                     <img src="assets/img/icons/car-parts-05.svg" alt="2018">
-                                    <p>2019</p>	
+                                    <p>2019</p>
                                 </li>
                             </ul>
-                        </div>	
+                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
             <!-- /Car List -->
 
         </div>
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-            <a [routerLink]="routes.listingGrid" class="btn btn-secondary d-inline-flex align-items-center">View More Cars<i class="bx bx-right-arrow-alt ms-1"></i></a>
+            <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary d-inline-flex align-items-center">View More Cars<i class="bx bx-right-arrow-alt ms-1"></i></a>
         </div>
 
     </div>
@@ -783,7 +783,7 @@
 
 <!-- Brand Section -->
 <section class="brand-section">
-    <div class="container">	
+    <div class="container">
         <div class="section-heading heading-four" data-aos="fade-down">
             <h2 class="text-white">Rent by Brands</h2>
             <p>Here's a list of some of the most popular cars globally</p>
@@ -837,7 +837,7 @@
 
 <!-- Rental Section -->
 <section class="rental-section-four">
-    <div class="container">	
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <div class="rental-img">
@@ -845,7 +845,7 @@
                     <div class="grid-img">
                         <img src="assets/img/about/car-grid.png" alt="img" class="img-fluid">
                     </div>
-                </div>						
+                </div>
             </div>
             <div class="col-lg-5">
                 <div class="rental-content">
@@ -948,7 +948,7 @@
                             <span><img src="assets/img/icons/spec-05.svg" alt="img">Diesel</span>
                             <span><img src="assets/img/icons/spec-05.svg" alt="img">5 Persons</span>
                         </div>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-primary">Rent Now</a>
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-primary">Rent Now</a>
                     </div>
                     <!-- /Car Item -->
                 </ng-template>
@@ -974,11 +974,11 @@
                              <span><img src="assets/img/icons/spec-05.svg" alt="img">Gas</span>
                              <span><img src="assets/img/icons/spec-05.svg" alt="img">4 Persons</span>
                          </div>
-                         <a [routerLink]="routes.listingDetails" class="btn btn-primary">Rent Now</a>
+                         <a [routerLink]="routes.vehicleDetails" class="btn btn-primary">Rent Now</a>
                      </div>
                      <!-- /Car Item -->
                     </ng-template>
-    
+
                  <ng-template carouselSlide>
                      <!-- Car Item -->
                      <div class="car-item">
@@ -1001,11 +1001,11 @@
                              <span><img src="assets/img/icons/spec-05.svg" alt="img">Petrol</span>
                              <span><img src="assets/img/icons/spec-05.svg" alt="img">6 Persons</span>
                          </div>
-                         <a [routerLink]="routes.listingDetails" class="btn btn-primary">Rent Now</a>
+                         <a [routerLink]="routes.vehicleDetails" class="btn btn-primary">Rent Now</a>
                      </div>
                      <!-- /Car Item -->
                 </ng-template>
-    
+
             </owl-carousel-o>
 
         </div>
@@ -1016,7 +1016,7 @@
 
 <!-- Testimonial Section -->
 <section class="testimonial-section">
-    <div class="container">	
+    <div class="container">
         <div class="section-heading heading-four" data-aos="fade-down">
             <h2>Our Clients Feedback</h2>
             <p>Provided by customers about their experience with a product or service.</p>
@@ -1030,7 +1030,7 @@
                     <div class="user-img">
                         <img src="assets/img/profiles/avatar-02.jpg" class="img-fluid" alt="img">
                     </div>
-                    <p>Renting a car from Dreams rent made my vacation so much smoother! The process was quick</p>							
+                    <p>Renting a car from Dreams rent made my vacation so much smoother! The process was quick</p>
                     <div class="rating">
                         <i class="fas fa-star filled"></i>
                         <i class="fas fa-star filled"></i>
@@ -1040,7 +1040,7 @@
                     </div>
                     <div class="user-info">
                         <h6>Kyle Roberts DVM</h6>
-                        <p>Newyork, USA</p>												
+                        <p>Newyork, USA</p>
                     </div>
                 </div>
             </div>
@@ -1052,7 +1052,7 @@
                     <div class="user-img">
                         <img src="assets/img/profiles/avatar-18.jpg" class="img-fluid" alt="img">
                     </div>
-                    <p>Their wide selection of vehicles, convenient locations, and competitive prices</p>							
+                    <p>Their wide selection of vehicles, convenient locations, and competitive prices</p>
                     <div class="rating">
                         <i class="fas fa-star filled"></i>
                         <i class="fas fa-star filled"></i>
@@ -1062,7 +1062,7 @@
                     </div>
                     <div class="user-info">
                         <h6>Hardley Vanessa</h6>
-                        <p>Newyork, USA</p>												
+                        <p>Newyork, USA</p>
                     </div>
                 </div>
             </div>
@@ -1074,7 +1074,7 @@
                     <div class="user-img">
                         <img src="assets/img/profiles/avatar-15.jpg" class="img-fluid" alt="img">
                     </div>
-                    <p>The spacious SUV we rented comfortably fit our family and all our luggage</p>							
+                    <p>The spacious SUV we rented comfortably fit our family and all our luggage</p>
                     <div class="rating">
                         <i class="fas fa-star filled"></i>
                         <i class="fas fa-star filled"></i>
@@ -1084,7 +1084,7 @@
                     </div>
                     <div class="user-info">
                         <h6>Wilson</h6>
-                        <p>Nevada, USA</p>												
+                        <p>Nevada, USA</p>
                     </div>
                 </div>
             </div>
@@ -1093,7 +1093,7 @@
         </div>
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-            <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View All<i class="bx bx-right-arrow-alt ms-1"></i></a>
+            <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary">View All<i class="bx bx-right-arrow-alt ms-1"></i></a>
         </div>
 
         <div class="client-slider">
@@ -1136,7 +1136,7 @@
 
 <!-- Price Section -->
 <section class="pricing-section-four">
-    <div class="container">	
+    <div class="container">
         <div class="section-heading heading-four" data-aos="fade-down">
             <h2>Best Pricing in Rental</h2>
             <p>Choose the Right Plan for Your Business</p>
@@ -1154,9 +1154,9 @@
                                 <h3>$299</h3>
                                 <p>Per Month</p>
                             </div>
-                            <span class="offer-tag bg-danger">30% Offer</span>	
-                        </div>						
-                    </div>	
+                            <span class="offer-tag bg-danger">30% Offer</span>
+                        </div>
+                    </div>
                     <div class="price-details">
                         <ul>
                              <li>50% Downpayment</li>
@@ -1167,8 +1167,8 @@
                              <li>Additional Perks - GPS</li>
                              <li>No Flexible timing & extension</li>
                         </ul>
-                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>							
-                    </div>							
+                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                    </div>
                 </div>
             </div>
             <!-- /Price Item -->
@@ -1183,9 +1183,9 @@
                                 <h3>$1299</h3>
                                 <p>Per Month</p>
                             </div>
-                            <span class="offer-tag bg-pink">100% Offer</span>	
-                        </div>						
-                    </div>	
+                            <span class="offer-tag bg-pink">100% Offer</span>
+                        </div>
+                    </div>
                     <div class="price-details">
                         <ul>
                              <li>25% Downpayment</li>
@@ -1196,8 +1196,8 @@
                              <li>Additional Perks GPS, Car Seat</li>
                              <li>Flexible timing & extension</li>
                         </ul>
-                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>							
-                    </div>							
+                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                    </div>
                 </div>
             </div>
             <!-- /Price Item -->
@@ -1213,8 +1213,8 @@
                                 <h3>$1599</h3>
                                 <p>Per Month</p>
                             </div>
-                        </div>						
-                    </div>	
+                        </div>
+                    </div>
                     <div class="price-details">
                         <ul>
                              <li>0% Downpayment</li>
@@ -1225,8 +1225,8 @@
                              <li>Additional Perks GPS, Car Seat</li>
                              <li>Flexible timing & extension</li>
                         </ul>
-                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>							
-                    </div>							
+                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                    </div>
                 </div>
             </div>
             <!-- /Price Item -->
@@ -1240,8 +1240,8 @@
                             <div>
                                 <h3>Contact Us</h3>
                             </div>
-                        </div>						
-                    </div>	
+                        </div>
+                    </div>
                     <div class="price-details">
                         <ul>
                              <li>Weekend/Weekly Deals</li>
@@ -1253,8 +1253,8 @@
                              <li>Refundable Deposit </li>
                              <li>Priority Service</li>
                         </ul>
-                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>							
-                    </div>							
+                        <a [routerLink]="routes.login" class="btn btn-secondary w-100">Choose Plan<i class="bx bx-right-arrow-alt ms-1"></i></a>
+                    </div>
                 </div>
             </div>
             <!-- /Price Item -->
@@ -1269,7 +1269,7 @@
         </div>
     </div>
 </section>
-<!-- /Price Section -->		
+<!-- /Price Section -->
 
 <!-- Support Section -->
 <section class="support-section">
@@ -1297,7 +1297,7 @@
 
 <!-- Blog Section -->
 <section class="blog-section-four">
-    <div class="container">	
+    <div class="container">
         <div class="section-heading heading-four" data-aos="fade-down">
             <h2>Insights and Innovations</h2>
             <p>Dive into our articles to stay ahead in the fast-paced world of technology.</p>
@@ -1360,7 +1360,7 @@
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
             <a [routerLink]="routes.blogGrid" class="btn btn-secondary d-inline-flex align-center">View More<i class="bx bx-right-arrow-alt ms-1"></i></a>
-        </div>				
+        </div>
 
         <div class="subscribe-sec">
             <div class="row align-items-end">
@@ -1370,7 +1370,7 @@
                         <p>Appropriately monetize one-to-one interfaces rather than  cutting-edge. Competently disintermediate backward.</p>
                         <div class="subscribe-form">
                             <form action="#">
-                                <span><i class="bx bx-mail-send"></i></span> 
+                                <span><i class="bx bx-mail-send"></i></span>
                                 <input type="email" class="form-control" placeholder="Enter You Email Here">
                                 <button type="submit" class="btn btn-subscribe"><i class="bx bx-send"></i></button>
                             </form>
@@ -1392,13 +1392,13 @@
 
 <!-- FAQ Section -->
 <section class="faq-section-four pt-0">
-    <div class="container">	
+    <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="section-heading heading-four" data-aos="fade-down">
                     <h2>Frequently asked questions</h2>
                     <p>Explore to learn more about how can empower your business</p>
-                </div>				
+                </div>
                 <div class="accordion faq-accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -1561,8 +1561,8 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer footer-four">	
-    <!-- Footer Top -->	
+<footer class="footer footer-four">
+    <!-- Footer Top -->
     <div class="footer-top aos" data-aos="fade-up">
         <div class="container">
             <div class="row">
@@ -1573,7 +1573,7 @@
                         </div>
                         <div class="footer-contact-info">
                             <p>We offer a diverse fleet of vehicles to suit every need, including compact cars, sedans, SUVs and luxury vehicles. </p>
-                        </div>	
+                        </div>
                         <div class="d-flex align-items-center gap-1 app-icon">
                             <a href="javascript:void(0);">
                                 <img src="assets/img/icons/gpay.svg" class="img-fluid" alt="logo">
@@ -1622,7 +1622,7 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">Financial Services</a>
-                                    </li>							
+                                    </li>
                                 </ul>
                             </div>
                             <!-- /Footer Widget -->
@@ -1646,11 +1646,11 @@
                                     </li>
                                     <li>
                                         <a [routerLink]="routes.contactUs">Contact Us</a>
-                                    </li>							
+                                    </li>
                                 </ul>
                             </div>
                             <!-- /Footer Widget -->
-                        </div>	
+                        </div>
                         <div class="col-lg-4 col-md-6">
                             <!-- Footer Widget -->
                             <div class="footer-widget footer-menu">
@@ -1670,14 +1670,14 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">Financial Services</a>
-                                    </li>							
+                                    </li>
                                 </ul>
                             </div>
                             <!-- /Footer Widget -->
-                        </div>									
-                    </div>							
+                        </div>
+                    </div>
                 </div>
-            </div>					
+            </div>
         </div>
     </div>
     <!-- /Footer Top -->
@@ -1724,6 +1724,6 @@
             <!-- /Copyright -->
         </div>
     </div>
-    <!-- /Footer Bottom -->			
+    <!-- /Footer Bottom -->
 </footer>
-<!-- /Footer -->	
+<!-- /Footer -->

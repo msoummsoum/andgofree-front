@@ -1,7 +1,7 @@
 <div class="hero-sec-main">
 <app-header/>
     <!-- Banner -->
-    <section class="banner-section banner-sec-two banner-slider">	
+    <section class="banner-section banner-sec-two banner-slider">
         <div class="banner-img-slider ">
             <owl-carousel-o [options]="bannerimgOwlOptions" class="custom-banner-img-slider">
                 <ng-template carouselSlide>
@@ -20,21 +20,21 @@
                 </div>
                </ng-template>
             </owl-carousel-o>
-                
-           
-            
-            
-           
-            
-            
-        </div>	
+
+
+
+
+
+
+
+        </div>
         <div class="container">
-            <div class="home-banner">		
-                <div class="row align-items-center">					    
+            <div class="home-banner">
+                <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="hero-sec-contents">
                             <div class="banner-title">
-                                <h1>Online Yacht Booking. 
+                                <h1>Online Yacht Booking.
                                     <span>Made Simple.</span>
                                 </h1>
                                 <p>Modern design sports cruisers for those who crave adventure & grandeur yachts for relaxing with your loved ones.
@@ -46,7 +46,7 @@
                                     <div class="banner-search-list">
                                         <div class="input-block">
                                             <label><i class="bx bx-map"></i>Location</label>
-                                           
+
                                             <mat-select
                                             [(ngModel)]="selectedValue1"
                                             [ngModelOptions]="{ standalone: true }"
@@ -62,7 +62,7 @@
                                         </div>
                                         <div class="input-block">
                                             <label><i class="bx bx-calendar"></i>Pickup Date</label>
-                                            <div class="date-widget">												
+                                            <div class="date-widget">
                                                 <div class="group-img">
                                                 <input type="text" class="form-control datetimepicker" placeholder="04/11/2023" bsDatepicker>
                                                 </div>
@@ -70,7 +70,7 @@
                                         </div>
                                         <div class="input-block">
                                             <label><i class="bx bx-calendar"></i>Pickup Date</label>
-                                            <div class="date-widget">												
+                                            <div class="date-widget">
                                                 <div class="group-img">
                                                 <input type="text" class="form-control datetimepicker" placeholder="04/11/2023" bsDatepicker>
                                                 </div>
@@ -78,7 +78,7 @@
                                         </div>
                                         <div class="input-block">
                                             <label><i class="bx bxs-ship"></i>Yacht Type</label>
-                                           
+
                                             <mat-select
                                             [(ngModel)]="selectedValue2"
                                             [ngModelOptions]="{ standalone: true }"
@@ -117,12 +117,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
-            </div>	
+            </div>
             <div class="video-btn text-center">
               <lightgallery
                 [settings]="settings"
@@ -301,7 +301,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-01.jpg"
                 class="img-fluid"
@@ -312,10 +312,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Motor yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Motor yachts</a></h4>
               <span>30 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -324,7 +324,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-02.jpg"
                 class="img-fluid"
@@ -335,10 +335,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Sailing yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Sailing yachts</a></h4>
               <span>56 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -347,7 +347,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-03.jpg"
                 class="img-fluid"
@@ -358,10 +358,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Yacht gulet</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Yacht gulet</a></h4>
               <span>21 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -370,7 +370,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-04.jpg"
                 class="img-fluid"
@@ -381,10 +381,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Catamaran</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Catamaran</a></h4>
               <span>47 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -393,7 +393,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-05.jpg"
                 class="img-fluid"
@@ -404,10 +404,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Fishing yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Fishing yachts</a></h4>
               <span>32 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -416,7 +416,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-06.jpg"
                 class="img-fluid"
@@ -427,10 +427,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Sports Cruisers</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Sports Cruisers</a></h4>
               <span>15 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -439,7 +439,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-07.jpg"
                 class="img-fluid"
@@ -450,10 +450,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Displacement Yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Displacement Yachts</a></h4>
               <span>75 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -462,7 +462,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-08.jpg"
                 class="img-fluid"
@@ -473,10 +473,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Classic Yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Classic Yachts</a></h4>
               <span>41 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -485,7 +485,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-09.jpg"
                 class="img-fluid"
@@ -496,10 +496,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Flybridge Yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Flybridge Yachts</a></h4>
               <span>65 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -508,7 +508,7 @@
       <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
+            <a [routerLink]="routes.vehicleGrid"
               ><img
                 src="assets/img/yacht/yacht-10.jpg"
                 class="img-fluid"
@@ -519,10 +519,10 @@
             class="card-content d-flex align-items-center justify-content-between"
           >
             <div>
-              <h4><a [routerLink]="routes.listingGrid">Hybrid Yachts</a></h4>
+              <h4><a [routerLink]="routes.vehicleGrid">Hybrid Yachts</a></h4>
               <span>145 Yachts</span>
             </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
+            <a [routerLink]="routes.vehicleGrid" class="arrow-right"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -530,7 +530,7 @@
       </div>
       <div class="col-md-12">
         <div class="view-more-btn text-center">
-          <a [routerLink]="routes.listingGrid" class="btn btn-secondary"
+          <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary"
             >View More Categories</a
           >
         </div>
@@ -731,7 +731,7 @@
           <div class="top-rated-yachts-slider">
             <owl-carousel-o
               [options]="ProfessionalOwlOptions"
-             
+
             >
               <ng-template carouselSlide>
                 <div class="top-rated-card">
@@ -743,7 +743,7 @@
                       >
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-01.jpg"
                                 class="img-fluid"
@@ -754,7 +754,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-02.jpg"
                                 class="img-fluid"
@@ -765,7 +765,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-03.jpg"
                                 class="img-fluid"
@@ -776,7 +776,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-04.jpg"
                                 class="img-fluid"
@@ -795,7 +795,7 @@
                     <div class="yacht-content-head">
                       <div class="head-items-left">
                         <h4>
-                          <a [routerLink]="routes.listingDetails">Bavaria 50 Cruiser</a>
+                          <a [routerLink]="routes.vehicleDetails">Bavaria 50 Cruiser</a>
                         </h4>
                         <span class="d-flex align-items-center"
                           ><i class="bx bx-map me-2"></i>Chicago, IL</span
@@ -874,7 +874,7 @@
                             src="assets/img/profiles/avatar-14.jpg"
                             alt="Img"
                         /></a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                           >Book Now</a
                         >
                       </div>
@@ -892,7 +892,7 @@
                       >
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-05.jpg"
                                 class="img-fluid"
@@ -903,7 +903,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-06.jpg"
                                 class="img-fluid"
@@ -914,7 +914,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-07.jpg"
                                 class="img-fluid"
@@ -925,7 +925,7 @@
                         </ng-template>
                         <ng-template carouselSlide>
                           <div class="slide-images">
-                            <a [routerLink]="routes.listingDetails">
+                            <a [routerLink]="routes.vehicleDetails">
                               <img
                                 src="assets/img/yacht/top-yacht-08.jpg"
                                 class="img-fluid"
@@ -1024,7 +1024,7 @@
                             src="assets/img/profiles/avatar-15.jpg"
                             alt="Img"
                         /></a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                           >Book Now</a
                         >
                       </div>
@@ -1292,7 +1292,7 @@
                 <owl-carousel-o [options]="yachtOwlOptions" >
                   <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-01.jpg"
                       class="img-fluid"
@@ -1303,7 +1303,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-02.jpg"
                       class="img-fluid"
@@ -1314,7 +1314,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-03.jpg"
                       class="img-fluid"
@@ -1325,7 +1325,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-04.jpg"
                       class="img-fluid"
@@ -1341,7 +1341,7 @@
               <div class="yacht-content-head">
                 <div class="head-items-left">
                   <h4>
-                    <a [routerLink]="routes.listingDetails">Yacht Sun Odyssey 419</a>
+                    <a [routerLink]="routes.vehicleDetails">Yacht Sun Odyssey 419</a>
                   </h4>
                   <span class="d-flex align-items-center"
                     ><i class="bx bx-map me-2"></i>Chicago, IL</span
@@ -1402,7 +1402,7 @@
                   <a href="javascript:void(0);" class="yacht-user-img"
                     ><img src="assets/img/profiles/avatar-14.jpg" alt="Img"
                   /></a>
-                  <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                  <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                     >Book Now</a
                   >
                 </div>
@@ -1417,7 +1417,7 @@
                 <owl-carousel-o [options]="yachtOwlOptions">
                   <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-05.jpg"
                       class="img-fluid"
@@ -1428,7 +1428,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-06.jpg"
                       class="img-fluid"
@@ -1439,7 +1439,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-07.jpg"
                       class="img-fluid"
@@ -1450,7 +1450,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-08.jpg"
                       class="img-fluid"
@@ -1466,7 +1466,7 @@
               <div class="yacht-content-head">
                 <div class="head-items-left">
                   <h4>
-                    <a [routerLink]="routes.listingDetails">Bavaria Cruiser | Oceanos</a>
+                    <a [routerLink]="routes.vehicleDetails">Bavaria Cruiser | Oceanos</a>
                   </h4>
                   <span class="d-flex align-items-center"
                     ><i class="bx bx-map me-2"></i>Miami beach, Miami</span
@@ -1527,7 +1527,7 @@
                   <a href="javascript:void(0);" class="yacht-user-img"
                     ><img src="assets/img/profiles/avatar-15.jpg" alt="Img"
                   /></a>
-                  <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                  <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                     >Book Now</a
                   >
                 </div>
@@ -1542,7 +1542,7 @@
                 <owl-carousel-o [options]="yachtOwlOptions">
                   <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-09.jpg"
                       class="img-fluid"
@@ -1553,7 +1553,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-10.jpg"
                       class="img-fluid"
@@ -1564,7 +1564,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-12.jpg"
                       class="img-fluid"
@@ -1575,7 +1575,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-13.jpg"
                       class="img-fluid"
@@ -1591,7 +1591,7 @@
               <div class="yacht-content-head">
                 <div class="head-items-left">
                   <h4>
-                    <a [routerLink]="routes.listingDetails">Sailing yacht Dufour</a>
+                    <a [routerLink]="routes.vehicleDetails">Sailing yacht Dufour</a>
                   </h4>
                   <span class="d-flex align-items-center"
                     ><i class="bx bx-map me-2"></i>Key West, harbour</span
@@ -1652,7 +1652,7 @@
                   <a href="javascript:void(0);" class="yacht-user-img"
                     ><img src="assets/img/profiles/avatar-13.jpg" alt="Img"
                   /></a>
-                  <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                  <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                     >Book Now</a
                   >
                 </div>
@@ -1667,7 +1667,7 @@
                 <owl-carousel-o [options]="yachtOwlOptions">
                   <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-11.jpg"
                       class="img-fluid"
@@ -1678,7 +1678,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-14.jpg"
                       class="img-fluid"
@@ -1689,7 +1689,7 @@
                 </ng-template>
                 <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-15.jpg"
                       class="img-fluid"
@@ -1700,7 +1700,7 @@
               </ng-template>
               <ng-template carouselSlide>
                 <div class="slide-images">
-                  <a [routerLink]="routes.listingDetails">
+                  <a [routerLink]="routes.vehicleDetails">
                     <img
                       src="assets/img/yacht/boat-16.jpg"
                       class="img-fluid"
@@ -1716,7 +1716,7 @@
               <div class="yacht-content-head">
                 <div class="head-items-left">
                   <h4>
-                    <a [routerLink]="routes.listingDetails">Beneteau Oceanis 41.1</a>
+                    <a [routerLink]="routes.vehicleDetails">Beneteau Oceanis 41.1</a>
                   </h4>
                   <span class="d-flex align-items-center"
                     ><i class="bx bx-map me-2"></i>Annopolis, Mariana</span
@@ -1777,7 +1777,7 @@
                   <a href="javascript:void(0);" class="yacht-user-img"
                     ><img src="assets/img/profiles/avatar-13.jpg" alt="Img"
                   /></a>
-                  <a [routerLink]="routes.listingDetails" class="btn btn-secondary"
+                  <a [routerLink]="routes.vehicleDetails" class="btn btn-secondary"
                     >Book Now</a
                   >
                 </div>
@@ -1787,7 +1787,7 @@
         </div>
         <div class="col-md-12">
           <div class="view-more-btn text-center">
-            <a [routerLink]="routes.listingGrid" class="btn btn-secondary"
+            <a [routerLink]="routes.vehicleGrid" class="btn btn-secondary"
               >View all Yachts</a
             >
           </div>
@@ -1825,7 +1825,7 @@
               </ul>
               <div class="ship-pricing">
                 <h5>From <span> $180 </span> /day</h5>
-                <a [routerLink]="routes.listingDetails" class="btn btn-primary btn-buy"
+                <a [routerLink]="routes.vehicleDetails" class="btn btn-primary btn-buy"
                   >Book Now</a
                 >
               </div>
@@ -1854,7 +1854,7 @@
               </ul>
               <div class="ship-pricing">
                 <h5>From <span> $180 </span> /day</h5>
-                <a [routerLink]="routes.listingDetails" class="btn btn-primary btn-buy"
+                <a [routerLink]="routes.vehicleDetails" class="btn btn-primary btn-buy"
                   >Book Now</a
                 >
               </div>
@@ -1883,7 +1883,7 @@
               </ul>
               <div class="ship-pricing">
                 <h5>From <span> $180 </span> /day</h5>
-                <a [routerLink]="routes.listingDetails" class="btn btn-primary btn-buy"
+                <a [routerLink]="routes.vehicleDetails" class="btn btn-primary btn-buy"
                   >Book Now</a
                 >
               </div>
@@ -1912,7 +1912,7 @@
               </ul>
               <div class="ship-pricing">
                 <h5>From <span> $180 </span> /day</h5>
-                <a [routerLink]="routes.listingDetails" class="btn btn-primary btn-buy"
+                <a [routerLink]="routes.vehicleDetails" class="btn btn-primary btn-buy"
                   >Book Now</a
                 >
               </div>
@@ -1981,7 +1981,7 @@
             and be inspired by our bespoke superyacht itineraries.
           </p>
           <a
-            [routerLink]="routes.listingDetails"
+            [routerLink]="routes.vehicleDetails"
             class="btn btn-primary d-flex align-items-center"
             ><i class="bx bx-bar-chart me-2"></i>Learn More</a
           >
@@ -2375,7 +2375,7 @@
       <div class="sec-btns">
         <a [routerLink]="routes.login" class="btn btn-dark-blue">Get Started</a>
         <a
-          [routerLink]="routes.listingDetails"
+          [routerLink]="routes.vehicleDetails"
           class="btn btn-primary d-flex align-items-center"
           ><i class="bx bx-bar-chart me-2"></i>Learn More</a
         >
@@ -2548,7 +2548,7 @@
           <div class="yacht-owner-title">
             <h3>Special Offers on Party rental Yachts!!!</h3>
             <p>View all the yachts under the Offer</p>
-            <a [routerLink]="routes.listingDetails" class="btn btn-primary"
+            <a [routerLink]="routes.vehicleDetails" class="btn btn-primary"
               >View Yachts</a
             >
           </div>

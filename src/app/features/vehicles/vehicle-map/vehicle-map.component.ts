@@ -11,13 +11,13 @@ interface data {
   value: string ;
 }
 @Component({
-  selector: 'app-listing-map',
+  selector: 'app-vehicle-map',
   imports: [MatSliderModule,CommonModule,RouterLink,MatSelectModule,FormsModule,BsDatepickerModule,TimepickerModule],
   providers:[DatePipe],
-  templateUrl: './listing-map.component.html',
-  styleUrl: './listing-map.component.scss'
+  templateUrl: './vehicle-map.component.html',
+  styleUrl: './vehicle-map.component.scss'
 })
-export class ListingMapComponent {
+export class VehicleMapComponent {
   routes = routes
   showTimePicker: Array<string> = [];
   myTime: Date = new Date();
@@ -44,7 +44,7 @@ export class ListingMapComponent {
     { value: '15' },
     { value: '20' },
     { value: '30' },
-    
+
   ];
   selectedList2: data[] = [
     { value: 'Newest' },
@@ -54,7 +54,7 @@ export class ListingMapComponent {
     { value: 'Best Rated' },
     { value: 'Distance' },
     { value: 'Popularity' },
-    
+
   ];
   infowindow: any;
   bounds = new google.maps.LatLngBounds();
@@ -71,10 +71,10 @@ export class ListingMapComponent {
     "lat":53.470692,
     "lng":-2.220328,
     "icons":"'assets/img/icons/car-marker-01.svg'",
-    "profile_link":routes.listingDetails,
+    "profile_link":routes.vehicleDetails,
     "image":'assets/img/profiles/avatar-04.jpg'
     }, {
-      
+
     "id":"02",
     "car_brand":"BMW",
     "car_name":"BMW 640 XI Gran Turismo",
@@ -86,7 +86,7 @@ export class ListingMapComponent {
     "lat":53.469189,
     "lng":-2.199262,
     "icons":"'assets/img/icons/car-marker-01.svg'",
-    "profile_link":routes.listingDetails,
+    "profile_link":routes.vehicleDetails,
     "image":'assets/img/profiles/avatar-03.jpg'
     }, {
     "id":"03",
@@ -100,7 +100,7 @@ export class ListingMapComponent {
     "lat":53.468665,
     "lng":-2.189269,
     "icons":"default",
-    "profile_link":routes.listingDetails,
+    "profile_link":routes.vehicleDetails,
     "image":'assets/img/profiles/avatar-06.jpg'
     }, {
     "id":"04",
@@ -114,7 +114,7 @@ export class ListingMapComponent {
     "lat":53.463894,
     "lng":-2.177880,
     "icons":"default",
-    "profile_link":routes.listingDetails,
+    "profile_link":routes.vehicleDetails,
     "image":'assets/img/profiles/avatar-03.jpg'
     }, {
     "id":"05",
@@ -128,7 +128,7 @@ export class ListingMapComponent {
     "lat":53.466359,
     "lng":-2.213314,
     "icons":"default",
-    "profile_link":routes.listingDetails,
+    "profile_link":routes.vehicleDetails,
     "image":'assets/img/profiles/avatar-03.jpg'
     }
     ];
@@ -162,33 +162,33 @@ export class ListingMapComponent {
   }
   setInfo(marker: { profile_link: string; doc_name: string; car_image: string; address: string; car_brand: string; image: string;car_name: string;reviews: string; km:string; amount:string;}) {
     const content =
-    '<div class="listing-item" style="width: 100%; display: inline-block;">'+											
-    '<div class="listing-img">'+	
-      '<a href="' + marker.profile_link + '">'+	
-        '<img src="' + marker.car_image + '" class="img-fluid" alt="Audi">'+	
-      '</a>'+	
-      '<div class="fav-item justify-content-end">'+	
-        '<a href="javascript:void(0)" class="fav-icon">'+	
-          '<i class="feather-heart"></i>'+	
-        '</a>	'+										
-      '</div>'+		
-      '<span class="featured-text">' + marker.car_brand + '</span>'+	
-    '</div>'+											
-    '<div class="listing-content">'+	
-      '<div class="listing-features d-flex align-items-end justify-content-between">'+	
-        '<div class="list-rating">'+	
-          '<a href="javascript:void(0)" class="author-img">'+	
+    '<div class="vehicle-item" style="width: 100%; display: inline-block;">'+
+    '<div class="vehicle-img">'+
+      '<a href="' + marker.profile_link + '">'+
+        '<img src="' + marker.car_image + '" class="img-fluid" alt="Audi">'+
+      '</a>'+
+      '<div class="fav-item justify-content-end">'+
+        '<a href="javascript:void(0)" class="fav-icon">'+
+          '<i class="feather-heart"></i>'+
+        '</a>	'+
+      '</div>'+
+      '<span class="featured-text">' + marker.car_brand + '</span>'+
+    '</div>'+
+    '<div class="vehicle-content">'+
+      '<div class="vehicle-features d-flex align-items-end justify-content-between">'+
+        '<div class="list-rating">'+
+          '<a href="javascript:void(0)" class="author-img">'+
           '<img src="' + marker.image + '" class="img-fluid" alt="Audi">'+
           '</a>'+
-          '<h3 class="listing-title">'+	
-            '<a href="' + marker.profile_link + '">' + marker.car_name + '</a>'+	
-          '</h3>			'+															  
-          '<div class="list-rating">			'+					
-          '	<i class="fas fa-star filled"></i>'+	
-            '<i class="fas fa-star filled"></i>'+	
-            '<i class="fas fa-star filled"></i>'+	
-            '<i class="fas fa-star filled"></i>'+	
-            '<i class="fas fa-star"></i>'+	
+          '<h3 class="vehicle-title">'+
+            '<a href="' + marker.profile_link + '">' + marker.car_name + '</a>'+
+          '</h3>			'+
+          '<div class="list-rating">			'+
+          '	<i class="fas fa-star filled"></i>'+
+            '<i class="fas fa-star filled"></i>'+
+            '<i class="fas fa-star filled"></i>'+
+            '<i class="fas fa-star filled"></i>'+
+            '<i class="fas fa-star"></i>'+
             '<span>' + marker.reviews + ' Reviews</span>'+
           '</div>'+
         '</div>'+
@@ -196,7 +196,7 @@ export class ListingMapComponent {
           '<span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">' + marker.km + '</span>'+
         '</div>'+
       '</div> '+
-      '<div class="listing-details-group">'+
+      '<div class="vehicle-details-group">'+
         '<ul>'+
           '<li>'+
             '<span><img src="assets/img/icons/car-parts-05.svg" alt="Manual"></span>'+
@@ -210,35 +210,35 @@ export class ListingMapComponent {
             '<span><img src="assets/img/icons/car-parts-03.svg" alt="Petrol"></span>'+
             '<p>Petrol</p>'+
           '</li>'+
-        '</ul>'+	
+        '</ul>'+
         '<ul>'+
           '<li>'+
             '<span><img src="assets/img/icons/car-parts-04.svg" alt="Power"></span>'+
             '<p>Power</p>'+
           '</li>'+
           '<li>'+
-            '<span><img src="assets/img/icons/car-parts-05.svg" alt="2019"></span>'+	
-            '<p>2019</p>'+	
-          '</li>'+	
-          '<li>'+	
-            '<span><img src="assets/img/icons/car-parts-06.svg" alt="Persons"></span>'+	
-            '<p>4 Persons</p>'+	
-          '</li>'+	
-        '</ul>'+	
-      '</div>'+																	 
-      '<div class="listing-location-details">'+	
-        '<div class="listing-price">'+	
-          '<span><i class="feather-map-pin"></i></span>' + marker.address + ''+	
-        '</div>'+	
-        '<div class="listing-price">'+	
-          '<h6>' + marker.amount + '<span>/ Day</span></h6>'+	
-        '</div>'+	
-      '</div>'+	
-      '<div class="listing-button">'+	
-        '<a href="' + marker.profile_link + '" class="btn btn-order"><span><i class="feather-calendar me-2"></i></span>'+	'Rent Now</a>'+	
-      '</div>'+		
-    '</div>'+	
-  '</div>';	
+            '<span><img src="assets/img/icons/car-parts-05.svg" alt="2019"></span>'+
+            '<p>2019</p>'+
+          '</li>'+
+          '<li>'+
+            '<span><img src="assets/img/icons/car-parts-06.svg" alt="Persons"></span>'+
+            '<p>4 Persons</p>'+
+          '</li>'+
+        '</ul>'+
+      '</div>'+
+      '<div class="vehicle-location-details">'+
+        '<div class="vehicle-price">'+
+          '<span><i class="feather-map-pin"></i></span>' + marker.address + ''+
+        '</div>'+
+        '<div class="vehicle-price">'+
+          '<h6>' + marker.amount + '<span>/ Day</span></h6>'+
+        '</div>'+
+      '</div>'+
+      '<div class="vehicle-button">'+
+        '<a href="' + marker.profile_link + '" class="btn btn-order"><span><i class="feather-calendar me-2"></i></span>'+	'Rent Now</a>'+
+      '</div>'+
+    '</div>'+
+  '</div>';
     this.infowindow.setContent(content);
   }
   setMarkers(map: any, locations: any) {
@@ -268,13 +268,13 @@ export class ListingMapComponent {
   }
   public isClassAdded: boolean[] = [false];
   isPopupVisible: boolean = false;
-  
+
 
   togglePopup() {
     this.isPopupVisible = !this.isPopupVisible;
   }
-  
- 
+
+
   formatLabel(value: number): string {
     if (value >= 1000) {
       return Math.round(value / 1000) + 'k';
@@ -282,5 +282,5 @@ export class ListingMapComponent {
     return `${value}`;
   }
 
-  
+
 }

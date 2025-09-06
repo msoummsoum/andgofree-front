@@ -143,7 +143,7 @@ export interface carTypes {
   heading: string;
   cars: string;
 }
-export interface listingDetails {
+export interface vehicleDetails {
   img: string;
 }
 export interface testimonials {
@@ -151,8 +151,8 @@ export interface testimonials {
   location:string;
   title: string;
   content: string;
-  
-  
+
+
 }
 export interface thumbnails1 {
   img: string;
@@ -179,7 +179,7 @@ export interface interestedCars {
   text: string;
   like: boolean;
 }
-export interface listingGrid {
+export interface vehicleGrid {
   carName: string;
   img1: string;
   img2: string;
@@ -284,7 +284,7 @@ export interface userPayment {
     status: string;
     isSelected: boolean;
   }
-  
+
 export interface userBookingCancelled {
   isSelected: boolean;
   id: number;

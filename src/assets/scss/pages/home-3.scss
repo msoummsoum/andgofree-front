@@ -97,7 +97,7 @@
 	        			}
 	        			@include respond-below(custom991) {
 	        				@include margin-padding(null, 14px 10px);
-	        			}	
+	        			}
 	        			@include respond-below(custom767) {
 	        				width: 100%;
 	        				padding: 10px;
@@ -172,13 +172,13 @@
 		        		font-size: $__font__size__24;
 		        		font-weight: $__semibold;
 		        		margin-bottom: 0;
-		        		color: $__secondarycolor;    
+		        		color: $__secondarycolor;
 		        		@include respond-below(custom991) {
 		        			font-size: $__font__size__18;
-		        		}    			  
+		        		}
 		        		@include respond-below(custom767) {
 		        			font-size: $__font__size__16;
-		        		}    			
+		        		}
 	        		}
 	        		p {
 	        			font-size: $__font__size__16;
@@ -524,10 +524,10 @@
 	overflow: hidden;
 }
 .work-bg {
-	.shape-01 {		
+	.shape-01 {
 		@include position(absolute, 0, null, null, 0);
 	}
-	.shape-02 {		
+	.shape-02 {
 		@include position(absolute, 10%, 10%, null, null);
 		animation: spin 3000ms linear infinite;
 	}
@@ -695,10 +695,10 @@
 	}
 }
 .feature-bg {
-	.shape-01 {		
+	.shape-01 {
 		@include position(absolute, 15%, 5%, null, null);
 	}
-	.shape-02 {		
+	.shape-02 {
 		@include position(absolute, 15%, 10%, null, null);
 		z-index: -1;
 	}
@@ -706,13 +706,13 @@
 		display: none;
 	}
 }
-.listing-item {
+.vehicle-item {
 	&.bike-list {
 		border: 1px solid $__blue__light;
 		@include rounded(5px);
 		@include margin-padding(0, 0);
 		&:hover {
-			.listing-img {
+			.vehicle-img {
 	            img {
 	                -webkit-transform: scale(1.05);
 	                -moz-transform: scale(1.05);
@@ -720,7 +720,7 @@
 	            }
 	        }
 		}
-		.listing-img {
+		.vehicle-img {
 			@include margin-padding(null, 15px 15px 0);
 			.fav-item {
 				@include margin-padding(null, 10px);
@@ -729,7 +729,7 @@
 				img {
 					width: 32px;
 					height: 32px;
-					@include rounded(50%);			
+					@include rounded(50%);
 				}
 			}
 			img {
@@ -737,16 +737,16 @@
 				margin: 0 auto;
 			}
 		}
-		.listing-content {
+		.vehicle-content {
 			@include margin-padding(0, 15px);
-			.listing-features { 
+			.vehicle-features {
 				border: 0;
 				@include margin-padding(0 0 24px, 0);
 			}
-			.listing-title {
+			.vehicle-title {
 				margin-bottom: 0;
 			}
-			.listing-details-group {
+			.vehicle-details-group {
 				@include margin-padding(0 0 15px, 0 0 15px);
 				border-bottom: 1px solid $__light__gooses;
 				ul {
@@ -776,7 +776,7 @@
 					}
 				}
 			}
-			.listing-button {
+			.vehicle-button {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -786,7 +786,7 @@
 				justify-content: space-between;
 				-webkit-justify-content: space-between;
 				-ms-flex-pack: space-between;
-				.listing-price {
+				.vehicle-price {
 					h6 {
 						span {
 							font-size: $__font__size__14;
@@ -864,7 +864,7 @@
 		@include respond-below(custom575) {
 			flex-direction: column;
 		}
-		.listing-img {
+		.vehicle-img {
 			width: 50%;
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -888,13 +888,13 @@
 				width: 100%;
 			}
 		}
-		.listing-content {
+		.vehicle-content {
 			width: 50%;
 			@include margin-padding(0, 24px);
 			@include respond-below(custom1199) {
 				@include margin-padding(0, 10px);
 			}
-			.listing-title {
+			.vehicle-title {
 				a {
 					white-space: nowrap;
 					overflow: hidden;
@@ -902,7 +902,7 @@
 					display: block;
 				}
 			}
-			.listing-button {
+			.vehicle-button {
 				.btn {
 					@include respond-below(custom1399) {
 						padding: 7px 12px;
@@ -916,7 +916,7 @@
 						width: 30px;
 						height: 30px;
 						font-size: $__font__size__14;
-					}					
+					}
 				}
 			}
 			@include respond-below(custom991) {
@@ -924,9 +924,9 @@
 			}
 			@include respond-below(custom575) {
 				width: 100%;
-			}	
+			}
 		}
-		.img-slider { 
+		.img-slider {
 			 .owl-dots {
 			 	 .owl-dot {
 			 	 	margin-bottom: 0;
@@ -939,11 +939,11 @@
 	.shape-01 {
 		@include position(absolute, 5%, null, null, 4%);
 	}
-	.shape-02 {		
+	.shape-02 {
 		@include position(absolute, 5%, 5%, null, null);
 		z-index: -1;
 	}
-	.shape-03 {		
+	.shape-03 {
 		@include position(absolute, 5%, 5%, null, null);
 		z-index: -1;
 	}
@@ -1044,7 +1044,7 @@
 				top: 30px;
 			}
 		}
-		.destination-content { 
+		.destination-content {
 			@include transition(ease-in-out 1s);
 			height: 100%;
 			background: linear-gradient(359.14deg, #000000 -1.08%, rgba(0, 0, 0, 0.6) 113.69%);
@@ -1128,15 +1128,15 @@
 	}
 }
 .faq-bg {
-	.shape-01 {		
+	.shape-01 {
 		@include position(absolute, null, null, 0, 0);
 		width: 260px;
 	}
-	.shape-02 {		
+	.shape-02 {
 		@include position(absolute, null, 0, 0, null);
 		z-index: -1;
 	}
-	.shape-03 {		
+	.shape-03 {
 		@include position(absolute, null, 10px, 0, null);
 		z-index: -1;
 	}
@@ -1145,10 +1145,10 @@
 	}
 }
 .testimonial-bg {
-	.shape-01 {		
+	.shape-01 {
 		@include position(absolute, 0, 10px, null, null);
 	}
-	.shape-02 {		
+	.shape-02 {
 		@include position(absolute, null, null, 0, 0);
 		height: 100%;
 		@include respond-below(custom991) {
@@ -1448,12 +1448,12 @@
 		@include position(absolute, 0, null, null, 0);
 		z-index: -1;
 	}
-	.listing-item.bike-list {
+	.vehicle-item.bike-list {
 		border: 0;
-		.listing-content {
+		.vehicle-content {
 			box-shadow: 0px 4px 24px 0px #E1E1E140;
 			@include margin-padding(0, 24px);
-			.listing-details-group {
+			.vehicle-details-group {
 				padding-bottom: 5px;
 				ul {
 					justify-content: space-between;
@@ -1485,12 +1485,12 @@
 	&.active {
 	  	opacity: 0.2;
 	  	transition: 0.6s ease;
-	  	.listing-content {
+	  	.vehicle-content {
 	  		display: none;
 	  	}
 	  	&.center {
 	  		opacity: 1;
-		  	.listing-content {
+		  	.vehicle-content {
 		  		display: block;
 		  	}
 	  	}
@@ -1647,7 +1647,7 @@
 			@include respond-below(custom991) {
 				max-width: 100%;
 			}
-		}		
+		}
 	}
 	&::before {
 		content: "";
@@ -1663,8 +1663,8 @@
 	ul {
 		border: 1px solid $__blue__light;
 		@include rounded(5px);
-		@include margin-padding(0 auto 40px, 10px); 
-		display: inline-block; 
+		@include margin-padding(0 auto 40px, 10px);
+		display: inline-block;
 		@include respond-below(custom991) {
 			margin-bottom: 30px;
 		}
@@ -1678,17 +1678,17 @@
 				align-items: center;
 				-webkit-box-align: center;
 				-ms-flex-align: center;
-				@include margin-padding(null, 7px 24px);  
+				@include margin-padding(null, 7px 24px);
 				font-weight: $__medium;
 				min-height: 53px;
 				@include respond-below(custom575) {
-					@include margin-padding(null, 7px 14px);  
+					@include margin-padding(null, 7px 14px);
 				}
 				span {
 					background: $__dark__blues;
 					@include rounded(5px);
 					color: $__white;
-					@include margin-padding(null, 7px 9px);  
+					@include margin-padding(null, 7px 9px);
 					margin-left: 17px;
 					font-weight: $__medium;
 				}
@@ -1713,7 +1713,7 @@
         border: 1px solid $__blue__light;
         box-shadow: 0px 4px 24px rgba(225, 225, 225, 0.25);
         border-radius: 10px;
-        @include margin-padding(0, 40px);  
+        @include margin-padding(0, 40px);
         z-index: 1;
         position: $__relative;
         overflow: hidden;
@@ -1724,15 +1724,15 @@
         -ms-transition: 500ms all ease;
         @include respond-below(custom991) {
             @include margin-padding(0 0 24px, 15px);
-        } 
-        .price-head {     
-            @include margin-padding(0 0 15px, 0 0 15px);   
-            border-bottom: 1px solid $__blue__light; 
+        }
+        .price-head {
+            @include margin-padding(0 0 15px, 0 0 15px);
+            border-bottom: 1px solid $__blue__light;
             .level-badge {
                	display: inline-block;
                	background: $__primarycolor;
                	@include rounded(5px);
-               	@include margin-padding(0 0 15px, 3px 14px); 
+               	@include margin-padding(0 0 15px, 3px 14px);
                	color: $__white;
               	font-size: $__font__size__18;
                	font-weight: $__medium;
@@ -1750,7 +1750,7 @@
         .price-level {
         	@include margin-padding(0 0 15px, null);
                 h3 {
-                    @include margin-padding(0, null); 
+                    @include margin-padding(0, null);
                     font-weight: $__bold;
                     font-size: $__font__size__62;
                     @include respond-below(custom991) {

@@ -10,7 +10,7 @@
                         <li class="breadcrumb-item"><a href="javascript:void(0);">Listings</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Add your Car Information  </li>
                     </ol>
-                </nav>							
+                </nav>
             </div>
         </div>
     </div>
@@ -26,8 +26,8 @@
                     <ul>
                         @for(tab of tabs;track tab){
                         <li>
-                                        <a 
-                                        href="javascript:void(0);" 
+                                        <a
+                                        href="javascript:void(0);"
                                         [class.active]="activeTab === tab.id"
                                         (click)="scrollTo(tab.id)"
                                         class="page-link"
@@ -36,7 +36,7 @@
                                         </a>
                                       </li>
                                     }
-                        
+
                     </ul>
                 </div>
             </div>
@@ -45,7 +45,7 @@
 </section>
 <!-- /Detail Page Head-->
 
-<section class="section product-details add-listing">
+<section class="section product-details add-vehicle">
     <div class="container">
         <div class="row" id="info">
             <div class="col-lg-4 col-md-12">
@@ -289,7 +289,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-lg-12 text-end">
                                 <div class="add-service">

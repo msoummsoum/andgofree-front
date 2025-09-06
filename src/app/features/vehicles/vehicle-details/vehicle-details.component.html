@@ -101,7 +101,7 @@
           <div class="slider">
             <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" data-sizes="50vw"
               class="detail-bigimg">
-              @for (data of listingDetails; track data) {
+              @for (data of vehicleDetails; track data) {
               <div ngxSlickItem class="product-img">
                 <img [src]="data.img" alt="Slider" />
               </div>
@@ -111,7 +111,7 @@
           <div class="slider">
             <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig2" data-sizes="50vw"
               class="slider-nav-thumbnails">
-              @for (data of listingDetails; track data) {
+              @for (data of vehicleDetails; track data) {
               <div ngxSlickItem>
                 <img [src]="data.img" alt="product image" />
               </div>
@@ -359,11 +359,11 @@
             </div>
           </div>
         </div>
-        <div class="review-sec listing-feature">
+        <div class="review-sec vehicle-feature">
           <div class="review-header">
             <h4>Car Features</h4>
           </div>
-          <div class="listing-description">
+          <div class="vehicle-description">
             <div class="row">
               <div class="col-md-4">
                 <ul>
@@ -480,7 +480,7 @@
                   <i class="bx bx-play"></i>
                 </a>
             </lightgallery>
-          
+
           </div>
         </div>
 
@@ -576,7 +576,7 @@
         </div>
         <!-- /Policies -->
         <!-- Reviews -->
-        <div class="review-sec listing-review">
+        <div class="review-sec vehicle-review">
           <div class="review-header">
             <h4>Reviews</h4>
           </div>
@@ -1271,9 +1271,9 @@
               <ng-template carouselSlide>
                 <!-- owl carousel item -->
                 <div class="rental-car-item">
-                  <div class="listing-item pb-0">
-                    <div class="listing-img">
-                      <a [routerLink]="routes.listingDetails">
+                  <div class="vehicle-item pb-0">
+                    <div class="vehicle-img">
+                      <a [routerLink]="routes.vehicleDetails">
                         <img src="assets/img/cars/car-03.jpg" class="img-fluid" alt="Audi">
                       </a>
                       <div class="fav-item justify-content-end">
@@ -1283,14 +1283,14 @@
                       </div>
                       <span class="featured-text">Audi</span>
                     </div>
-                    <div class="listing-content">
-                      <div class="listing-features d-flex align-items-end justify-content-between">
+                    <div class="vehicle-content">
+                      <div class="vehicle-features d-flex align-items-end justify-content-between">
                         <div class="list-rating">
                           <a href="javascript:void(0)" class="author-img">
                             <img src="assets/img/profiles/avatar-03.jpg" alt="author">
                           </a>
-                          <h3 class="listing-title">
-                            <a [routerLink]="routes.listingDetails">Audi A3 2019 new</a>
+                          <h3 class="vehicle-title">
+                            <a [routerLink]="routes.vehicleDetails">Audi A3 2019 new</a>
                           </h3>
                           <div class="list-rating">
                             <i class="fas fa-star filled"></i>
@@ -1305,7 +1305,7 @@
                           <span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">3.5m</span>
                         </div>
                       </div>
-                      <div class="listing-details-group">
+                      <div class="vehicle-details-group">
                         <ul>
                           <li>
                             <span><img src="assets/img/icons/car-parts-05.svg" alt="Manual"></span>
@@ -1335,16 +1335,16 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="listing-location-details">
-                        <div class="listing-price">
+                      <div class="vehicle-location-details">
+                        <div class="vehicle-price">
                           <span><i class="feather icon-map-pin"></i></span>Newyork, USA
                         </div>
-                        <div class="listing-price">
+                        <div class="vehicle-price">
                           <h6>$45 <span>/ Day</span></h6>
                         </div>
                       </div>
-                      <div class="listing-button">
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                      <div class="vehicle-button">
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                               class="feather icon-calendar me-2"></i></span>Rent Now</a>
                       </div>
                     </div>
@@ -1355,18 +1355,18 @@
               <ng-template carouselSlide>
                 <!-- owl carousel item -->
                 <div class="rental-car-item">
-                  <div class="listing-item pb-0">
-                    <a [routerLink]="routes.listingDetails">
+                  <div class="vehicle-item pb-0">
+                    <a [routerLink]="routes.vehicleDetails">
                       <img src="assets/img/cars/car-01.jpg" class="img-fluid" alt="Toyota">
                     </a>
-                    <div class="listing-content">
-                      <div class="listing-features d-flex align-items-end justify-content-between">
+                    <div class="vehicle-content">
+                      <div class="vehicle-features d-flex align-items-end justify-content-between">
                         <div class="list-rating">
                           <a href="javascript:void(0)" class="author-img">
                             <img src="assets/img/profiles/avatar-04.jpg" alt="author">
                           </a>
-                          <h3 class="listing-title">
-                            <a [routerLink]="routes.listingDetails">Toyota Camry SE 350</a>
+                          <h3 class="vehicle-title">
+                            <a [routerLink]="routes.vehicleDetails">Toyota Camry SE 350</a>
                           </h3>
                           <div class="list-rating">
                             <i class="fas fa-star filled"></i>
@@ -1381,7 +1381,7 @@
                           <span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">3.2m</span>
                         </div>
                       </div>
-                      <div class="listing-details-group">
+                      <div class="vehicle-details-group">
                         <ul>
                           <li>
                             <span><img src="assets/img/icons/car-parts-01.svg" alt="Auto"></span>
@@ -1411,16 +1411,16 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="listing-location-details">
-                        <div class="listing-price">
+                      <div class="vehicle-location-details">
+                        <div class="vehicle-price">
                           <span><i class="feather icon-map-pin"></i></span>Washington
                         </div>
-                        <div class="listing-price">
+                        <div class="vehicle-price">
                           <h6>$160 <span>/ Day</span></h6>
                         </div>
                       </div>
-                      <div class="listing-button">
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                      <div class="vehicle-button">
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                               class="feather icon-calendar me-2"></i></span>Rent Now</a>
                       </div>
                     </div>
@@ -1434,9 +1434,9 @@
               <ng-template carouselSlide>
                 <!-- owl carousel item -->
                 <div class="rental-car-item">
-                  <div class="listing-item pb-0">
-                    <div class="listing-img">
-                      <a [routerLink]="routes.listingDetails">
+                  <div class="vehicle-item pb-0">
+                    <div class="vehicle-img">
+                      <a [routerLink]="routes.vehicleDetails">
                         <img src="assets/img/cars/car-04.jpg" class="img-fluid" alt="Audi">
                       </a>
                       <div class="fav-item justify-content-end">
@@ -1446,14 +1446,14 @@
                       </div>
                       <span class="featured-text">Ferrai</span>
                     </div>
-                    <div class="listing-content">
-                      <div class="listing-features d-flex align-items-end justify-content-between">
+                    <div class="vehicle-content">
+                      <div class="vehicle-features d-flex align-items-end justify-content-between">
                         <div class="list-rating">
                           <a href="javascript:void(0)" class="author-img">
                             <img src="assets/img/profiles/avatar-04.jpg" alt="author">
                           </a>
-                          <h3 class="listing-title">
-                            <a [routerLink]="routes.listingDetails">Ferrari 458 MM Speciale</a>
+                          <h3 class="vehicle-title">
+                            <a [routerLink]="routes.vehicleDetails">Ferrari 458 MM Speciale</a>
                           </h3>
                           <div class="list-rating">
                             <i class="fas fa-star filled"></i>
@@ -1468,7 +1468,7 @@
                           <span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">3.5m</span>
                         </div>
                       </div>
-                      <div class="listing-details-group">
+                      <div class="vehicle-details-group">
                         <ul>
                           <li>
                             <span><img src="assets/img/icons/car-parts-05.svg" alt="Manual"></span>
@@ -1498,16 +1498,16 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="listing-location-details">
-                        <div class="listing-price">
+                      <div class="vehicle-location-details">
+                        <div class="vehicle-price">
                           <span><i class="feather icon-map-pin"></i></span>Newyork, USA
                         </div>
-                        <div class="listing-price">
+                        <div class="vehicle-price">
                           <h6>$160 <span>/ Day</span></h6>
                         </div>
                       </div>
-                      <div class="listing-button">
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                      <div class="vehicle-button">
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                               class="feather icon-calendar me-2"></i></span>Rent Now</a>
                       </div>
                     </div>
@@ -1521,9 +1521,9 @@
               <!-- owl carousel item -->
               <ng-template carouselSlide>
                 <div class="rental-car-item">
-                  <div class="listing-item pb-0">
-                    <div class="listing-img">
-                      <a [routerLink]="routes.listingDetails">
+                  <div class="vehicle-item pb-0">
+                    <div class="vehicle-img">
+                      <a [routerLink]="routes.vehicleDetails">
                         <img src="assets/img/cars/car-05.jpg" class="img-fluid" alt="Audi">
                       </a>
                       <div class="fav-item justify-content-end">
@@ -1533,14 +1533,14 @@
                       </div>
                       <span class="featured-text">Chevrolet</span>
                     </div>
-                    <div class="listing-content">
-                      <div class="listing-features d-flex align-items-end justify-content-between">
+                    <div class="vehicle-content">
+                      <div class="vehicle-features d-flex align-items-end justify-content-between">
                         <div class="list-rating">
                           <a href="javascript:void(0)" class="author-img">
                             <img src="assets/img/profiles/avatar-05.jpg" alt="author">
                           </a>
-                          <h3 class="listing-title">
-                            <a [routerLink]="routes.listingDetails">2018 Chevrolet Camaro</a>
+                          <h3 class="vehicle-title">
+                            <a [routerLink]="routes.vehicleDetails">2018 Chevrolet Camaro</a>
                           </h3>
                           <div class="list-rating">
                             <i class="fas fa-star filled"></i>
@@ -1555,7 +1555,7 @@
                           <span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">4.5m</span>
                         </div>
                       </div>
-                      <div class="listing-details-group">
+                      <div class="vehicle-details-group">
                         <ul>
                           <li>
                             <span><img src="assets/img/icons/car-parts-05.svg" alt="Manual"></span>
@@ -1585,16 +1585,16 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="listing-location-details">
-                        <div class="listing-price">
+                      <div class="vehicle-location-details">
+                        <div class="vehicle-price">
                           <span><i class="feather icon-map-pin"></i></span>Germany
                         </div>
-                        <div class="listing-price">
+                        <div class="vehicle-price">
                           <h6>$36 <span>/ Day</span></h6>
                         </div>
                       </div>
-                      <div class="listing-button">
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                      <div class="vehicle-button">
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                               class="feather icon-calendar me-2"></i></span>Rent Now</a>
                       </div>
                     </div>
@@ -1609,9 +1609,9 @@
               <!-- owl carousel item -->
               <ng-template carouselSlide>
                 <div class="rental-car-item">
-                  <div class="listing-item">
-                    <div class="listing-img">
-                      <a [routerLink]="routes.listingDetails">
+                  <div class="vehicle-item">
+                    <div class="vehicle-img">
+                      <a [routerLink]="routes.vehicleDetails">
                         <img src="assets/img/cars/car-06.jpg" class="img-fluid" alt="Audi">
                       </a>
                       <div class="fav-item justify-content-end">
@@ -1621,14 +1621,14 @@
                       </div>
                       <span class="featured-text">Acura</span>
                     </div>
-                    <div class="listing-content">
-                      <div class="listing-features d-flex align-items-end justify-content-between">
+                    <div class="vehicle-content">
+                      <div class="vehicle-features d-flex align-items-end justify-content-between">
                         <div class="list-rating">
                           <a href="javascript:void(0)" class="author-img">
                             <img src="assets/img/profiles/avatar-06.jpg" alt="author">
                           </a>
-                          <h3 class="listing-title">
-                            <a [routerLink]="routes.listingDetails">Acura Sport Version</a>
+                          <h3 class="vehicle-title">
+                            <a [routerLink]="routes.vehicleDetails">Acura Sport Version</a>
                           </h3>
                           <div class="list-rating">
                             <i class="fas fa-star filled"></i>
@@ -1643,7 +1643,7 @@
                           <span class="km-count"><img src="assets/img/icons/map-pin.svg" alt="author">3.2m</span>
                         </div>
                       </div>
-                      <div class="listing-details-group">
+                      <div class="vehicle-details-group">
                         <ul>
                           <li>
                             <span><img src="assets/img/icons/car-parts-01.svg" alt="Auto"></span>
@@ -1673,16 +1673,16 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="listing-location-details">
-                        <div class="listing-price">
+                      <div class="vehicle-location-details">
+                        <div class="vehicle-price">
                           <span><i class="feather icon-map-pin"></i></span>Newyork, USA
                         </div>
-                        <div class="listing-price">
+                        <div class="vehicle-price">
                           <h6>$30 <span>/ Day</span></h6>
                         </div>
                       </div>
-                      <div class="listing-button">
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                      <div class="vehicle-button">
+                        <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                               class="feather icon-calendar me-2"></i></span>Rent Now</a>
                       </div>
                     </div>

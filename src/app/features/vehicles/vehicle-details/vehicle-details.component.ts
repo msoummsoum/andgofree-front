@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { routes } from '../../../shared/routes';
-import { interestedCars, listingDetails, thumbnails } from '../../../shared/services/model/model';
+import { interestedCars, vehicleDetails, thumbnails } from '../../../shared/services/model/model';
 import { DataService } from '../../../shared/services/data/data.service';
 import { Lightbox, LightboxModule } from 'ngx-lightbox';
 import { CommonModule, DatePipe } from '@angular/common';
@@ -24,16 +24,16 @@ interface gallery {
 }
 
 @Component({
-  selector: 'app-listing-details',
+  selector: 'app-vehicle-details',
   imports: [CarouselModule,RouterLink,MatSelectModule,FormsModule,SlickCarouselModule,LightgalleryModule,LightboxModule,TimepickerModule,BsDatepickerModule,CommonModule],
   providers:[DatePipe],
-  templateUrl: './listing-details.component.html',
-  styleUrl: './listing-details.component.scss'
+  templateUrl: './vehicle-details.component.html',
+  styleUrl: './vehicle-details.component.scss'
 })
-export class ListingDetailsComponent {
+export class VehicleDetailsComponent {
   routes = routes;
   public gallery: Array<gallery> = [];
-  public listingDetails: listingDetails[] = [];
+  public vehicleDetails: vehicleDetails[] = [];
   public thumbnails: thumbnails[] = [];
   public interestedCars: interestedCars[] = [];
   showTimePicker: Array<string> = [];
@@ -46,15 +46,15 @@ export class ListingDetailsComponent {
   selectedList1: data[] = [
     { value: 'Newyork Office - 78, 10th street Laplace USA' },
     { value: 'Newyork Office - 12, 5th street USA' },
-    
+
   ];
   selectedList2: data[] = [
     { value: 'Newyork Office - 78, 10th street Laplace USA' },
     { value: 'Newyork Office - 12, 5th street USA' },
-    
+
   ];
   constructor(private data: DataService, private datePipe: DatePipe,private _lightbox: Lightbox) {
-    this.listingDetails = this.data.listingDetails;
+    this.vehicleDetails = this.data.vehicleDetails;
     this.thumbnails = this.data.thumbnails;
     this.interestedCars = this.data.interestedCars;
     for (let i = 1; i <= 12; i++) {
@@ -93,7 +93,7 @@ export class ListingDetailsComponent {
       0:{
         items:1
       },
-      
+
       550:{
         items:1
       },
@@ -116,8 +116,8 @@ export class ListingDetailsComponent {
     const selectedDate: Date = new Date(date);
     return this.datePipe.transform(selectedDate, 'h:mm a');
   }
- 
-  
+
+
   open(index: number, albumArray: Array<any>): void {
     this._lightbox.open(albumArray, index);
   }
@@ -143,7 +143,7 @@ export class ListingDetailsComponent {
    }
    onInit = (detail: { instance: LightGallery }): void => {
      this.lightGallery = detail.instance;
- 
+
    };
    onBeforeSlide = (detail: BeforeSlideDetail): void => {
      // eslint-disable-next-line @typescript-eslint/no-unused-vars

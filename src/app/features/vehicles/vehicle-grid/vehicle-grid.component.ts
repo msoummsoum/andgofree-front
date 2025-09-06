@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { listingGrid } from '../../../shared/services/model/model';
+import { vehicleGrid } from '../../../shared/services/model/model';
 import { DataService } from '../../../shared/services/data/data.service';
 import { CommonModule, DatePipe } from '@angular/common';
 import { routes } from '../../../shared/routes';
@@ -14,20 +14,20 @@ interface data {
   value: string ;
 }
 @Component({
-  selector: 'app-listing-grid',
+  selector: 'app-vehicle-grid',
   imports: [CarouselModule,RouterLink,CommonModule,MatSliderModule,MatSelectModule,BsDatepickerModule,FormsModule,TimepickerModule],
   providers:[DatePipe],
-  templateUrl: './listing-grid.component.html',
-  styleUrl: './listing-grid.component.scss'
+  templateUrl: './vehicle-grid.component.html',
+  styleUrl: './vehicle-grid.component.scss'
 })
-export class ListingGridComponent {
+export class VehicleGridComponent {
   public selectedValue1!: string;
   public selectedValue2!: string;
   public selectedValue3!: string;
-  public listingGrid: listingGrid[] = [];
+  public vehicleGrid: vehicleGrid[] = [];
 
   constructor(private data: DataService,private datePipe: DatePipe) {
-    this.listingGrid = this.data.listingGrid;
+    this.vehicleGrid = this.data.vehicleGrid;
   }
 
   routes = routes;

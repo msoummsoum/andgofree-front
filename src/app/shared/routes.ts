@@ -1,7 +1,7 @@
 // export class  routes {
 //   private static Url = '/';
 //   static roles: string;
-  
+
 
 //   public static get baseUrl(): string {
 //     return this.Url;
@@ -18,20 +18,20 @@
 //   public static get home3(): string {
 //     return this.baseUrl + '/home-3';
 //   }
-//   public static get listingList(): string {
-//     return this.baseUrl + '/listings/listing-list';
+//   public static get vehicleList(): string {
+//     return this.baseUrl + '/vehicles/vehicle-list';
 //   }
-//   public static get listingMap(): string {
-//     return this.baseUrl + '/listings/listing-map';
+//   public static get vehicleMap(): string {
+//     return this.baseUrl + '/vehicles/vehicle-map';
 //   }
-//   public static get listingDetails(): string {
-//     return this.baseUrl + '/listings/listing-details';
+//   public static get vehicleDetails(): string {
+//     return this.baseUrl + '/vehicles/vehicle-details';
 //   }
-//   public static get listingGrid(): string {
-//     return this.baseUrl + '/listings/listing-grid';
+//   public static get vehicleGrid(): string {
+//     return this.baseUrl + '/vehicles/vehicle-grid';
 //   }
-//   public static get addListing(): string {
-//     return this.baseUrl + '/listings/add-listing';
+//   public static get addvehicle(): string {
+//     return this.baseUrl + '/vehicles/add-vehicle';
 //   }
 //   public static get aboutUs(): string {
 //     return this.baseUrl + '/pages/about-us';
@@ -187,7 +187,7 @@
 //   public static get bookingInprogressCalendar(): string {
 //     return this.user + '/booking-inprogress-callendar';
 //   }
-  
+
 
 //   // ADMIN //
 //   public static get admin(): string {
@@ -363,7 +363,7 @@
 //     }
 
 
-    
+
 //     public static get advancedUi(): string {
 //       return this.admin + '/advanced-ui';
 //     }
@@ -481,7 +481,7 @@
 //     public static get border(): string {
 //       return this.baseUi + '/ui-borders';
 //     }
-    
+
 //     public static get buttons(): string {
 //       return this.baseUi + '/ui-buttons';
 //     }
@@ -1067,11 +1067,11 @@ export const routes={
   home2: '/index-4',
   home3: '/index-3',
 
-  listingList: '/listings/listing-list',
-  listingMap: '/listings/listing-map',
-  listingDetails: '/listings/listing-details',
-  listingGrid: '/listings/listing-grid',
-  addListing: '/listings/add-listing',
+  vehicleList: '/vehicles/vehicle-list',
+  vehicleMap: '/vehicles/vehicle-map',
+  vehicleDetails: '/vehicles/vehicle-details',
+  vehicleGrid: '/vehicles/vehicle-grid',
+  addVehicle: '/vehicles/add-vehicle',
 
   aboutUs: '/pages/about-us',
   register: '/authentication/register',

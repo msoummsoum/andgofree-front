@@ -4,7 +4,7 @@ import { UserWalletComponent } from './features/user/user-wallet/user-wallet.com
 
 
 export const routes: Routes = [
-    
+
     {
       path: '',
       redirectTo: 'index',
@@ -13,7 +13,7 @@ export const routes: Routes = [
   //Admin Authentication
     {
       path: 'auth',
-      loadComponent: () => import('./admin-auth/auth.component').then(m => m.Auth), 
+      loadComponent: () => import('./admin-auth/auth.component').then(m => m.Auth),
       children: [
         {
           path: 'login',
@@ -63,7 +63,7 @@ export const routes: Routes = [
           { path: 'cars', loadComponent: () => import('./admin/rentals/cars/cars.component').then(m => m.CarsComponent) },
           { path: 'add-car', loadComponent: () => import('./admin/rentals/add-car/add-car.component').then(m => m.AddCarComponent) },
           { path: 'edit-car', loadComponent: () => import('./admin/rentals/edit-car/edit-car.component').then(m => m.EditCarComponent) },
-          { path: 'car-details', loadComponent: () => import('./admin/rentals/car-details/car-details.component').then(m => m.CarDetailsComponent) }, 
+          { path: 'car-details', loadComponent: () => import('./admin/rentals/car-details/car-details.component').then(m => m.CarDetailsComponent) },
           { path: 'extra-services', loadComponent: () => import('./admin/rentals/extra-services/extra-services.component').then(m => m.ExtraServicesComponent) },
           { path: 'pricing', loadComponent: () => import('./admin/rentals/pricing/pricing.component').then(m => m.PricingComponent) },
           { path: 'inspections', loadComponent: () => import('./admin/rentals/inspections/inspections.component').then(m => m.InspectionsComponent) },
@@ -71,7 +71,7 @@ export const routes: Routes = [
           { path: 'maintenance', loadComponent: () => import('./admin/rentals/maintenance/maintenance.component').then(m => m.MaintenanceComponent) },
           { path: 'reviews', loadComponent: () => import('./admin/rentals/reviews/reviews.component').then(m => m.ReviewsComponent) },
           { path: 'car-attributes',
-            loadComponent: () => import('./admin/rentals/car-attributes/car-attributes.component').then(m => m.CarAttributesComponent), 
+            loadComponent: () => import('./admin/rentals/car-attributes/car-attributes.component').then(m => m.CarAttributesComponent),
             children:[
                 { path: 'brands', loadComponent: () => import('./admin/rentals/car-attributes/brands/brands.component').then(m => m.BrandsComponent) },
                 { path: 'types', loadComponent: () => import('./admin/rentals/car-attributes/types/types.component').then(m => m.TypesComponent) },
@@ -83,7 +83,7 @@ export const routes: Routes = [
                 { path: 'seats', loadComponent: () => import('./admin/rentals/car-attributes/seats/seats.component').then(m => m.SeatsComponent) },
                 { path: 'cylinders', loadComponent: () => import('./admin/rentals/car-attributes/cylinders/cylinders.component').then(m => m.CylindersComponent) },
                 { path: 'doors', loadComponent: () => import('./admin/rentals/car-attributes/doors/doors.component').then(m => m.DoorsComponent) },
-                { path: 'features', loadComponent: () => import('./admin/rentals/car-attributes/features/features.component').then(m => m.FeaturesComponent) }, 
+                { path: 'features', loadComponent: () => import('./admin/rentals/car-attributes/features/features.component').then(m => m.FeaturesComponent) },
                 { path: 'safety-features', loadComponent: () => import('./admin/rentals/car-attributes/safety-features/safety-features.component').then(m => m.SafetyFeaturesComponent) }
               ]
           },
@@ -98,10 +98,10 @@ export const routes: Routes = [
           { path: 'coupons', loadComponent: () => import('./admin/others/coupons/coupons.component').then(m => m.CouponsComponent) },
           { path: 'newsletters', loadComponent: () => import('./admin/others/newsletters/newsletters.component').then(m => m.NewslettersComponent) },
         //cms
-          { path: 'pages', loadComponent: () => import('./admin/cms/pages/pages.component').then(m => m.PagesComponent) }, 
+          { path: 'pages', loadComponent: () => import('./admin/cms/pages/pages.component').then(m => m.PagesComponent) },
           { path: 'add-pages', loadComponent: () => import('./admin/cms/add-pages/add-pages.component').then(m => m.AddPagesComponent) },
           { path: 'edit-pages', loadComponent: () => import('./admin/cms/edit-pages/edit-pages.component').then(m => m.EditPagesComponent) },
-          { path: 'menu-management', loadComponent: () => import('./admin/cms/menu-management/menu-management.component').then(m => m.MenuManagementComponent) }, 
+          { path: 'menu-management', loadComponent: () => import('./admin/cms/menu-management/menu-management.component').then(m => m.MenuManagementComponent) },
           { path: 'edit-menu', loadComponent: () => import('./admin/cms/edit-menu/edit-menu.component').then(m => m.EditMenuComponent) },
           { path: 'testimonials', loadComponent: () => import('./admin/cms/testimonials/testimonials.component').then(m => m.TestimonialsComponent) },
           { path: 'faq', loadComponent: () => import('./admin/cms/faq/faq.component').then(m => m.FaqComponent),
@@ -145,14 +145,14 @@ export const routes: Routes = [
             { path: 'setting', loadComponent: () => import('./admin/settings/settings.component').then(m => m.SettingsComponent),
               children:[
                   { path: 'profile-settings', loadComponent: () => import('./admin/settings/account-settings/profile-settings/profile-settings.component').then(m => m.ProfileSettingsComponent) },
-                  { path: 'security-settings', loadComponent: () => import('./admin/settings/account-settings/security-settings/security-settings.component').then(m => m.SecuritySettingsComponent) }, 
+                  { path: 'security-settings', loadComponent: () => import('./admin/settings/account-settings/security-settings/security-settings.component').then(m => m.SecuritySettingsComponent) },
                   { path: 'notifications-settings', loadComponent: () => import('./admin/settings/account-settings/notifications-settings/notifications-settings.component').then(m => m.NotificationsSettingsComponent) },
                   { path: 'integrations-settings', loadComponent: () => import('./admin/settings/account-settings/integrations-settings/integrations-settings.component').then(m => m.IntegrationsSettingsComponent) },
                   { path: 'tracker-settings', loadComponent: () => import('./admin/settings/account-settings/tracker-settings/tracker-settings.component').then(m => m.TrackerSettingsComponent) },
                   { path: 'rental-settings', loadComponent: () => import('./admin/settings/rental-settings/rental-settings/rental-settings.component').then(m => m.RentalSettingsComponent) },
                   { path: 'insurance-settings', loadComponent: () => import('./admin/settings/rental-settings/insurance-settings/insurance-settings.component').then(m => m.InsuranceSettingsComponent) },
                   { path: 'company-settings', loadComponent: () => import('./admin/settings/website-settings/company-settings/company-settings.component').then(m => m.CompanySettingsComponent) },
-                  { path: 'localization-settings', loadComponent: () => import('./admin/settings/website-settings/localization-settings/localization-settings.component').then(m => m.LocalizationSettingsComponent) }, 
+                  { path: 'localization-settings', loadComponent: () => import('./admin/settings/website-settings/localization-settings/localization-settings.component').then(m => m.LocalizationSettingsComponent) },
                   { path: 'prefixes-settings', loadComponent: () => import('./admin/settings/website-settings/prefixes-settings/prefixes-settings.component').then(m => m.PrefixesSettingsComponent) },
                   { path: 'seo-setup', loadComponent: () => import('./admin/settings/website-settings/seo-setup/seo-setup.component').then(m => m.SeoSetupComponent) },
                   { path: 'login-setting', loadComponent: () => import('./admin/settings/website-settings/login-setting/login-setting.component').then(m => m.LoginSettingComponent) },
@@ -290,7 +290,7 @@ export const routes: Routes = [
               //advanced ui
               {path: 'advanced-ui',loadComponent: () =>import('./admin/ui-interface/advanced-ui/advanced-ui.component').then((m) => m.AdvancedUiComponent),
                 children:[
-    
+
                   {
                       path: 'ui-timeline',
                       loadComponent: () =>
@@ -490,12 +490,12 @@ export const routes: Routes = [
     { path: '', loadComponent: () => import('./features/features.component').then((m) => m.FeaturesComponent),
       children:[
         //Vehicle
-          { path: 'vehicles', loadComponent: () => import('./features/listings/listings.component').then((m) => m.VehiclesComponent),
+          { path: 'vehicles', loadComponent: () => import('./features/vehicles/vehicles.component').then((m) => m.VehiclesComponent),
             children:[
-                { path: 'add-vehicle', loadComponent: () => import('./features/listings/add-listing/add-listing.component').then((m) => m.AddListingComponent )},
+                { path: 'add-vehicle', loadComponent: () => import('./features/vehicles/add-vehicle/add-vehicle.component').then((m) => m.AddVehicleComponent )},
             ]
-          }
-        
+          },
+
           { path: '', loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
             children:[
               { path: '', loadComponent: () => import('./features/home/home-new/home-new.component').then((m) => m.HomeNewComponent),},
@@ -505,14 +505,14 @@ export const routes: Routes = [
               { path: 'index-3', loadComponent: () => import('./features/home/home3/home3.component').then((m) => m.Home3Component),},
             ]
           },
-          //Listing
-          { path: 'listings', loadComponent: () => import('./features/listings/listings.component').then((m) => m.VehiclesComponent),
+          //Vehicle
+          { path: 'vehicles', loadComponent: () => import('./features/vehicles/vehicles.component').then((m) => m.VehiclesComponent),
             children:[
-                { path: 'listing-details', loadComponent: () => import('./features/listings/listing-details/listing-details.component').then((m) => m.ListingDetailsComponent),},
-                { path: 'listing-grid', loadComponent: () => import('./features/listings/listing-grid/listing-grid.component').then((m) => m.ListingGridComponent),},
-                { path: 'listing-list', loadComponent: () => import('./features/listings/listing-list/listing-list.component').then((m) => m.ListingListComponent ),},
-                { path: 'listing-map', loadComponent: () => import('./features/listings/listing-map/listing-map.component').then((m) => m.ListingMapComponent),},
-                { path: 'add-listing', loadComponent: () => import('./features/listings/add-listing/add-listing.component').then((m) => m.AddListingComponent )},
+                { path: 'vehicle-details', loadComponent: () => import('./features/vehicles/vehicle-details/vehicle-details.component').then((m) => m.VehicleDetailsComponent)},
+                { path: 'vehicle-grid', loadComponent: () => import('./features/vehicles/vehicle-grid/vehicle-grid.component').then((m) => m.VehicleGridComponent)},
+                { path: 'vehicle-list', loadComponent: () => import('./features/vehicles/vehicle-list/vehicle-list.component').then((m) => m.VehicleListComponent )},
+                { path: 'vehicle-map', loadComponent: () => import('./features/vehicles/vehicle-map/vehicle-map.component').then((m) => m.VehicleMapComponent)},
+                { path: 'add-vehicle', loadComponent: () => import('./features/vehicles/add-vehicle/add-vehicle.component').then((m) => m.AddVehicleComponent)},
             ]
           },
           //Blog
@@ -632,7 +632,7 @@ export const routes: Routes = [
                   },
                 ]
               }
-        
+
       ]
     },
 

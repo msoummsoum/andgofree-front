@@ -13,13 +13,13 @@ interface data {
   value: string ;
 }
 @Component({
-  selector: 'app-listing-list',
+  selector: 'app-vehicle-list',
   imports: [CarouselModule,RouterLink,CommonModule,MatSliderModule,MatSelectModule,FormsModule,BsDatepickerModule,DatePickerModule,TimepickerModule],
    providers: [DatePipe],
-  templateUrl: './listing-list.component.html',
-  styleUrl: './listing-list.component.scss'
+  templateUrl: './vehicle-list.component.html',
+  styleUrl: './vehicle-list.component.scss'
 })
-export class ListingListComponent {
+export class VehicleListComponent {
   routes = routes;
   public selectedValue1 !: string;
   public selectedValue2 !: string;
@@ -61,7 +61,7 @@ export class ListingListComponent {
     }
   }
   constructor(private datePipe: DatePipe) {
-   
+
   }
   formatTime(date: Date) {
     const selectedDate: Date = new Date(date);
@@ -84,7 +84,7 @@ export class ListingListComponent {
     responsive:{
       0:{
         items:1
-      },				
+      },
       550:{
         items:1
       },

@@ -28,7 +28,7 @@ export class HomeNewComponent {
 
   }
   directePage() : void{
-    this.router.navigate([routes.listingGrid])
+    this.router.navigate([routes.vehicleGrid])
   }
 public imgSlider:OwlOptions={
   loop:true,
@@ -44,7 +44,7 @@ public imgSlider:OwlOptions={
 			responsive:{
 				0:{
 					items:1
-				},				
+				},
 				550:{
 					items:1
 				},
@@ -66,7 +66,7 @@ public brandSlider:OwlOptions={
 			responsive:{
 				0:{
 					items:2
-				},				
+				},
 				767:{
 					items:4
 				},
@@ -89,7 +89,7 @@ public carSlider:OwlOptions={
 			responsive:{
 				0:{
 					items:1
-				},	
+				},
 			}
 }
 public clientSlider:OwlOptions={
@@ -102,7 +102,7 @@ public clientSlider:OwlOptions={
 			responsive:{
 				0:{
 					items:2
-				},				
+				},
 				767:{
 					items:4
 				},

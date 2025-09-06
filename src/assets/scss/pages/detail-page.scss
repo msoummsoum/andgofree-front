@@ -6,7 +6,7 @@
     position: $__relative;
     z-index: 9;
     @include margin-padding(null,60px 0 36px 0);
-    @include respond-below(custom991) {           
+    @include respond-below(custom991) {
         @include margin-padding(null,50px 0 26px 0);
      }
 }
@@ -14,7 +14,7 @@
     @include margin-padding(null,30px 0);
     background: $__white;
     box-shadow: 0px 4px 24px rgba(225, 225, 225, 0.25);
-    @include respond-below(custom991) {            
+    @include respond-below(custom991) {
         @include margin-padding(null,24px 24px 9px);
     }
     .detail-page-head {
@@ -71,26 +71,26 @@
                     margin-right: 5px;
                 }
             }
-        }        
-        .camaro-info {                
+        }
+        .camaro-info {
             @include respond-below(custom767) {
                 margin-bottom: 5px;
-            }                
+            }
         }
         .camaro-location {
             @extend %display-flex-center;
             flex-wrap: wrap;
-            @include respond-below(custom575) {   
+            @include respond-below(custom575) {
                align-items: start;
-               flex-direction: column;    
-            }  
+               flex-direction: column;
+            }
             .camaro-location-inner {
                 position: relative;
                 @include margin-padding(0 15px 0 0, 0 15px 0 0);
                  @include respond-below(custom991) {
                     margin-bottom: 10px;
                  }
-                @include respond-below(custom575) {   
+                @include respond-below(custom575) {
                     display: flex;
                     align-items: baseline;
                     margin-right: 0;
@@ -106,7 +106,7 @@
                     width: 1px;
                     @include position(absolute, 50%, 0, null, null);
                     @include transform(translateY(-50%));
-                     @include respond-below(custom575) {  
+                     @include respond-below(custom575) {
                         content: none;
                      }
                 }
@@ -151,20 +151,20 @@
     .search-btn {
         .search-button {
             background-color: $__primarycolor;
-            border: 1px solid $__primarycolor;                
-            box-shadow: inset 0 0 0 $__white;                
-            color: $__white;             
-            @include margin-padding(null, 12px 20px);           
+            border: 1px solid $__primarycolor;
+            box-shadow: inset 0 0 0 $__white;
+            color: $__white;
+            @include margin-padding(null, 12px 20px);
             @extend %animation-effect;
                 @include respond-below(custom991) {
                     width: 250px;
-                } 
+                }
                 @include respond-below(custom991) {
                     @include margin-padding(null, 12px 8px);
                 }
                 @include respond-below(custom1199) {
                     @include margin-padding(null, 12px 12px);
-                }                
+                }
             &:hover {
                 background-color: $__white;
                 border: 1px solid #201F1D;
@@ -187,7 +187,7 @@
                 -ms-flex: 50%;
                 flex: 50%;
                 max-width: 50%;
-            }         
+            }
         &:last-child {
             padding-right: 0;
         }
@@ -207,20 +207,20 @@
                 flex: 50%;
                 max-width: 50%;
                 margin-bottom: 15px;
-            }            
+            }
             @include respond-below(custom575) {
                 -ms-flex: 100%;
                 flex: 100%;
                 max-width: 100%;
                 margin-bottom: 0;
-            } 
+            }
         &:last-child {
             padding-right: 0;
         }
     }
     .details-btn {
-        @extend %display-flex-center;        
-        @include respond-below(custom991) {            
+        @extend %display-flex-center;
+        @include respond-below(custom991) {
             @include margin-padding(0, null);
             display: block;
         }
@@ -240,7 +240,7 @@
                 margin-right: 5px;
                 line-height: inherit;
             }
-             @include respond-below(custom991) {      
+             @include respond-below(custom991) {
                 @include margin-padding(0 10px 15px 0, 8px 16px);
              }
         }
@@ -248,17 +248,17 @@
             background: $__light__vampire;
             color: $__gray_light;
             border-radius: 5px;
-            font-size: $__font__size__14;            
+            font-size: $__font__size__14;
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
             display: inline-flex;
             align-items: center;
             -webkit-box-align: center;
             -ms-flex-align: center;
-            @extend %justify-content-center; 
-            @include margin-padding(null,8px 16px); 
+            @extend %justify-content-center;
+            @include margin-padding(null,8px 16px);
             @include transition(500ms all ease);
-            @include respond-below(custom991) {  
+            @include respond-below(custom991) {
                 @include margin-padding(0 0 15px 0, null);
             }
             &:hover {
@@ -276,7 +276,7 @@
             img {
                 margin-right: 5px;
             }
-    
+
         }
     }
 }
@@ -292,7 +292,7 @@
     -ms-flex-pack: space-between;
     margin-bottom: 10px;
     padding: 0 10px;
-     @include respond-below(custom575) {  
+     @include respond-below(custom575) {
         display: block;
      }
     .pro-badge {
@@ -329,7 +329,7 @@
             color: $__white;
         }
     }
-    ul {        
+    ul {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -345,7 +345,7 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             @include margin-padding(0 10px 10px 0, 0 10px 0 0);
-            position: relative;            
+            position: relative;
             &::before {
                 content: "";
                 background: $__blue__light;
@@ -353,7 +353,7 @@
                 width: 1px;
                 @include position(absolute, 50%, 0, null, null);
                 @include transform(translateY(-50%));
-                 @include respond-below(custom575) {  
+                 @include respond-below(custom575) {
                     content: none;
                  }
             }
@@ -457,7 +457,7 @@
                 display:$__inline__block;
                 font-family: "Font Awesome 5 Free";
                 font-size: $__font__size__15;
-                font-weight: 900;  
+                font-weight: 900;
                 @include respond-below(custom991) {
                     font-size: $__font__size__13;
                 }
@@ -480,14 +480,14 @@
                 display:$__inline__block;
                 font-family: "Font Awesome 5 Free";
                 font-size: $__font__size__15;
-                font-weight: 900;  
+                font-weight: 900;
                 @include respond-below(custom991) {
                     font-size: $__font__size__13;
                 }
             }
         }
 
-     
+
 
     }
 }
@@ -525,7 +525,7 @@
         &.access-feature {
             margin-bottom: 0px;
         }
-    
+
     }
     .featues-info {
         h6 {
@@ -551,7 +551,7 @@
         }
     }
 }
-.listing-feature {
+.vehicle-feature {
     @include margin-padding(null, 15px 15px 5px);
     ul {
         li {
@@ -593,7 +593,7 @@
 .review-list-rating {
     @extend %display-flex-center;
     color: $__gray;
-    margin: 15px 0 15px 0;    
+    margin: 15px 0 15px 0;
     @include respond-below(custom767) {
         flex-direction: column;
         align-items: start;
@@ -607,7 +607,7 @@
             &:last-child {
                 margin-bottom: 0;
             }
-        } 
+        }
         @include respond-below(custom1199) {
             margin-right: 10px;
         }
@@ -618,7 +618,7 @@
                 color: $__warningcolor;
             }
         }
-     
+
     }
 }
 .review-sec {
@@ -645,7 +645,7 @@
                         color: $__gray__lightdark;
                     }
                 }
-             
+
             }
         }
     }
@@ -684,7 +684,7 @@
 .details-slider-heading {
     margin-bottom: 25px;
     h3 {
-        @include respond-below(custom767) { 
+        @include respond-below(custom767) {
             margin-top: 30px
         }
     }
@@ -696,10 +696,10 @@
     &.owl-carousel {
         .owl-nav {
             display: $__flex;
-            -webkit-display: $__flex;             
-            @include position($__absolute,-80px,0,null,null);           
-            @include respond-below(custom767) { 
-                left: 0; 
+            -webkit-display: $__flex;
+            @include position($__absolute,-80px,0,null,null);
+            @include respond-below(custom767) {
+                left: 0;
                 top: -100px
             }
             .owl-prev, .owl-next {
@@ -713,7 +713,7 @@
                 -webkit-transition: all 0.2s ease;
                 -ms-transition: all 0.2s ease;
                 transition: all 0.2s ease;
-                @include respond-below(custom991) {  
+                @include respond-below(custom991) {
                     width: 35px;
                     height: 35px;
                     font-size: 12px;
@@ -731,7 +731,7 @@
             }
         }
     }
-    
+
 }
 .owner-detail {
     display: $__flex;
@@ -747,7 +747,7 @@
             border-radius: 50%;
             margin-right: 8px;
             border: 2px solid $__white;
-            @include respond-below(custom991) { 
+            @include respond-below(custom991) {
                 width: 40px;
                 height: 40px;
             }
@@ -775,7 +775,7 @@
             &:hover {
                 color: $__primarycolor;
             }
-            @include respond-below(custom991) { 
+            @include respond-below(custom991) {
                 font-size: $__font__size__16;
                 margin-bottom: 5px;
             }
@@ -837,7 +837,7 @@
             color: $__goose-gray;
         }
     }
-    .chat-link {        
+    .chat-link {
         display: flex;
         align-items: center;
         -webkit-box-align: center;
@@ -883,7 +883,7 @@
             .modal-content {
                 @include margin-padding(null,30px);
                 @include respond-below(custom767) {
-                    @include margin-padding(null, 15px);  
+                    @include margin-padding(null, 15px);
                 }
                 .modal-header {
                     @include margin-padding(0 0 20px,0 0 20px);
@@ -926,7 +926,7 @@
         border-radius: 10px;
         @include margin-padding(0 0 20px 0, 20px);
             @include respond-below(custom767) {
-                @include margin-padding(null, 15px);  
+                @include margin-padding(null, 15px);
             }
         h5 {
             margin-bottom: 15px;
@@ -969,16 +969,16 @@
                             }
                         }
                     }
-    
+
                 }
             }
-           
+
         }
         &.pay-amount {
             background: $__white;
             h6 {
                 margin-bottom: 15px;
-               
+
             }
             .radio-btn {
                 margin-bottom: 10px;
@@ -1035,7 +1035,7 @@
         @include margin-padding(0,0);
         border: 0;
         a {
-            @include margin-padding(0,12px 20px);  
+            @include margin-padding(0,12px 20px);
             background: $__goose-gray;
             color: $__white;
             @extend %display-flex-center;
@@ -1044,14 +1044,14 @@
             }
         }
     }
-    
+
 }
 
-// Booking 
+// Booking
 .booking-section {
-    @include margin-padding(null,80px 0);  
+    @include margin-padding(null,80px 0);
     @include respond-below(custom991) {
-        @include margin-padding(null,50px 0);  
+        @include margin-padding(null,50px 0);
     }
     .booking-tab {
         justify-content: $__center;
@@ -1062,7 +1062,7 @@
         li {
             margin-right: 15px;
             @include respond-below(custom575) {
-                @include margin-padding(0 0 20px 0,0); 
+                @include margin-padding(0 0 20px 0,0);
             }
             a {
                 padding: 20px;
@@ -1085,7 +1085,7 @@
                         color: $__gray;
                     }
                     span {
-                        color: $__dark__blues;  
+                        color: $__dark__blues;
                         font-weight: $__semibold;
                     }
                 }
@@ -1191,7 +1191,7 @@
     a {
         color: $__dangered;
     }
-  
+
 }
 .payment-method {
     border: 1px solid $__blue__light;
@@ -1277,7 +1277,7 @@
                 }
             }
         }
-    } 
+    }
     .payment-success {
         .check {
             width: 56px;
@@ -1303,7 +1303,7 @@
             span {
                 color: $__goose-gray;
                 font-weight: $__semibold;
-               
+
             }
         }
         .order-confirm {
@@ -1377,7 +1377,7 @@
                 span {
                    color: $__dangered;
                    font-size: $__font__size__16;
-                   display: $__block; 
+                   display: $__block;
                    margin-top: 8px;
                    font-weight: $__semibold;
                 }
@@ -1497,7 +1497,7 @@
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
-    .policy-info {        
+    .policy-info {
         @include respond-below(custom575) {
             margin-bottom: 10px;
         }
@@ -1551,7 +1551,7 @@
         color: $__dark__blues;
         margin-bottom: 0;
         span {
-            font-size: $__font__size__18;            
+            font-size: $__font__size__18;
             @include respond-below(custom991) {
                 font-size: $__font__size__16;
             }
@@ -1586,7 +1586,7 @@
 .bg-primary {
     background: $__primarycolor !important;
 }
-.rating-progress { 
+.rating-progress {
     width: calc(100% - 224px);
     margin-bottom: 15px;
     @include respond-below(custom767) {
@@ -1641,7 +1641,7 @@
     p {
         font-size: $__font__size__14;
         margin-bottom: 0;
-    }   
+    }
     h6 {
         margin-bottom: 0;
     }
@@ -1737,7 +1737,7 @@
         @include margin-padding(null, 7px 20px);
     }
 }
-.listing-review {
+.vehicle-review {
     &.review-sec .review-card {
         margin-bottom: 0;
         .review-head {
@@ -1780,7 +1780,7 @@
                         margin-bottom: 0;
                     }
                 }
-            }            
+            }
         }
         .review-header-group {
             margin-bottom: 15px;
@@ -1902,7 +1902,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: 0.5s all;        
+                transition: 0.5s all;
                 cursor: pointer;
                 .checked-title {
                     color: $__black-gray;
@@ -2047,7 +2047,7 @@
                 &.total {
                     p {
                         font-size: $__font__size__15;
-                        font-weight: $__semibold;                        
+                        font-weight: $__semibold;
                     }
                     span {
                         font-size: $__font__size__15;
@@ -2168,11 +2168,11 @@
                 font-weight: $__semibold;
             }
             .form-control {
-                height: 40px;                
+                height: 40px;
             }
             textarea {
                 &.form-control {
-                    height: auto;                
+                    height: auto;
                 }
             }
         }
@@ -2199,10 +2199,10 @@
         }
     }
     table {
-        tbody {     
+        tbody {
             tr {
                 border-color: $__light__gooses;
-            }       
+            }
             td, th {
                 border-color: $__light__gooses;
                 color: $__black-gray;

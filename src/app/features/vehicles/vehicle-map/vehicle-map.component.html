@@ -95,7 +95,7 @@
 <!-- /Search -->
 
 <!-- Car Grid View -->
-<section class="section car-listing" >
+<section class="section car-vehicle" >
     <div class="container-fluid p-0">
         <div class="row gx-0">
 
@@ -154,17 +154,17 @@
                                         <div class="grid-listview">
                                             <ul>
                                                 <li>
-                                                    <a [routerLink]="routes.listingGrid">
+                                                    <a [routerLink]="routes.vehicleGrid">
                                                         <i class="feather icon-grid"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a [routerLink]="routes.listingList">
+                                                    <a [routerLink]="routes.vehicleList">
                                                         <i class="feather icon-list"></i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a [routerLink]="routes.listingMap" class="active">
+                                                    <a [routerLink]="routes.vehicleMap" class="active">
                                                         <i class="feather icon-map-pin"></i>
                                                     </a>
                                                 </li>
@@ -181,7 +181,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-1.jpg" class="img-fluid" alt="Toyota">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -197,7 +197,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">Ferrari 458 MM Special</a>
+                                                <h3><a [routerLink]="routes.vehicleDetails">Ferrari 458 MM Special</a>
                                                 </h3>
                                                 <h6>Category : <span>Ferrarai</span></h6>
                                             </div>
@@ -213,7 +213,7 @@
                                                 <h6>$160<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -263,8 +263,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -280,7 +280,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-2.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -295,7 +295,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">BMW 640 XI Gran Turismo</a>
+                                                <h3><a [routerLink]="routes.vehicleDetails">BMW 640 XI Gran Turismo</a>
                                                 </h3>
                                                 <h6>Category : <span>BMW</span></h6>
                                             </div>
@@ -311,7 +311,7 @@
                                                 <h6>$60 <span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-05.svg"
@@ -360,8 +360,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -374,7 +374,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-3.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -389,7 +389,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">Ford Mustang, Blue 2014</a>
+                                                <h3><a [routerLink]="routes.vehicleDetails">Ford Mustang, Blue 2014</a>
                                                 </h3>
                                                 <h6>Category : <span>Ford</span></h6>
                                             </div>
@@ -405,7 +405,7 @@
                                                 <h6>$150<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -454,8 +454,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -471,7 +471,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-5.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -486,7 +486,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">Audi A3 2019 new</a></h3>
+                                                <h3><a [routerLink]="routes.vehicleDetails">Audi A3 2019 new</a></h3>
                                                 <h6>Category : <span>Audi</span></h6>
                                             </div>
                                             <div class="blog-list-rate">
@@ -501,7 +501,7 @@
                                                 <h6>$45<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -550,8 +550,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -564,7 +564,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-6.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -579,7 +579,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">Ford Mustang 4.0 AT</a></h3>
+                                                <h3><a [routerLink]="routes.vehicleDetails">Ford Mustang 4.0 AT</a></h3>
                                                 <h6>Category : <span>Ford</span></h6>
                                             </div>
                                             <div class="blog-list-rate">
@@ -594,7 +594,7 @@
                                                 <h6>$90<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -643,8 +643,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -660,7 +660,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-7.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -675,7 +675,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">Acura Sport Version</a></h3>
+                                                <h3><a [routerLink]="routes.vehicleDetails">Acura Sport Version</a></h3>
                                                 <h6>Category : <span>Acura</span></h6>
                                             </div>
                                             <div class="blog-list-rate">
@@ -690,7 +690,7 @@
                                                 <h6>$30<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -739,8 +739,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -753,7 +753,7 @@
                         <div class="card">
                             <div class="blog-widget d-flex">
                                 <div class="blog-img">
-                                    <a [routerLink]="routes.listingDetails">
+                                    <a [routerLink]="routes.vehicleDetails">
                                         <img src="assets/img/car-list-4.jpg" class="img-fluid" alt="blog-img">
                                     </a>
                                     <div class="fav-item justify-content-end">
@@ -768,7 +768,7 @@
                                     <div class="card-body">
                                         <div class="blog-list-head d-flex">
                                             <div class="blog-list-title">
-                                                <h3><a [routerLink]="routes.listingDetails">2018 Chevrolet Camaro</a>
+                                                <h3><a [routerLink]="routes.vehicleDetails">2018 Chevrolet Camaro</a>
                                                 </h3>
                                                 <h6>Category : <span>Chevrolet</span></h6>
                                             </div>
@@ -784,7 +784,7 @@
                                                 <h6>$36<span>/ Day</span></h6>
                                             </div>
                                         </div>
-                                        <div class="listing-details-group">
+                                        <div class="vehicle-details-group">
                                             <ul>
                                                 <li>
                                                     <span><img src="assets/img/icons/car-parts-01.svg"
@@ -833,8 +833,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-button">
-                                                <a [routerLink]="routes.listingDetails" class="btn btn-order"><span><i
+                                            <div class="vehicle-button">
+                                                <a [routerLink]="routes.vehicleDetails" class="btn btn-order"><span><i
                                                             class="feather  icon-calendar me-2"></i></span>Rent Now</a>
                                             </div>
                                         </div>
@@ -883,7 +883,7 @@
                 <!-- Filter View -->
                 <div class="toggle-popup" [ngClass]="{'sidebar-popup': isPopupVisible}">
                     <div class="sidebar-layout">
-                        <div class="toggle-body car-listing p-0">
+                        <div class="toggle-body car-vehicle p-0">
                             <form action="#" autocomplete="off" class="sidebar-form">
                                 <div class="sidebar-heading">
                                     <h3>What Are You Looking For</h3>
@@ -1594,7 +1594,7 @@
             <div class="col-xl-4 col-lg-12 map-right grid-list-map">
 
                 <!-- Map -->
-                <div id="map" class="map-listing"></div>
+                <div id="map" class="map-vehicle"></div>
                 <!-- /Map-->
 
             </div>

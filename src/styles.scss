@@ -40,7 +40,7 @@ body {
 .cus-icon-calender {
   font-size: 16px;
 }
-.datepicker-icon-listing {
+.datepicker-icon-vehicle {
   position: absolute;
   top: -6px;
   right: 0;
@@ -615,8 +615,8 @@ mat-tooltip-component .mat-mdc-tooltip .mdc-tooltip__surface {
   align-items: center;
   justify-content: center;
  }
- 
- 
+
+
  .detail-product ngx-slick-carousel.slider-nav-thumbnails.slick-initialized.slick-slider .slick-slide img {
   width: auto;
   height: 100px;
@@ -646,7 +646,7 @@ mat-tooltip-component .mat-mdc-tooltip .mdc-tooltip__surface {
     color: #2F2F2F;
     border-radius: 50%;
 }
-} 
+}
 .icon-heart:before {
   content: "\e879" !important;
 }
@@ -710,7 +710,7 @@ app-admin{
     display: block !important;
     transition: all 0.5s;
   }
-  
+
   .hide-sub-menu {
     display: none !important;
     transition: all 0.5s;
@@ -816,7 +816,7 @@ app-admin{
 .p-colorpicker-preview {
   width: 30px;
   border:1px solid;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 .sidebar-menu{
   .input-icon-addon {
@@ -857,7 +857,7 @@ tag-input{
     }
     .bs-datepicker{
       box-shadow: none !important;
-      
+
     }
     .bs-datepicker-body{
       border-color: #252525;
@@ -868,7 +868,7 @@ tag-input{
       .mat-mdc-select-placeholder {
         color: #F5F5F5 !important;
       }
-      
+
     }
     .cdk-overlay-pane:not(.mat-mdc-select-panel-above) div.mat-mdc-select-panel{
       background-color: #070808 ;
@@ -944,12 +944,12 @@ tag-input{
     font-size: 14px;
     min-height: 35px;
   }
-  
+
   mat-option.mat-mdc-option span.mdc-list-item__primary-text {
     font-size: 14px;
     color: #22100d;
   }
-  
+
   mat-option.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
     color: #22100d !important;
   }
@@ -1095,7 +1095,7 @@ a.feather-size {
 }
 .iti{
   width: 100%;
-} 
+}
 p-inputotp{
   .p-inputtext{
     width: 88px;

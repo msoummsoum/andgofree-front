@@ -6,18 +6,18 @@
     'mini-sidebar': miniSidebar === true,
     'slide-nav': mobileSidebar === true,
     'home-three': base  === 'index-3',
-    'listing-page map-page': page === 'listing-map',
-    'listing-page': page === 'listing-grid' || 'listing-list',
-    
+    'vehicle-page map-page': page === 'vehicle-map',
+    'vehicle-page': page === 'vehicle-grid' || 'vehicle-list',
+
     'login-body':
       page === 'forgot-password' ||
       page === 'login' ||
       page === 'register' ||
-      page === 'reset-password' 
+      page === 'reset-password'
   }"
   >
     <app-header [hidden]="base==='index-4'" [ngClass]="{ 'd-none': headerActive === false }"></app-header>
-  
+
   <router-outlet></router-outlet>
   <app-footer [ngClass]="{ 'd-none': footerActive === false }"></app-footer>
 </div>
@@ -32,7 +32,7 @@
   base === 'index-2' ||
   base === 'index-4' ||
   base === 'index-3' ||
-  base === 'listings' ||
+  base === 'vehicles' ||
   base === 'pages' ||
   base === 'user'
   ) {

@@ -15,7 +15,7 @@
         -webkit-justify-content: space-between;
         -ms-flex-pack: space-between;
         &.bg-danger-light {
-            background: rgba(239, 59, 45, 0.10); 
+            background: rgba(239, 59, 45, 0.10);
         }
         @include respond-below(custom767) {
             font-size: $__font__size__15;
@@ -36,7 +36,7 @@
                 &:hover {
                     color: $__primarycolor;
                 }
-            }            
+            }
         }
         .close-link {
             color: $__black-gray;
@@ -44,7 +44,7 @@
                 color: $__dangered;
             }
         }
-        .view-detail { 
+        .view-detail {
             text-decoration: $__underline;
             color: $__goose-gray;
             &:hover {
@@ -222,7 +222,7 @@
                                 &:hover {
                                     color: $__sandstone;
                                     border: 1px solid $__blue__light;
-                                    background: $__light__grayish;  
+                                    background: $__light__grayish;
                                 }
                             }
                             .dropdown-menu {
@@ -276,12 +276,12 @@
                 font-weight: 400;
                 a {
                     font-weight: $__medium;
-                    font-size: $__font__size__14;   
-                    margin-bottom: 6px; 
+                    font-size: $__font__size__14;
+                    margin-bottom: 6px;
                     color: $__black-gray;
                     &:hover {
                         color: $__primarycolor;
-                    }                
+                    }
                 }
                 .avatar  {
                     @include margin-padding(0 8px 0 0, null);
@@ -293,11 +293,11 @@
                         object-fit: cover;
                         border-radius: 10px;
                     }
-                    &.avatar-lg {                        
+                    &.avatar-lg {
                         width: 60px;
                         height: 60px;
                     }
-                    &.avatar-md {                        
+                    &.avatar-md {
                         width: 45px;
                         height: 45px;
                     }
@@ -310,12 +310,12 @@
                 color: $__black-gray;
             }
             p {
-                font-size: $__font__size__14;            
+                font-size: $__font__size__14;
             }
             .badge {
                 border-radius: 5px;
                 @include margin-padding(null, 7px 5px);
-                font-size: $__font__size__14; 
+                font-size: $__font__size__14;
                 font-weight: $__medium;
                 min-width: 80px;
                 text-align: $__center;
@@ -400,7 +400,7 @@
         margin-right: 0;
     }
     div.dataTables_filter {
-        label {       
+        label {
             position: relative;
             &::before {
                 position: absolute;
@@ -430,7 +430,7 @@
 }
 .table-footer {
     margin-top: 20px;
-    .page-link {    
+    .page-link {
         width: 47px;
         height: 37px;
         padding: 0;
@@ -697,7 +697,7 @@
             background: $__light__hash;
             @include margin-padding(null, 12px);
             min-width: 120px;
-            color: $__black-gray; 
+            color: $__black-gray;
             font-size: $__font__size__14;
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
@@ -759,7 +759,7 @@
             }
         }
     }
-    
+
 }
 .reason-item {
     p {
@@ -773,7 +773,7 @@
             height: $__auto !important;
             resize: none;
         }
-    }    
+    }
 }
 .booking-img-wrap {
     display: flex;
@@ -896,7 +896,7 @@
     .badge {
         border-radius: 5px;
         @include margin-padding(null, 7px 5px);
-        font-size: $__font__size__14; 
+        font-size: $__font__size__14;
         font-weight: $__medium;
         min-width: 80px;
         text-align: $__center;
@@ -921,22 +921,22 @@
 }
 .cancel-reason {
     h6 {
-        font-size: $__font__size__14; 
+        font-size: $__font__size__14;
         font-weight: $__medium;
         margin-bottom: 10px;
     }
     p {
-        font-size: $__font__size__14; 
+        font-size: $__font__size__14;
         margin-bottom: 20px;
     }
 }
 .cancel-box {
-    font-size: $__font__size__14; 
+    font-size: $__font__size__14;
     background: #FCE3E3;
     color: $__dangered;
     @include margin-padding(null, 10px);
 }
-.refund-wrap {    
+.refund-wrap {
     h6 {
         font-size: $__font__size__16;
         margin-bottom: 10px;
@@ -945,7 +945,7 @@
     }
 }
 .card-status-wrap {
-    border-bottom: 1px solid $__blue__light;    
+    border-bottom: 1px solid $__blue__light;
     display: flex;
     display: -webkit-flex;
     align-items:center;
@@ -955,7 +955,7 @@
     -ms-flex-pack: space-between;
     margin-bottom: 24px;
     padding-bottom: 14px;
-    .card-status {       
+    .card-status {
         margin-bottom: 10px;
         h5 {
             font-size: $__font__size__20;
@@ -965,9 +965,9 @@
         p {
             color: $__sandstone;
             font-size: $__font__size__16;
-        }        
+        }
     }
-    .status-img {        
+    .status-img {
         margin-bottom: 10px;
     }
 }
@@ -1070,7 +1070,7 @@
             }
         }
     }
-        
+
 }
 .review-rating {
     i {
@@ -1134,7 +1134,7 @@
     }
 }
 .wishlist-wrap {
-    .listview-car .card .card-body .listing-details-group {
+    .listview-car .card .card-body .vehicle-details-group {
         ul {
             justify-content: start;
             -webkit-justify-content: start;
@@ -1155,7 +1155,7 @@
         width: $__full__width;
         @include respond-below(custom575) {
             margin-right: 0;
-        }   
+        }
     }
     .btn {
         width: 147px;
@@ -1166,10 +1166,10 @@
             background-color: $__secondarycolor;
             color: $__white;
         }
-    }    
+    }
     @include respond-below(custom575) {
         flex-direction: column;
-    }    
+    }
 }
 .rent-radio {
     border-radius: 5px;
@@ -1213,11 +1213,11 @@
         color: $__black-gray !important;
     }
 }
-.badge-item {    
+.badge-item {
     .badge {
         border-radius: 5px;
         @include margin-padding(null, 7px 5px);
-        font-size: $__font__size__14; 
+        font-size: $__font__size__14;
         font-weight: $__medium;
         min-width: 80px;
         text-align: $__center;
@@ -1365,7 +1365,7 @@
                 color: rgba(115, 115, 115, 1);
                 @extend %inline-flex;
             }
-        }       
+        }
         .chat-search {
             background-color: $__light__hash;
             border-bottom: 1px solid $__light__hash;
@@ -1584,7 +1584,7 @@
                     @include respond-below(custom767) {
                         display: $__none;
                     }
-                    .user-name {                       
+                    .user-name {
                         color: $__black-gray;
                         font-size: $__font__size__16;
                         font-weight: $__medium;
@@ -1850,12 +1850,12 @@
             @include respond-below(custom991) {
                 right: 0;
                 opacity: 1;
-                visibility: $__visible;     
-                z-index: 999;       
+                visibility: $__visible;
+                z-index: 999;
             }
         }
     }
-    
+
 
 }
 .chat-seen {
@@ -2021,10 +2021,10 @@ input.form-control.rounded-pill {
     }
 }
 .call-box {
-    .call-wrapper { 
+    .call-wrapper {
         height: $__auto;
         text-align: $__center;
-        .call-user { 
+        .call-user {
             margin-bottom: 30px;
             h4 {
                 font-size: $__font__size__24;
@@ -2194,7 +2194,7 @@ input.form-control.rounded-pill {
                     text-align: $__center;
                     min-width: 135px;
                     line-height: $__normal;
-                    
+
                     @include respond-below(custom767) {
                         @include margin-padding(null, 20px);
                     }
@@ -2266,13 +2266,13 @@ input.form-control.rounded-pill {
     }
     .balance-content {
         h6 {
-            font-size: $__font__size__18; 
+            font-size: $__font__size__18;
             font-weight: $__medium;
             color: $__white;
             margin-bottom: 0;
         }
         h4 {
-            font-size: $__font__size__28; 
+            font-size: $__font__size__28;
             font-weight: $__bold;
             color: $__white;
             margin-bottom: 0;
@@ -2280,7 +2280,7 @@ input.form-control.rounded-pill {
     }
     .refersh-icon {
         a {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             color: $__white;
             &:hover {
                 color: $__primarycolor;
@@ -2294,13 +2294,13 @@ input.form-control.rounded-pill {
     margin-bottom: 10px;
     width: 100%;
     h6 {
-        font-size: $__font__size__18; 
+        font-size: $__font__size__18;
         font-weight: $__medium;
         color: $__black-gray;
         margin-bottom: 5px;
     }
     p {
-        font-size: $__font__size__14; 
+        font-size: $__font__size__14;
         color: $__dark__blues;
         margin-bottom: 0;
     }
@@ -2350,7 +2350,7 @@ input.form-control.rounded-pill {
 }
 .wallet-btn {
     .btn {
-        font-size: $__font__size__16; 
+        font-size: $__font__size__16;
         font-weight: $__medium;
         color: $__white;
         background: $__secondarycolor;
@@ -2391,12 +2391,12 @@ input.form-control.rounded-pill {
             @include margin-padding(0 0 5px, 0 0 15px);
             border-bottom: 1px solid $__light__gooses;
             h4 {
-                font-size: $__font__size__20; 
+                font-size: $__font__size__20;
                 font-weight: $__medium;
                 color: $__black-gray;
-                margin-bottom: 0; 
+                margin-bottom: 0;
                 @include respond-below(custom767) {
-                    font-size: $__font__size__18; 
+                    font-size: $__font__size__18;
                 }
             }
             a {
@@ -2446,7 +2446,7 @@ input.form-control.rounded-pill {
                             }
                         }
                         .custom_radio {
-                            margin-bottom: 0; 
+                            margin-bottom: 0;
                             .checkmark {
                                 width: 12px;
                                 height: 12px;
@@ -2462,16 +2462,16 @@ input.form-control.rounded-pill {
                             }
                         }
                         h6 {
-                            font-size: $__font__size__18; 
+                            font-size: $__font__size__18;
                             font-weight: $__medium;
                             color: $__black-gray;
-                            margin-bottom: 5px; 
+                            margin-bottom: 5px;
                             @include respond-below(custom767) {
-                                font-size: $__font__size__16; 
+                                font-size: $__font__size__16;
                             }
                         }
                         p {
-                            margin-bottom: 0; 
+                            margin-bottom: 0;
                         }
                         .dropdown-action {
                             .dropdown-toggle {
@@ -2498,7 +2498,7 @@ input.form-control.rounded-pill {
                                 &:hover {
                                     color: $__sandstone;
                                     border: 1px solid $__blue__light;
-                                    background: $__light__grayish;  
+                                    background: $__light__grayish;
                                 }
                             }
                             .dropdown-menu {
@@ -2553,7 +2553,7 @@ input.form-control.rounded-pill {
             top: -50px;
             right: 0;
             .btn {
-                font-size: $__font__size__14; 
+                font-size: $__font__size__14;
                 font-weight: $__regular;
                 color: $__sandstone;
                 padding: 10px 15px;
@@ -2568,7 +2568,7 @@ input.form-control.rounded-pill {
                     box-shadow: inset 0 70px 0 0 $__secondarycolor;
                 }
                 @include respond-below(custom767) {
-                    padding: 8px 15px; 
+                    padding: 8px 15px;
                 }
                 i {
                     margin-right: 4px;
@@ -2586,24 +2586,24 @@ input.form-control.rounded-pill {
             margin-bottom: 15px;
         }
         p {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__medium;
             color: $__sandstone;
-            margin-bottom: 0; 
+            margin-bottom: 0;
         }
         h6 {
-            font-size: $__font__size__18; 
+            font-size: $__font__size__18;
             font-weight: $__medium;
             color: $__secondarycolor;
-            margin-bottom: 0; 
+            margin-bottom: 0;
         }
     }
     .choose-payment-info {
         h5 {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__regular;
             color: $__black-gray;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
         .choose-payment {
             display: -webkit-box;
@@ -2675,7 +2675,7 @@ input.form-control.rounded-pill {
                                 border-color: transparent;
                                 border-bottom: 0;
                                 .custom_radio {
-                                    margin-bottom: 0; 
+                                    margin-bottom: 0;
                                     .checkmark {
                                         width: 16px;
                                         height: 16px;
@@ -2702,12 +2702,12 @@ input.form-control.rounded-pill {
     }
     .modal-btn {
         .btn {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__medium;
             padding: 10px 20px;
             @include respond-below(custom767) {
-                font-size: $__font__size__14; 
-                padding: 8px 15px; 
+                font-size: $__font__size__14;
+                padding: 8px 15px;
             }
         }
         .btn-secondary {
@@ -2767,7 +2767,7 @@ input.form-control.rounded-pill {
             -ms-flex-pack: center;
         }
         h4 {
-            font-size: $__font__size__24; 
+            font-size: $__font__size__24;
             font-weight: $__semibold;
             color: $__black-gray;
             margin-bottom: 5px;
@@ -2776,7 +2776,7 @@ input.form-control.rounded-pill {
             }
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__regular;
             color: $__sandstone;
             max-width: 310px;
@@ -2790,7 +2790,7 @@ input.form-control.rounded-pill {
     .modal-form-group {
         margin-bottom: 15px;
         label {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__medium;
             color: $__black-gray;
             margin-bottom: 5px;
@@ -2821,13 +2821,13 @@ input.form-control.rounded-pill {
             }
         }
         .custom_check {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__regular;
             color: $__gray__lightdark;
             margin-bottom: 0;
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__regular;
             color: $__sandstone;
             margin-bottom: 0;
@@ -2852,7 +2852,7 @@ input.form-control.rounded-pill {
             @include margin-padding(null, 0 0 15px);
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__sandstone;
             margin-bottom: 0;
             span {
@@ -2909,7 +2909,7 @@ input.form-control.rounded-pill {
             }
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__sandstone;
             margin-bottom: 0;
         }
@@ -2918,7 +2918,7 @@ input.form-control.rounded-pill {
         background: rgba(31, 188, 47, 0.15);
         padding: 10px;
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__success__light;
             margin-bottom: 0;
         }
@@ -2926,7 +2926,7 @@ input.form-control.rounded-pill {
     .deactive-content {
         margin-bottom: 15px;
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__sandstone;
             margin-bottom: 0;
         }
@@ -2954,7 +2954,7 @@ input.form-control.rounded-pill {
                     }
                 }
                 p {
-                    font-size: $__font__size__14; 
+                    font-size: $__font__size__14;
                     color: $__sandstone;
                     margin-bottom: 0;
                 }
@@ -2967,7 +2967,7 @@ input.form-control.rounded-pill {
             @include margin-padding(0 0 30px, 30px);
             @include respond-below(custom991) {
                 @include margin-padding(0 0 20px, 20px 20px 0);
-            } 
+            }
             &:before {
                 content: '';
                 background: url(../../img/bg/invoice.png) no-repeat;
@@ -2983,7 +2983,7 @@ input.form-control.rounded-pill {
                 @include respond-below(custom991) {
                     border-right: 0;
                     margin-bottom: 20px;
-                } 
+                }
                 h6 {
                     font-size: $__font__size__18;
                     font-weight: $__medium;
@@ -3052,7 +3052,7 @@ input.form-control.rounded-pill {
                     font-size: $__font__size__18;
                     color: $__gray;
                     margin-bottom: 18px;
-                }            
+                }
                 .invocie-note {
                     border: 2px dashed $__grey;
                     border-radius: 4px;
@@ -3121,7 +3121,7 @@ input.form-control.rounded-pill {
                 }
             }
         }
-        .invoice-note-footer {   
+        .invoice-note-footer {
             .invocie-note {
                 @include margin-padding(0 0 30px, null);
                 @include respond-below(custom767) {
@@ -3141,7 +3141,7 @@ input.form-control.rounded-pill {
                     color: $__gray;
                     margin-bottom: 0;
                 }
-            }     
+            }
             .invoice-sign {
                 float: $__right;
                     @include respond-below(custom575) {
@@ -3184,7 +3184,7 @@ input.form-control.rounded-pill {
     text-align: center;
     .delete-header {
         h4 {
-            font-size: $__font__size__24; 
+            font-size: $__font__size__24;
             font-weight: $__semibold;
             color: $__black-gray;
             margin-bottom: 5px;
@@ -3193,7 +3193,7 @@ input.form-control.rounded-pill {
             }
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__regular;
             color: $__sandstone;
             max-width: 310px;
@@ -3220,7 +3220,7 @@ input.form-control.rounded-pill {
                     margin-bottom: 0;
                 }
                 a {
-                    font-size: $__font__size__16; 
+                    font-size: $__font__size__16;
                     font-weight: $__regular;
                     color: $__sandstone;
                     border-radius: 5px;
@@ -3304,7 +3304,7 @@ input.form-control.rounded-pill {
             p {
                 font-size: $__font__size__16;
                 color: $__sandstone;
-                margin-bottom: 0;  
+                margin-bottom: 0;
             }
         }
         .profile-inner {
@@ -3381,7 +3381,7 @@ input.form-control.rounded-pill {
             .profile-form-group {
                 margin-bottom: 15px;
                 label {
-                    font-size: $__font__size__14; 
+                    font-size: $__font__size__14;
                     font-weight: $__medium;
                     color: $__black-gray;
                     margin-bottom: 5px;
@@ -3425,12 +3425,12 @@ input.form-control.rounded-pill {
     .profile-submit-btn {
         text-align: right;
         .btn {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__medium;
             padding: 8px 20px;
             @include respond-below(custom767) {
-                font-size: $__font__size__14; 
-                padding: 8px 15px; 
+                font-size: $__font__size__14;
+                padding: 8px 15px;
             }
         }
         .btn-secondary {
@@ -3474,7 +3474,7 @@ input.form-control.rounded-pill {
         -ms-flex-pack: space-between;
         margin-bottom: 15px;
         h5 {
-            font-size: $__font__size__15; 
+            font-size: $__font__size__15;
             font-weight: $__medium;
             color: $__secondarycolor;
             margin-bottom: 0;
@@ -3534,24 +3534,24 @@ input.form-control.rounded-pill {
                     display: $__block;
                     background-color: rgba(0, 0, 0, 0.25);
                     height: 10px;
-                    width: 10px; 
+                    width: 10px;
                     @include transform(translate(3px, -50%));
                     @include position($__absolute,null,null,null,0);
-                    @include rounded(50%); 
+                    @include rounded(50%);
                     @include position($__absolute,50%,null,null,0);
                     @include transition(all 0.2s ease);
-                } 
+                }
             }
         }
     }
     .security-content {
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__sandstone;
             margin-bottom: 15px;
         }
         .badge-light-success {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             font-weight: $__medium;
             padding: 5px;
             border-radius: 5px;
@@ -3567,13 +3567,13 @@ input.form-control.rounded-pill {
     }
     .security-btn {
         .btn {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__medium;
             padding: 3px 20px;
             border: 0;
             @include respond-below(custom767) {
-                font-size: $__font__size__14; 
-                padding: 3px 15px; 
+                font-size: $__font__size__14;
+                padding: 3px 15px;
             }
         }
         .btn-secondary {
@@ -3631,7 +3631,7 @@ input.form-control.rounded-pill {
         -webkit-justify-content: space-between;
         -ms-flex-pack: space-between;
         h5 {
-            font-size: $__font__size__18; 
+            font-size: $__font__size__18;
             font-weight: $__medium;
             color: $__secondarycolor;
             margin-bottom: 0;
@@ -3694,13 +3694,13 @@ input.form-control.rounded-pill {
                     display: $__block;
                     background-color: rgba(0, 0, 0, 0.25);
                     height: 10px;
-                    width: 10px; 
+                    width: 10px;
                     @include transform(translate(3px, -50%));
                     @include position($__absolute,null,null,null,0);
-                    @include rounded(50%); 
+                    @include rounded(50%);
                     @include position($__absolute,50%,null,null,0);
                     @include transition(all 0.2s ease);
-                } 
+                }
             }
         }
     }
@@ -3719,7 +3719,7 @@ input.form-control.rounded-pill {
             padding-bottom: 5px;
         }
         h5 {
-            font-size: $__font__size__18; 
+            font-size: $__font__size__18;
             font-weight: $__medium;
             color: $__black-gray;
             margin-bottom: 15px;
@@ -3760,7 +3760,7 @@ input.form-control.rounded-pill {
             margin-right: 10px;
         }
         h5 {
-            font-size: $__font__size__18; 
+            font-size: $__font__size__18;
             font-weight: $__medium;
             color: $__secondarycolor;
             margin-bottom: 4px;
@@ -3769,7 +3769,7 @@ input.form-control.rounded-pill {
             }
         }
         p {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             color: $__sandstone;
             margin-bottom: 0;
             @include respond-below(custom767) {
@@ -3831,13 +3831,13 @@ input.form-control.rounded-pill {
                     display: $__block;
                     background-color: rgba(0, 0, 0, 0.25);
                     height: 10px;
-                    width: 10px; 
+                    width: 10px;
                     @include transform(translate(3px, -50%));
                     @include position($__absolute,null,null,null,0);
-                    @include rounded(50%); 
+                    @include rounded(50%);
                     @include position($__absolute,50%,null,null,0);
                     @include transition(all 0.2s ease);
-                } 
+                }
             }
         }
     }
@@ -3917,25 +3917,25 @@ input.form-control.rounded-pill {
                     display: $__block;
                     background-color: rgba(0, 0, 0, 0.25);
                     height: 10px;
-                    width: 10px; 
+                    width: 10px;
                     @include transform(translate(3px, -50%));
                     @include position($__absolute,null,null,null,0);
-                    @include rounded(50%); 
+                    @include rounded(50%);
                     @include position($__absolute,50%,null,null,0);
                     @include transition(all 0.2s ease);
-                } 
+                }
             }
         }
     }
     .integration-content {
         h5 {
-            font-size: $__font__size__16; 
+            font-size: $__font__size__16;
             font-weight: $__medium;
             color: $__black-gray;
             margin-bottom: 10px;
         }
         p {
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
             color: $__sandstone;
             margin-bottom: 0;
         }
@@ -3977,7 +3977,7 @@ input.form-control.rounded-pill {
         height: 40px;
         .select2-selection__rendered {
             color: $__black-gray;
-            font-size: $__font__size__14; 
+            font-size: $__font__size__14;
         }
         .select2-selection__arrow b {
             border-color: $__black-gray;
