@@ -489,6 +489,12 @@ export const routes: Routes = [
   //FrontEnd Components
     { path: '', loadComponent: () => import('./features/features.component').then((m) => m.FeaturesComponent),
       children:[
+        //Vehicle
+          { path: 'vehicles', loadComponent: () => import('./features/listings/listings.component').then((m) => m.VehiclesComponent),
+            children:[
+                { path: 'add-vehicle', loadComponent: () => import('./features/listings/add-listing/add-listing.component').then((m) => m.AddListingComponent )},
+            ]
+          }
         
           { path: '', loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
             children:[
@@ -500,7 +506,7 @@ export const routes: Routes = [
             ]
           },
           //Listing
-          { path: 'listings', loadComponent: () => import('./features/listings/listings.component').then((m) => m.ListingsComponent),
+          { path: 'listings', loadComponent: () => import('./features/listings/listings.component').then((m) => m.VehiclesComponent),
             children:[
                 { path: 'listing-details', loadComponent: () => import('./features/listings/listing-details/listing-details.component').then((m) => m.ListingDetailsComponent),},
                 { path: 'listing-grid', loadComponent: () => import('./features/listings/listing-grid/listing-grid.component').then((m) => m.ListingGridComponent),},
