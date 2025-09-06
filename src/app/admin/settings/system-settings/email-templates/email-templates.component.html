@@ -1,0 +1,361 @@
+<div class="card">
+    <div class="card-header">
+        <h5 class="fw-bold">System Settings</h5>
+    </div>
+    <div class="card-body">
+        
+        <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
+            <div class="d-flex align-items-center flex-wrap row-gap-3">
+                <h6 class="fw-bold mb-0">Email Templates</h6> 
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_email" class="btn btn-primary d-flex align-items-center"><i class="ti ti-plus me-2"></i>Add New Template</a>
+            </div>
+        </div>
+        <div class="custom-datatable-filter table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>TEMPLATE NAME</th>
+                        <th>CREATED ON</th>
+                        <th>STATUS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">Welcome Email</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">24 Jan 2025</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">Booking Confirmation</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">27 Dec 2024</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">Booking Reminder</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">19 Dec 2024</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">Booking Cancellation</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">08 Dec 2024</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">Seasonal Promotions & Discounts</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">25 Nov 2024</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#view_email">System Update</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">20 Nov 2024</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_email"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_email"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="add_email">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Create Template</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-0">
+                            <label class="form-label">Template Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Create New</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="edit_email">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Edit Template</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="border br-10 p-2 mb-3">
+                            <p>
+                                Hi <span class="text-info">{{'{'}}Customer Name{{'}'}}</span>,<br>
+                                Welcome to <span class="text-info">{{'{'}}Company Name{{'}'}}</span>!
+                                
+                            </p>
+                            <p>
+                                We’re thrilled to have you as part of our community and are excited to support you in finding the perfect car rental solution. Thank you for choosing us – we truly appreciate your trust and confidence.
+                            </p>
+                            <p>
+                                At <span class="text-info">{{'{'}}Company Name{{'}'}}</span>, our mission is to make your experience as smooth and efficient as possible. Whether you’re looking for the perfect vehicle or need assistance with booking, we’re here to help you every step of the way.
+                                If you have any questions or need help, our dedicated support team is always ready to assist you. Feel free to reach out at any time – we’re committed to ensuring you have the best experience possible
+                            </p>
+                            <p>
+                                Thank you again for choosing <span class="text-info">{{'{'}}Company Name{{'}'}}</span>. We’re excited to be part of your journey and look forward to supporting you throughout your rental experience.
+                            </p>
+                            <p>
+                                Best <br>
+                                The <span class="text-info">{{'{'}}Company Name{{'}'}}</span>Team
+                            </p>
+                        </div>
+                        <label class="form-label">Tags</label>
+                        <ul class="d-flex flex-wrap gap-2">
+                            <li><span class="text-info">{{'{'}}Company Name{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Booking Number{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Booking Date{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Car Name{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Invoice ID{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Receipt ID{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Pickup Location{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Pickup Date{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Drop-off Location{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Drop-off Date{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Rental Price{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Website URL{{'}'}}</span></li>
+                            <li><span class="text-info">{{'{'}}Discount Code{{'}'}}</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div class="form-check form-check-md form-switch me-2">
+                    <label class="form-check-label form-label mt-0 mb-0">
+                    <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked="">
+                    Status
+                    </label>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="add_email">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Create Template</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-0">
+                            <label class="form-label">Template Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Create New</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="view_email">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Preview Template</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            Hi <span class="text-info">{{'{'}}Customer Name{{'}'}}</span>,<br>
+                            Welcome to <span class="text-info">{{'{'}}Company Name{{'}'}}</span>!
+                            
+                        </p>
+                        <p>
+                            We’re thrilled to have you as part of our community and are excited to support you in finding the perfect car rental solution. Thank you for choosing us – we truly appreciate your trust and confidence.
+                        </p>
+                        <p>
+                            At <span class="text-info">{{'{'}}Company Name{{'}'}}</span>, our mission is to make your experience as smooth and efficient as possible. Whether you’re looking for the perfect vehicle or need assistance with booking, we’re here to help you every step of the way.
+If you have any questions or need help, our dedicated support team is always ready to assist you. Feel free to reach out at any time – we’re committed to ensuring you have the best experience possible
+                        </p>
+                        <p>
+                            Thank you again for choosing <span class="text-info">{{'{'}}Company Name{{'}'}}</span>. We’re excited to be part of your journey and look forward to supporting you throughout your rental experience.
+                        </p>
+                        <p>
+                            Best <br>
+                            The <span class="text-info">{{'{'}}Company Name{{'}'}}</span>Team
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

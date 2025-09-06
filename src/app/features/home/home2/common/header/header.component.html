@@ -1,0 +1,190 @@
+<!-- Hero Sec Main -->
+
+    <!-- Header -->
+    <header class="header header-two " [ngClass]="{'header-fixed':isFixed}">
+        <div class="header-two-top">
+            <div class="container">
+                <div class="header-top-items">
+                    <ul class="header-address">
+                        <li><span><i class="bx bxs-phone"></i></span>(+088) 123 456 7890</li>
+                        <li><span><i class="bx bx-map"></i></span>5617 Glassford Street New York, NY 10000, USA</li>
+                    </ul>
+                    <div class="header-top-right d-flex align-items-center">
+                        <div class="header-top-flag-drops d-flex align-items-center">
+                            <div class="header-top-drpodowns me-3">
+                                <div class="dropdown header-dropdown country-flag">
+                                    <a class="dropdown-toggle nav-tog" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                        <img src="assets/img/flags/us.png" alt="Img">English
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="javascript:void(0);" class="dropdown-item">
+                                            <img src="assets/img/flags/fr.png" alt="Img">French
+                                        </a>
+                                        <a href="javascript:void(0);" class="dropdown-item">
+                                            <img src="assets/img/flags/es.png" alt="Img">Spanish
+                                        </a>
+                                        <a href="javascript:void(0);" class="dropdown-item">
+                                            <img src="assets/img/flags/de.png" alt="Img">German
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-top-drpodowns">
+                                <div class="dropdown header-dropdown country-flag">
+                                    <a class="dropdown-toggle nav-tog" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                        <i class="bx bx-globe me-2"></i>USD
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="javascript:void(0);" class="dropdown-item">
+                                            Euro
+                                        </a>
+                                        <a href="javascript:void(0);" class="dropdown-item">
+                                            INR
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-top-social-links">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-behance"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-pinterest-p"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg header-nav">
+                <div class="navbar-header">
+                    <a id="mobile_btn" href="javascript:void(0);" (click)="toggleSidebar()">
+                        <span class="bar-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                    <a [routerLink]="routes.home" class="navbar-brand logo">
+                        <img src="assets/img/logo-2.svg" class="img-fluid" alt="Logo">
+                    </a>
+                    <a [routerLink]="routes.home" class="navbar-brand logo-small">
+                        <img src="assets/img/logo-small.png" class="img-fluid" alt="Logo">
+                    </a>					
+                </div>
+                <div class="main-menu-wrapper">
+                    <div class="menu-header">
+                      <a [routerLink]="routes.home" class="menu-logo">
+                        <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+                      </a>
+                      <a
+                        (click)="hideSidebar()"
+                        id="menu_close"
+                        class="menu-close"
+                        href="javascript:void(0);"
+                        >
+                        <i class="fas fa-times"></i
+                        ></a>
+                      </div>
+                      <ul class="main-nav">
+          @for (mainMenus of header; track mainMenus;let i = $index) {
+          @if (mainMenus.separateRoute === false && mainMenus.tittle === 'Home') {
+          <li class="has-submenu megamenu" routerLinkActive="active" (mouseenter)="isHovered = true"
+            (mouseleave)="isHovered = false">
+            <a [routerLink]="mainMenus.routes" [ngClass]="{'submenu':isDropdownOpen}" (click)="openSubMenu()">{{mainMenus.tittle}} <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu mega-submenu" [ngStyle]="{'display':isDropdownOpen?'block':''}">
+              <li>
+                <div class="megamenu-wrapper">
+                  <div class="row">
+                    @for(menu of mainMenus.menu;track menu){
+                    <div class="col-lg-3">
+                      <div class="single-demo" routerLinkActive="active">
+                        <div class="demo-img">
+                          <a [routerLink]="menu.routes">
+                            <img src="assets/img/menu/{{menu.img}}" class="img-fluid " alt="img">
+                          </a>
+                        </div>
+                        <div class="demo-info">
+                          <a [routerLink]="menu.routes">{{menu.menuValue}}<span [ngClass]="menu.badge==='Hot'?'hot':'new'">{{menu.badge}}</span> </a>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          }
+          @if (mainMenus.separateRoute === true) {
+          <li routerLinkActive="active">
+            <a [routerLink]="mainMenus.routes">{{ mainMenus.tittle }}</a>
+          </li>
+          }
+          @if (mainMenus.separateRoute === false && mainMenus.tittle !== 'Home') {
+          <li class="has-submenu" routerLinkActive="active">
+            <a href="javascript:void(0);" (click)="mainMenus.showAsTab = !mainMenus.showAsTab" [ngClass]="{'submenu':openDropdownIndex === i}" (click)="toggleSubMenu(i)">{{ mainMenus.tittle }} <i
+                class="fas fa-chevron-down"></i></a>
+            <ul class="submenu"  [ngStyle]="{'display':openDropdownIndex === i?'block':''}">
+              @for (menu of mainMenus.menu; track menu) {
+              @if (menu.hasSubRoute === false) {
+              <li routerLinkActive="active">
+                <a [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+              </li>
+              }
+              @if (menu.hasSubRoute === true) {
+              <li class="has-submenu" routerLinkActive="active">
+                <a (click)="menu.showSubRoute = !menu.showSubRoute" [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+                <ul class="submenu" [ngClass]="{
+                            'd-block': menu.showSubRoute === true
+                          }">
+                  @for (subMenu of menu.subMenus; track subMenu) {
+                  <li routerLinkActive="active">
+                    <a [routerLink]="subMenu.routes">{{
+                      subMenu.menuValue
+                      }}</a>
+                  </li>
+                  }
+                </ul>
+              </li>
+              }
+              }
+            </ul>
+          </li>
+          }
+          }
+        </ul>
+                      </div>
+                <ul class="nav header-navbar-rht">
+                    <li class="nav-item">
+                        <a class="nav-link login-link" [routerLink]="routes.login"><span><i class="bx bx-user me-2"></i></span>Sign In / </a>
+                        <a class="nav-link login-link ms-1" [routerLink]="routes.register">Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-reg" [routerLink]="routes.listingList"><span><i class="bx bx-plus-circle"></i></span>Add Listing</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /Header -->
+
+   
+
+<!-- /Hero Sec Main -->

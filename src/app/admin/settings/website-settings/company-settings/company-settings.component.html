@@ -1,0 +1,169 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Website Settings</h5>
+    </div>
+    <form>
+        <div class="card-body">
+            <div class="localization-content mb-3">
+                <div>
+                    <h6 class="mb-3">Company Settings</h6>
+                    <div class="mb-3">
+                        <p class="fw-medium mb-0 text-gray-9 mb-1">Profile Photo</p>
+                        <div class="d-flex align-items-center flex-wrap row-gap-3  mb-3">                                                
+                            <div class="d-flex align-items-center justify-content-center avatar avatar-xxl  me-3 flex-shrink-0 text-dark frames">
+                                <img src="assets/admin/img/settings/company-logo-01.jpg" class="rounded-circle" alt="img">
+                                <span class="avatar-badge avatar-badge-end bg-white p-1"><i class="ti ti-trash text-danger fs-12"></i></span>
+                            </div>                                              
+                            <div class="profile-upload">
+                                <div class="profile-uploader d-flex align-items-center">
+                                    <div class="drag-upload-btn btn btn-md btn-dark">
+                                        <i class="ti ti-photo-up fs-14"></i>
+                                        Change
+                                        <input type="file" class="form-control image-sign" multiple="">
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <p class="fs-14">Recommended size is 500px x 500px</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="localization-content mb-3">
+                <h6 class="mb-3">Basic Information</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Organization Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Owner Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number <span class="text-danger">*</span></label>
+                            <input id="phone" type="tel" class="form-control pass-input" placeholder="(201) 555-0123"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Industry <span class="text-danger">*</span></label>
+                             <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Peer-to-Peer Car Renta</mat-option>
+                                <mat-option value="1">Electric and Hybrid Vehicles</mat-option>
+                                <mat-option value="1">Subscription Services</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Team Size <span class="text-danger">*</span></label>
+                             <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">1-10</mat-option>
+                                <mat-option value="1">11-15</mat-option>
+                                <mat-option value="1">50+</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                    <div>
+                </div>
+                </div>
+            </div>
+            <div class="localization-content mb-3">
+                <h6 class="mb-3">Address Information</h6>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Address Line</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Country</label>
+                             <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">United States</mat-option>
+                                <mat-option value="1">Canada</mat-option>
+                                <mat-option value="1">Germany</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>   
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                             <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">California</mat-option>
+                                <mat-option value="1">New York</mat-option>
+                                <mat-option value="1">Texas</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>   
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                             <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Los Angeles</mat-option>
+                                <mat-option value="1">New York City</mat-option>
+                                <mat-option value="1">Houston</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div>
+                </div>
+                </div>
+            </div>
+            <div class="mb-0">
+                <h6 class="mb-1">Transfer Ownership</h6>
+                <p class="mb-2">As the current owner of this workspace, you must select an existing admin to transfer ownership.</p>
+                <div class="row">  
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="w-100 me-3">
+                                <label class="form-label">Owner</label>
+                                 <mat-select class="custom-mat-select select" placeholder="Select">
+                                    <mat-option value="1">Select</mat-option>
+                                    <mat-option value="1">Adrian Saurez  </mat-option>
+                                    <mat-option value="1">Jessica David</mat-option>
+                                    <mat-option value="1">Hendrita Margerate</mat-option>
+                                    <mat-option value="1">Silvaa Andrew</mat-option>
+                                </mat-select>
+                            </div>
+                            <a href="javascript:void(0);" class="btn btn-primary mb-1">Update</a>
+                        </div>
+                    </div>
+                    <div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </form>
+</div>

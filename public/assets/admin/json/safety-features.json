@@ -1,0 +1,46 @@
+{
+    "data": [
+      {
+        "name": "Active Head Restraints",
+        "status": "Active"
+      },
+      {
+        "name": "Adaptive Headlights",
+        "status": "Active"
+      },
+      {
+        "name": "Blind-spot warning",
+        "status": "Inactive"
+      },
+      {
+        "name": "Brake Assist",
+        "status": "Inactive"
+      },
+      {
+        "name": "Lane Keeping Assist",
+        "status": "Active"
+      },
+      {
+        "name": "Parking Assist Systems",
+        "status": "Active"
+      },
+      {
+        "name": "Forward Collision Warning",
+        "status": "Inactive"
+      },
+      {
+        "name": "Side View Camera",
+        "status": "Active"
+      },
+      {
+        "name": "Pedestrian Detection",
+        "status": "Active"
+      },
+      {
+        "name": "Backup Camera",
+        "status": "Active"
+      }
+    ],
+    "totalData": 10
+  }
+  

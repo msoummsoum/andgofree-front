@@ -1,0 +1,75 @@
+{
+    "data":[
+        {
+          "name": "Child Seats",
+          "price": "$120",
+          "type": "One Time",
+          "noOfCars": "12",
+          "status": "Active"
+        },
+        {
+          "name": "GPS Navigation System",
+          "price": "$30",
+          "type": "Per Day",
+          "noOfCars": "12",
+          "status": "Active"
+        },
+        {
+          "name": "Roof Box Storage",
+          "price": "$100",
+          "type": "One Time",
+          "noOfCars": "15",
+          "status": "Active"
+        },
+        {
+          "name": "Camping Equipment",
+          "price": "$130",
+          "type": "One Time",
+          "noOfCars": "8",
+          "status": "Active"
+        },
+        {
+          "name": "Glass & Tire Protection",
+          "price": "$150",
+          "type": "One Time",
+          "noOfCars": "16",
+          "status": "Inactive"
+        },
+        {
+          "name": "Mini Refrigerator",
+          "price": "$80",
+          "type": "One Time",
+          "noOfCars": "22",
+          "status": "Inactive"
+        },
+        {
+          "name": "Wi-Fi Hotspot",
+          "price": "$30",
+          "type": "Per Day",
+          "noOfCars": "10",
+          "status": "Active"
+        },
+        {
+          "name": "Express Check-in/Check-out",
+          "price": "$200",
+          "type": "One Time",
+          "noOfCars": "25",
+          "status": "Active"
+        },
+        {
+          "name": "Air Purifier",
+          "price": "$40",
+          "type": "Per Day",
+          "noOfCars": "25",
+          "status": "Inactive"
+        },
+        {
+          "name": "Sanitization Kit",
+          "price": "$60",
+          "type": "One Time",
+          "noOfCars": "18",
+          "status": "Active"
+        }
+      ],
+      "totalData":10
+}

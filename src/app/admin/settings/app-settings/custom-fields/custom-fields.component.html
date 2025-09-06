@@ -1,0 +1,306 @@
+<div class="card h-100">
+    <div class="card-header">
+        <h5 class="fw-bold">App Settings</h5>
+    </div>
+    <div class="card-body">
+        <h6 class="fw-bold mb-3">Custom Fields</h6>
+        <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
+            <div class="d-flex align-items-center flex-wrap row-gap-3">
+                <div class="top-search me-2">
+                    <div class="top-search-group">
+                        <span class="input-icon">
+                            <i class="ti ti-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div> 
+            </div>
+            <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_field" class="btn btn-primary d-flex align-items-center"><i class="ti ti-plus me-2"></i>Add New Field</a>
+            </div>
+        </div>
+        <div class="custom-datatable-filter table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>MODULE</th>
+                        <th>LABEL</th>
+                        <th>TYPE</th>
+                        <th>DEFAULT VALUE</th>
+                        <th>REQUIRED/DISABLE</th>
+                        <th>STATUS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);">Drivers</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">Total Rides</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Number</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">0</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Required</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_field"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_field"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);">Maintenance</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">Fuel</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Number</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">0</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Required</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-danger-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Inactive
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_field"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_field"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium"><a href="javascript:void(0);">Inspection</a></h6>
+                        </td>
+                        <td>
+                            <p class="text-dark">Inspection Type</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Select</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Routine</p>
+                        </td>
+                        <td>
+                            <p class="text-dark">Required</p>
+                        </td>
+                        <td>
+                            <span class="badge badge-success-transparent d-inline-flex align-items-center badge-sm">
+                                <i class="ti ti-point-filled me-1"></i>Active
+                            </span>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_field"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_field"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+<div class="modal fade" id="add_field">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Create Custom Field</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label class="form-label">Module <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Drivers</mat-option>
+                                <mat-option value="1">Maintenance</mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Input Type <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Number</mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Label <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Default Value <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="d-flex align-items-center gap-2 ">
+                            <p class="text-gray-9 me-2 mb-0">Required</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Yes
+                                </label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    No
+                                </label>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Create New</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="edit_field">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Edit Custom Field</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <label class="form-label">Module <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1" selected>Drivers</mat-option>
+                                <mat-option value="1">Maintenance</mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Input Type <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1" selected>Number</mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Label <span class="text-danger">*</span></label>
+                            <input type="text" value="Total Rides" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Default Value <span class="text-danger">*</span></label>
+                            <input type="text" value="0" class="form-control">
+                        </div>
+                        <div class="d-flex align-items-center gap-2 ">
+                            <p class="text-gray-9 me-2 mb-0">Required</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Yes
+                                </label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    No
+                                </label>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div class="form-check form-check-md form-switch me-2">
+                    <label class="form-check-label form-label mt-0 mb-0">
+                    <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked="">
+                    Status
+                    </label>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Delete  -->
+<div class="modal fade" id="delete_field">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <form>
+                    <span class="avatar avatar-lg bg-transparent-danger rounded-circle text-danger mb-3">
+                        <i class="ti ti-trash-x fs-26"></i>
+                    </span>
+                    <h4 class="mb-1">Delete Custom Fields</h4>
+                    <p class="mb-3">Are you sure you want to delete custom fields?</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Yes, Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Delete -->	

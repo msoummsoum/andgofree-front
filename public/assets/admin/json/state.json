@@ -1,0 +1,65 @@
+{
+    "data" : [        
+        {
+            "STATENAME": "California",
+            "IMAGE": "us.png",
+            "CREATEDDATE": "United States",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "New York",
+            "IMAGE": "us.png",
+            "CREATEDDATE": "United States",
+            "STATUS": "Inactive"
+          },
+          {
+            "STATENAME": "Texas",
+            "IMAGE": "us.png",
+            "CREATEDDATE": "United States",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "Baveria",
+            "IMAGE": "de.png",
+            "CREATEDDATE": "Germany",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "Quebec",
+            "IMAGE": "ca.png",
+            "CREATEDDATE": "Canada",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "Ontario",
+            "IMAGE": "ca.png",
+            "CREATEDDATE": "Canada",
+            "STATUS": "Inactive"
+          },
+          {
+            "STATENAME": "Florida",
+            "IMAGE": "us.png",
+            "CREATEDDATE": "United States",
+            "STATUS": "Inactive"
+          },
+          {
+            "STATENAME": "Berlin",
+            "IMAGE": "de.png",
+            "CREATEDDATE": "Germany",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "Victoria",
+            "IMAGE": "au.png",
+            "CREATEDDATE": "Australia",
+            "STATUS": "Active"
+          },
+          {
+            "STATENAME": "Gauteng",
+            "IMAGE": "eg.png",
+            "CREATEDDATE": "Egypt",
+            "STATUS": "Active"
+          }  
+    ],
+    "totalData": 10
+}

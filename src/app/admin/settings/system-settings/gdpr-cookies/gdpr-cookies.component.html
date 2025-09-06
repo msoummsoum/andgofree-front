@@ -1,0 +1,100 @@
+<div class="card">
+    <div class="card-header">
+        <h5>System Settings</h5>
+    </div>
+    <form>
+        <div class="card-body">
+            <div class="sms-gateway">
+                <h6 class="mb-3">GDPR Cookies</h6>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Cookies Content Text <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div>
+                            <div class="editor">
+                                <ngx-editor [editor]="editor">
+                                    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar" >
+                                    </ngx-editor-menu>
+                                 </ngx-editor>
+                            </div>
+                            <p class="mt-2">Maximum 60 Words</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Cookies Position <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Right</mat-option>
+                                <mat-option value="1">Left</mat-option>
+                            </mat-select>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Agree Button Text <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div>
+                            <input type="text" class="form-control">
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Decline Button Text <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div>
+                            <input type="text" class="form-control">
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Show Decline Button <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check form-check-md form-switch me-2">
+                            <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-xl-4 d-flex">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h6 class="fw-medium fs-14">Links for Cookies Page <span class="text-danger">*</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div>
+                            <input type="text" class="form-control">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-end">
+                <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </form>
+</div>

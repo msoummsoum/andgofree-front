@@ -1,0 +1,65 @@
+{
+    "data" : [        
+        {
+            "PAGE": "Home",
+            "PAGESLUG": "/home",
+            "LASTUPDATED": "24 Jan 2025",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "About Us",
+            "PAGESLUG": "/about-us",
+            "LASTUPDATED": "19 Dec 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "PAGE": "Contact",
+            "PAGESLUG": "/contact",
+            "LASTUPDATED": "11 Dec 2024",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "Blog",
+            "PAGESLUG": "/blog",
+            "LASTUPDATED": "29 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "FAQ",
+            "PAGESLUG": "/faq",
+            "LASTUPDATED": "03 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "Privacy Policy",
+            "PAGESLUG": "/privacy-policy",
+            "LASTUPDATED": "31 Oct 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "PAGE": "Terms & Conditions",
+            "PAGESLUG": "/terms",
+            "LASTUPDATED": "15 Oct 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "PAGE": "Support",
+            "PAGESLUG": "/support",
+            "LASTUPDATED": "26 Sep 2024",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "Testimonials",
+            "PAGESLUG": "/testimonials",
+            "LASTUPDATED": "01 Sep 2024",
+            "STATUS": "Published"
+          },
+          {
+            "PAGE": "Rental Policies",
+            "PAGESLUG": "/rental-policy",
+            "LASTUPDATED": "15 Aug 2024",
+            "STATUS": "Published"
+          }    
+    ],
+    "totalData": 10
+}

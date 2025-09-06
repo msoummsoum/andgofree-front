@@ -1,0 +1,47 @@
+
+    {
+        "data": [
+          {
+            "name": "Sedan",
+            "status": "Active"
+          },
+          {
+            "name": "Hatchback",
+            "status": "Active"
+          },
+          {
+            "name": "SUV",
+            "status": "Inactive"
+          },
+          {
+            "name": "Coupes",
+            "status": "Active"
+          },
+          {
+            "name": "Convertible",
+            "status": "Active"
+          },
+          {
+            "name": "Pickup Truck",
+            "status": "Inactive"
+          },
+          {
+            "name": "Sport",
+            "status": "Inactive"
+          },
+          {
+            "name": "Minivan",
+            "status": "Active"
+          },
+          {
+            "name": "EV",
+            "status": "Active"
+          },
+          {
+            "name": "Wagon",
+            "status": "Active"
+          }
+        ],
+        "totalData": 10
+      }
+      

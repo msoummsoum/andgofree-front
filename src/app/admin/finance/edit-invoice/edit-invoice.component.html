@@ -1,0 +1,495 @@
+<div class="content me-4">
+    <div class="mb-3">
+        <a [routerLink]="routes.invoices" class="d-inline-flex align-items-center fw-medium"><i class="ti ti-arrow-narrow-left me-2"></i>Back to List</a>
+    </div>
+    <div class="filterbox mb-3 d-flex align-items-center invoice-title">
+        <h4 class="me-3"><i class="ti ti-menu-2 me-2"></i>Edit Invoice</h4>
+    </div>
+    <div class="card mb-0">
+        <div class="card-body">
+            <div class="border-bottom mb-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="me-lg-3">
+                            <h5 class="mb-3">Invoice Details</h5>
+                            <div class="row gx-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Invoice Number</label>
+                                        <input type="text" class="form-control" value="5432" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Car</label>
+                                        <mat-select class="custom-mat-select select" placeholder="Ferrari 458 MM">
+                                            <mat-option value="1">Select</mat-option>
+                                            <mat-option value="1">Ford Endeavour</mat-option>
+                                            <mat-option value="1">Ferrari 458 MM</mat-option>
+                                            <mat-option value="1">Ford Mustang</mat-option>
+                                            <mat-option value="1">Toyota Tacoma 4</mat-option>
+                                            <mat-option value="1">Chevrolet Truck</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">From Date</label>
+                                        <div class="input-icon-end position-relative">
+                                            <input type="text" class="form-control datetimepicker" bsDatepicker placeholder="dd/mm/yyyy">
+                                            <span class="input-icon-addon">
+                                                <i class="ti ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Due Date</label>
+                                        <div class="input-icon-end position-relative">
+                                            <input type="text" class="form-control datetimepicker" bsDatepicker placeholder="dd/mm/yyyy">
+                                            <span class="input-icon-addon">
+                                                <i class="ti ti-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Currency</label>
+                                        <mat-select class="custom-mat-select select" placeholder="Dollor">
+                                            <mat-option value="1">Select</mat-option>
+                                            <mat-option value="1">Dollor</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Status</label>
+                                        <mat-select class="custom-mat-select select" placeholder="Paid">
+                                            <mat-option value="1">Select</mat-option>
+                                            <mat-option value="1">Paid</mat-option>
+                                            <mat-option value="1">Pending</mat-option>
+                                            <mat-option value="1">Overdue</mat-option>
+                                            <mat-option value="1">Unpaid</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ms-lg-3">
+                            <h5 class="mb-3">Billing Details</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">From</label>
+                                        <mat-select class="custom-mat-select select" placeholder="Dreams Rent">
+                                            <mat-option value="1">Dreams Rent</mat-option>
+                                            <mat-option value="1">Ford Endeavour</mat-option>
+                                            <mat-option value="1">Ferrari 458 MM</mat-option>
+                                            <mat-option value="1">Ford Mustang</mat-option>
+                                            <mat-option value="1">Toyota Tacoma 4</mat-option>
+                                            <mat-option value="1">Chevrolet Truck</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <label class="form-label">To</label>
+                                            <a href="javascript:void(0);" class="text-info d-block mb-1">Add New</a>
+                                        </div>
+                                        <mat-select class="custom-mat-select select" placeholder="Andrew Simons">
+                                            <mat-option value="1">Select Customer</mat-option>
+                                            <mat-option value="1">Andrew Simons</mat-option>
+                                            <mat-option value="1">David Steiger</mat-option>
+                                            <mat-option value="1">Virginia Phu</mat-option>
+                                            <mat-option value="1">Walter Hartmann</mat-option>
+                                            <mat-option value="1">Andrea Jermaine</mat-option>
+                                        </mat-select>
+                                    </div>
+                                    <div class="bg-light border p-3 rounded mb-3">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <a href="javascript:void(0);" class="avatar avatar-lg me-2 avatar-rounded">
+                                                <img src="assets/admin/img/profiles/avatar-21.jpg" alt="">
+                                            </a>
+                                            <div>
+                                                <h6 class="fs-14"><a href="javascript:void(0);">David Seigar</a></h6>
+                                                <p>20 Cooper Square, New York, NY 10003, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 me-2 ">Contact : +447123456789</p>
+                                            <p>your123&#64;example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5 class="mb-3">Rental Details</h5>
+                <div class="table-responsive border border-gray br-10 mb-3">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th class="w-50">DESCRIPTION</th>
+                                <th>QUANTITY</th>
+                                <th>NET PRICE</th>
+                                <th>TAX</th>
+                                <th>TOTAL PRICE</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="Car Rental (Toyota Camry 2024)">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="5 Days">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="50.00">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="12.50">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="262.50">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="" class="btn btn-icon btn-sm text-danger"><i class="ti ti-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="GPS Navigation">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="1 Unit">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="10.00">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="1.50">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="11.50">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="" class="btn btn-icon btn-sm text-danger"><i class="ti ti-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="Additional Driver">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="1 Person">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="15.00">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="2.25">
+                                    </div>
+                                </td>
+                                <td class="pe-0">
+                                    <div>
+                                        <input type="text" class="form-control" value="17.25">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <a href="" class="btn btn-icon btn-sm text-danger"><i class="ti ti-trash"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                    <a href="javascript:void(0);" class="btn btn-secondary d-inline-flex align-items-center me-2"><i class="ti ti-plus me-1"></i>Add More</a>
+                    <a href="javascript:void(0);" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#link_reservation">Link Reservation</a>
+                </div>
+                <div class="border-bottom mb-3">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="me-lg-4">
+                                <h5 class="mb-3">Others</h5>
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Payment Method</label>
+                                        <mat-select class="custom-mat-select select" placeholder="Select">
+                                            <mat-option value="1">Select</mat-option>
+                                            <mat-option value="1">Bank Transfer</mat-option>
+                                            <mat-option value="1">Paypal</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Terms & Conditions <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" rows="3">The car must be returned in the same condition as rented. Additional charges may apply for damages, late returns, or excessive mileage.</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Notes <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" rows="3">All charges are final and include applicable taxes, fees, and additional costs incurred during the rental period.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="border-bottom mb-3">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <span>Subtotal</span>
+                                            <h6>$0.00</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <span>Discount (0%)</span>
+                                            <h6 class="text-danger fs-14 fw-medium">$0.00</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <span>TAX (0%)</span>
+                                            <h6>$0.00</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Total Amount </h4>
+                                        <h4>$0.00</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end align-items-center">
+                <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
+                <a href="javascript:void(0);" class="btn btn-primary">Save & Send</a>
+            </div>
+        </div>
+    </div>
+    
+</div>	
+
+	<!-- Link Reservation -->
+    <div class="modal fade" id="link_reservation">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="mb-0">Link Reservation</h5>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x fs-16"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                     <!-- Custom Data Table -->
+                     <div class="custom-datatable-filter table-responsive">
+                        <table class="table datatable">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="no-sort">ID</th>
+                                    <th>CAR</th>
+                                    <th>CUSTOMER</th>
+                                    <th>PICK UP  DETAILS</th>
+                                    <th>DROP OFF  DETAILS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a [routerLink]="routes.reservationDetails" class="text-info d-block mb-1" data-bs-dismiss="modal">#BR3466</a>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0"><img src="assets/admin/img/car/car-01.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="fs-14"><a href="javascript:void(0);">Ford Endeavour</a></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar avatar-rounded me-2 flex-shrink-0"><img src="assets/admin/img/customer/customer-01.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="mb-1 fs-14"><a href="javascript:void(0);">Reuben Keen</a></h6>
+                                                <span class="badge bg-secondary-transparent rounded-pill">Client</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">12</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Newyork </p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">13</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Newyork </p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>   
+                                <tr>
+                                    <td>
+                                        <a [routerLink]="routes.reservationDetails" class="text-info d-block mb-1" data-bs-dismiss="modal">#FR7321</a>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0"><img src="assets/admin/img/car/car-02.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="fs-14"><a href="javascript:void(0);">Ferrari 458 MM</a></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar avatar-rounded me-2 flex-shrink-0"><img src="assets/admin/img/customer/customer-02.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="mb-1 fs-14"><a href="javascript:void(0);">William Jones</a></h6>
+                                                <span class="badge bg-secondary-transparent rounded-pill">Company</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">14</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Los Angeles</p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">16</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Newyork </p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>   
+                                <tr>
+                                    <td>
+                                        <a [routerLink]="routes.reservationDetails" class="text-info d-block mb-1" data-bs-dismiss="modal">#FD8414</a>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0"><img src="assets/admin/img/car/car-03.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="fs-14"><a href="javascript:void(0);">Ford Mustang </a></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="javascript:void(0);" class="avatar avatar-rounded me-2 flex-shrink-0"><img src="assets/admin/img/customer/customer-03.jpg" alt=""></a>
+                                            <div>
+                                                <h6 class="mb-1 fs-14"><a href="javascript:void(0);">Leonard Jandreau</a></h6>
+                                                <span class="badge bg-secondary-transparent rounded-pill">Company</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">19</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Chicago </p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="border rounded text-center flex-shrink-0 p-1 me-2">
+                                                <h5 class="mb-2 fs-16">22</h5>
+                                                <span class="fw-medium fs-12 bg-light p-1 rounded-1 d-inline-block text-gray-9">Feb, 2025</span>
+                                            </div>
+                                            <div>
+                                                <p class="text-gray-9 mb-0">Newyork </p>
+                                                <span class="fs-13">01:00 PM</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>   
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Custom Data Table -->
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center">
+                        <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Create New</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Link Reservation -->

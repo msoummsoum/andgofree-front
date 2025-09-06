@@ -1,0 +1,45 @@
+{
+    "data" : [
+        {
+          "EMAIL": "andrew@example.com",
+          "DATE": "24 Jan 2025"
+        },
+        {
+          "EMAIL": "david@example.com",
+          "DATE": "19 Dec 2024"
+        },
+        {
+          "EMAIL": "phu@example.com",
+          "DATE": "11 Dec 2024"
+        },
+        {
+          "EMAIL": "walter@example.com",
+          "DATE": "29 Nov 2024"
+        },
+        {
+          "EMAIL": "jermaine@example.com",
+          "DATE": "03 Nov 2024"
+        },
+        {
+          "EMAIL": "dennis@example.com",
+          "DATE": "31 Oct 2024"
+        },
+        {
+          "EMAIL": "lan@example.com",
+          "DATE": "15 Oct 2024"
+        },
+        {
+          "EMAIL": "crump@example.com",
+          "DATE": "26 Sep 2024"
+        },
+        {
+          "EMAIL": "julie@example.com",
+          "DATE": "01 Sep 2024"
+        },
+        {
+          "EMAIL": "jean@example.com",
+          "DATE": "15 Aug 2024"
+        }
+      ],
+      "totalData": 10
+}

@@ -1,0 +1,79 @@
+<div class="table-footer">
+  <div class="d-flex justify-content-between align-items-center w-100">
+    <!-- Showing info -->
+    <div class="datatable-info">
+      <div class="dataTables_info" role="status" aria-live="polite">
+        Showing
+        {{ serialNumberArray[0] || 0 }} to
+        {{ serialNumberArray[serialNumberArray.length - 1] || 0 }} of
+        {{ totalData }} entries
+      </div>
+    </div>
+
+    <!-- Pagination controls -->
+    <div class="datatable-pagination">
+      <div class="dataTables_paginate paging_simple_numbers">
+        <ul class="pagination">
+          <!-- Prev -->
+          <li class="paginate_button page-item previous" [class.disabled]="currentPage === 1">
+            <a (click)="getMoreData('previous')" class="page-link" href="javascript:void(0);">
+              Previous
+            </a>
+          </li>
+
+          <!-- Page Numbers -->
+          @for (item of pageNumberArray; track item; let i = $index) {
+            @if (i === 0 && currentPage > 3 && pageNumberArray.length > 6) {
+              <!-- First Page -->
+              <li class="paginate_button page-item">
+                <a (click)="moveToPage(1)" class="page-link" href="javascript:void(0);">1</a>
+              </li>
+              <!-- Ellipsis -->
+              <li class="paginate_button page-item disabled">
+                <span class="page-link">...</span>
+              </li>
+            }
+
+            @if (
+              item === 1 ||
+              item === pageNumberArray.length ||
+              (item >= currentPage - 1 && item <= currentPage + 1) ||
+              pageNumberArray.length <= 6
+            ) {
+              <li class="paginate_button page-item" [class.active]="item === currentPage">
+                <a (click)="moveToPage(item)" class="page-link" href="javascript:void(0);">
+                  {{ item }}
+                </a>
+              </li>
+            }
+
+            @if (
+              i === pageNumberArray.length - 1 &&
+              currentPage < pageNumberArray.length - 2 &&
+              pageNumberArray.length > 6
+            ) {
+              <!-- Ellipsis -->
+              <li class="paginate_button page-item disabled">
+                <span class="page-link">...</span>
+              </li>
+              <!-- Last Page -->
+              <li class="paginate_button page-item">
+                <a (click)="moveToPage(pageNumberArray.length)" class="page-link" href="javascript:void(0);">
+                  {{ pageNumberArray.length }}
+                </a>
+              </li>
+            }
+          }
+
+          <!-- Next -->
+          <li class="paginate_button page-item next"
+              [class.disabled]="currentPage === pageNumberArray[pageNumberArray.length - 1] || tableData.length === 0">
+            <a (click)="getMoreData('next')" class="page-link" href="javascript:void(0);">
+              Next
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

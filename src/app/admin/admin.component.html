@@ -1,0 +1,29 @@
+<div class="h-100" [ngClass]="{
+    'expand-menu': miniSidebar === true && expandMenu === true ,
+    'mini-sidebar': miniSidebar === true ,
+    'menu-opened': mobileSidebar === true,
+    'slide-nav': mobileSidebar === true,
+  }">
+
+
+<!-- Main Wrapper -->
+<div class="main-wrapper">
+    <app-admin-header/>
+    
+    <app-admin-sidebar/>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        <router-outlet></router-outlet>
+        <!-- Footer-->
+        <div class="footer d-sm-flex align-items-center justify-content-between bg-white p-3">
+            <p class="mb-0">
+                <a href="javascript:void(0);">Privacy Policy</a>
+                <a href="javascript:void(0);" class="ms-4">Terms of Use</a>
+            </p>
+            <p>&copy; 2025 Dreamsrent, Made with <span class="text-danger">❤</span> by <a href="javascript:void(0);" class="text-secondary">Dreams</a></p>
+        </div>
+        <!-- /Footer-->
+    </div>
+</div>
+<!-- /Main Wrapper -->
+ </div>

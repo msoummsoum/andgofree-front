@@ -1,0 +1,94 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Website Settings</h5>
+    </div>
+    <div class="card-body pb-0">
+        <div class="d-flex align-items-center justify-content-between">
+            <h6 class="mb-3">Plugin Managers</h6>
+            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add_plugin"><i class="ti ti-plus me-1"></i>Add New Plugin</a>
+        </div>
+        <div class="plugin-content">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="plugin-icons me-2">
+                                        <span><img src="assets/admin/img/icons/paypal-icons.svg" alt="image" class="img-fluid"></span>
+                                    </div>
+                                    <h6 class="fw-normal fs-13">Google</h6>
+                                </div>
+                                <span class="badge badge-soft-purple d-inline-flex align-items-center">Version : 8.78.1</span>
+                            </div>
+                            <p class="fs-13">PayPal is a global digital payments platform that enables secure, fast online transactions.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-14 text-gray-9 d-flex align-items-center"><i class="ti ti-trash me-1"></i>Delete</span>
+                                <div class="form-check form-check-md form-switch me-2">
+                                    <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="plugin-icons  me-2">
+                                        <span><img src="assets/admin/img/icons/google-analytics-icon.svg" alt="image" class="img-fluid"></span>
+                                    </div>
+                                    <h6 class="fw-normal fs-13">Google Analytics</h6>
+                                </div>
+                                <span class="badge badge-soft-purple d-inline-flex align-items-center">Version : GA4</span>
+                            </div>
+                            <p class="fs-13">Google Analytics tracks and analyzes website traffic and user interactions to provide insights.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-14 text-gray-9 d-flex align-items-center"><i class="ti ti-trash me-1"></i>Delete</span>
+                                <div class="form-check form-check-md form-switch me-2">
+                                    <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Add Plugin -->
+<div class="modal fade" id="add_plugin">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Add Plugin</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="plugin-content-modal">
+                    <div class="d-flex flex-column align-items-center">
+                        <span class="mb-2"><i class="ti ti-files text-primary"></i></span>
+                        <p class="mb-0">Drop your files here or <a href="javascript:void(0);">Browse</a></p>
+                        <p class="mb-0">Maximum size 50mb</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary"  data-bs-dismiss="modal">Install</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Plugin -->

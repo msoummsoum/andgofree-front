@@ -1,0 +1,105 @@
+{
+    "data" :[
+        {
+          "car": "Ford Endeavour",
+          "type": "Sedan",
+          "img": "car-01.jpg",
+          "startDate": "24 Jan 2025",
+          "endDate": "26 Jan 2025 ",
+          "time": "10:30 AM",
+          "kilometer": "12,215 km",
+          "status": "Completed"
+        },
+        {
+          "car": "Ferrari 458 MM",
+          "type": "Convertible",
+          "img": "car-02.jpg",
+          "startDate": "19 Dec 2024",
+          "endDate": "20 Dec 2024",
+          "time": "10:30 AM",
+          "kilometer": "12,215 km",
+          "status": "Inprogress"
+        },
+        {
+          "car": "Ford Mustang",
+          "type": "Coupe",
+          "img": "car-03.jpg",
+          "startDate": "11 Dec 2024",
+          "endDate": "13 Dec 2024",
+          "time": "10:30 AM",
+          "kilometer": "11,345 km",
+          "status": "Completed"
+        },
+        {
+          "car": "Toyota Tacoma 4",
+          "type": "Hatchback",
+          "img": "car-04.jpg",
+          "startDate": "29 Nov 2024",
+          "endDate": "30 Nov 2024",
+          "time": "10:30 AM",
+          "kilometer": "10,675 km",
+          "status": "Planned"
+        },
+        {
+          "car": "Chevrolet Truck",
+          "type": "Sedan",
+          "img": "car-05.jpg",
+          "startDate": "03 Nov 2024",
+          "endDate": "05 Nov 2024",
+          "time": "10:30 AM",
+          "kilometer": "19,015 km",
+          "status": "Completed"
+        },
+        {
+          "car": "Etios Carmen",
+          "type": "Hatchback",
+          "img": "car-06.jpg",
+          "startDate": "31 Oct 2024",
+          "endDate": "01 Oct 2024",
+          "time": "10:30 AM",
+          "kilometer": "12,098 km",
+          "status": "Inprogress"
+        },
+        {
+          "car": "Acura Sport",
+          "type": "Crossover",
+          "img": "car-07.jpg",
+          "startDate": "15 Oct 2024",
+          "endDate": "17 Oct 2024",
+          "time": "10:30 AM",
+          "kilometer": "10,315 km",
+          "status": "Completed"
+        },
+        {
+          "car": "Kia Soul 2016",
+          "type": "Delivery",
+          "img": "car-08.jpg",
+          "startDate": "26 Sep 2024",
+          "endDate": "27 Sep 2024",
+          "time": "10:30 AM",
+          "kilometer": "14,432 km",
+          "status": "Planned"
+        },
+        {
+          "car": "Camaro",
+          "type": "Station Wagon",
+          "img": "car-09.jpg",
+          "startDate": "01 Sep 2024",
+          "endDate": "03 Sep 2024",
+          "time": "10:30 AM",
+          "kilometer": "15,215 km",
+          "status": "Completed"
+        },
+        {
+          "car": "Toyota Camry",
+          "type": "Mini Van",
+          "img": "car-10.jpg",
+          "startDate": "15 Aug 2024",
+          "endDate": "16 Aug 2024",
+          "time": "10:30 AM",
+          "kilometer": "13,582 km",
+          "status": "Completed"
+        }
+      ],
+      "totalData":10
+}

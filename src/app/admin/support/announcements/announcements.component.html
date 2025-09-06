@@ -1,0 +1,510 @@
+<div class="content me-4">
+                
+    <!-- Breadcrumb -->
+    <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+        <div class="my-auto mb-2">
+            <h4 class="mb-1">Announcement</h4>
+            <nav>
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                        <a [routerLink]="routes.adminDashboard">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Announcement</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+            <div class="mb-2">
+                <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add_announcement"><i class="ti ti-plus me-2"></i>Add Announcement</a>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+    <!-- Table Header -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
+        <div class="d-flex align-items-center flex-wrap row-gap-3">
+            <div class="dropdown me-2">
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                    <i class="ti ti-filter me-1"></i> Sort By : Latest
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end p-2">
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Latest</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                    </li>
+                </ul>
+            </div>                  
+            <div class="dropdown">
+                <a href="#filtercollapse" class="filtercollapse coloumn d-inline-flex align-items-center" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="filtercollapse">
+                    <i class="ti ti-filter me-1"></i> Filter<span class="badge badge-xs rounded-pill bg-danger ms-2">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
+            <div class="top-search me-2">
+                <div class="top-search-group">
+                    <span class="input-icon">
+                        <i class="ti ti-search"></i>
+                    </span>
+                    <input  [(ngModel)]="searchDataValue" [ngModelOptions]="{ standalone: true }" type="search" (ngModelChange)="searchData(searchDataValue)" class="form-control form-control-md" placeholder="Search">
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- /Table Header -->
+
+    <div class="collapse" id="filtercollapse">
+        <div class="filterbox mb-3 d-flex align-items-center">
+            <h6 class="me-3">Filters</h6>
+            <div class="dropdown me-2">
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <span class="badge badge-xs rounded-pill bg-success me-2">4</span>Type
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg p-2">
+                    <li>
+                        <div class="top-search m-2">
+                            <div class="top-search-group">
+                                <span class="input-icon">
+                                    <i class="ti ti-search"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox" checked>New Rental Service
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Special Offer
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox" checked>New Vehicle Addition
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox" checked>Seasonal Promotion
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Policy Update
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Branch Opening
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox" checked>Customer Safety
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Loyalty Program
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Emergency Closure
+                        </label>
+                    </li>
+                    <li>
+                        <label class="dropdown-item d-flex align-items-center rounded-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox">Online Booking Update
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown me-2">
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    Status
+                </a>
+                <ul class="dropdown-menu dropdown-menu-md p-2">
+                    <li class="dropdown-item">
+                        Published
+                    </li>
+                    <li class="dropdown-item">
+                        Unpublish
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="me-2 text-purple links">Apply</a>
+            <a href="javascript:void(0);" class="text-danger links">Clear All</a>
+        </div>
+    </div>
+
+    <!-- Custom Data Table -->
+    <div class="custom-datatable-filter table-responsive">
+        <table matSort (matSortChange)="sortData($event)" class="table datatable">
+            <thead class="thead-light">
+                <tr>
+                    <th mat-sort-header="date">DATE</th>
+                    <th mat-sort-header="created">ANNOUNCEMENT</th>
+                    <th mat-sort-header="email">TYPE</th>
+                    <th mat-sort-header="status">STATUS</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>        
+                @for (data of tableData;track data){
+                <tr>
+                    <td>
+                        <p class="text-gray-9 mb-0">{{data.DATE}}</p>
+                        <p class="fs-13 text-gray-5">{{data.TIME}}</p>
+                    </td>
+                    <td>
+                        <p class="text-gray-9 mb-0">{{data.ANNOUNCEMENT}}</p>
+                        <p class="fs-13 text-gray-5">{{data.CONTENT}}</p>
+                    </td>
+                    <td>
+                        <p class="text-gray-9">{{data.TYPE}}</p>
+                    </td>
+                    <td>
+                        <span class="badge  badge-sm" 
+                        [ngClass]="data.STATUS === 'Published' ? 'bg-success-transparent' : 'bg-danger-transparent'">
+                            <i class="ti ti-point-filled me-1"
+                            [ngClass]="data.STATUS === 'Published' ? 'text-success' : 'text-danger'">
+                            </i>{{data.STATUS}}
+                        </span>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ti ti-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end p-2">
+                                <li>
+                                    <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_announcement"><i class="ti ti-edit me-1"></i>Edit</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#announcement_detail"><i class="ti ti-eye me-1"></i>Details</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_announcement"><i class="ti ti-trash me-1"></i>Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            }     @if(tableData.length===0){
+                    <tr>
+                        <td class="text-center" colspan="12">No Matching Found</td>
+                    </tr>
+                }                                                      
+            </tbody>
+        </table>
+    </div>
+    <!-- Custom Data Table -->
+    <div class="table-footer"></div>
+    <app-custom-pagination></app-custom-pagination>			
+</div>
+<!-- Add Announcement -->
+<div class="modal fade" id="add_announcement">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Add Announcement</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body pb-1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Announcement Title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Announcement Type <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">New Rental Service</mat-option>
+                                <mat-option value="1">Special Offer</mat-option>
+                                <mat-option value="1">Seasonal Promotion</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Users <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1">Customer</mat-option>
+                                <mat-option value="1">Admin</mat-option>
+                                <mat-option value="1">Manager</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>  
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Description <span class="text-danger">*</span></label>
+                            <div class="editor">
+                                <ngx-editor [editor]="editor">
+                                    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar" >
+                                    </ngx-editor-menu>
+                                 </ngx-editor>
+                            </div>
+                            <p class="mt-2">Maximum 60 Words</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Create New</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Announcement -->
+
+<!-- Edit Announcement -->
+<div class="modal fade" id="edit_announcement">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Edit Announcement</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body pb-1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Announcement Title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" value="Limited-Time Offer!">
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Announcement Type <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1" selected>New Rental Service</mat-option>
+                                <mat-option value="1">Special Offer</mat-option>
+                                <mat-option value="1">Seasonal Promotion</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>  
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Users <span class="text-danger">*</span></label>
+                            <mat-select class="custom-mat-select select" placeholder="Select">
+                                <mat-option value="1">Select</mat-option>
+                                <mat-option value="1" selected>Customer</mat-option>
+                                <mat-option value="1">Admin</mat-option>
+                                <mat-option value="1">Manager</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>  
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Description <span class="text-danger">*</span></label>
+                            <div class="editor">
+                                <ngx-editor [editor]="editor">
+                                    <ngx-editor-menu [editor]="editor" [toolbar]="toolbar" >
+                                    </ngx-editor-menu>
+                                 </ngx-editor>
+                            </div>
+                            <p class="mt-2">Maximum 60 Words</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="form-check form-check-md form-switch me-2">
+                        <label class="form-check-label form-label mt-0 mb-0">
+                        <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked="">
+                            Status
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Save Changes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Edit Announcement -->
+
+<!-- Announcement Details -->
+<div class="modal fade" id="announcement_detail">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Announcement Details</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body pb-1">
+                <div class="mb-3">
+                    <p class="text-gray-9 fw-medium mb-0">Announcement Type</p>
+                    <p>New Rental Servicepe</p>
+                </div>
+                <div class="mb-3">
+                    <p class="text-gray-9 fw-medium mb-0">Description</p>
+                    <p>Limited-Time Offer!</p>
+                </div>
+                <div class="mb-3">
+                    <p class="text-gray-9 fw-medium mb-0">Announcement Type</p>
+                    <p> We are now offering premium car rentals in your city! Book your ride today and enjoy unbeatable rates.</p>
+                </div>
+                <div class="mb-3">
+                    <p class="text-gray-9 fw-medium mb-0">Date</p>
+                    <p>10 Jan 2025</p>
+                </div>
+                <h6 class="mb-3">Announcement Views</h6>
+                <div class="custom-datatable-filter table-responsive brandstable mb-3">
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>USER</th>
+                                <th>ROLE</th>
+                                <th>VIEWED DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                            <img src="assets/admin/img/profiles/avatar-20.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                        <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">Andrew Simons</a></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">Admin</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9 mb-0">29 Nov 2024</p>
+                                    <p class="fs-13 text-gray-5">01:00 PM</p>
+                                </td>
+                            </tr>                                                            
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                            <img src="assets/admin/img/profiles/avatar-21.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                        <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">David Steiger</a></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">Manager</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9 mb-0">19 Dec 2024</p>
+                                    <p class="fs-13 text-gray-5">10:00 AM</p>
+                                </td>
+                            </tr>                                                            
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                            <img src="assets/admin/img/profiles/avatar-12.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                        <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">Virginia Phu</a></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">Customer</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9 mb-0">24 Dec 2024</p>
+                                    <p class="fs-13 text-gray-5">12:32 PM</p>
+                                </td>
+                            </tr>                                                            
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                            <img src="assets/admin/img/profiles/avatar-22.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                        <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">Walter Hartmann</a></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">Accountant</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9 mb-0">29 Nov 2024</p>
+                                    <p class="fs-13 text-gray-5">03:15 PM</p>
+                                </td>
+                            </tr>                                                            
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                            <img src="assets/admin/img/profiles/avatar-27.jpg" class="rounded-circle" alt="">
+                                        </a>
+                                        <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">Andrea Jermaine</a></h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">Inspector</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9 mb-0">03 Nov 2024</p>
+                                    <p class="fs-13 text-gray-5">04:10 PM</p>
+                                </td>
+                            </tr>                                                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Announcement Details -->
+
+
+<!-- Delete  -->
+<div class="modal fade" id="delete_announcement">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span class="avatar avatar-lg bg-transparent-danger rounded-circle text-danger mb-3">
+                    <i class="ti ti-trash-x fs-26"></i>
+                </span>
+                <h4 class="mb-1">Delete Announcement</h4>
+                <p class="mb-3">Are you sure you want to delete announcement?</p>
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Yes, Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Delete -->

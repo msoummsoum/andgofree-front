@@ -1,0 +1,116 @@
+{
+    "data": [
+      {
+        "invoiceNo": "#INV12345",
+        "image": "car-01.jpg",
+        "car": "Ford Endeavour",
+        "rentalFees": "$3,800",
+        "lateFees": "$200",
+        "additionalServices": "$200",
+        "totalIncome": "$5,100",
+        "date": "24 Jan 2025",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12346",
+        "image": "car-02.jpg",
+        "car": "Ferrari 458 MM",
+        "rentalFees": "$3,500",
+        "lateFees": "$250",
+        "additionalServices": "$150",
+        "totalIncome": "$4,500",
+        "date": "19 Dec 2024",
+        "status": "Pending"
+      },
+      {
+        "invoiceNo": "#INV12347",
+        "image": "car-03.jpg",
+        "car": "Ford Mustang",
+        "rentalFees": "$4,600",
+        "lateFees": "$300",
+        "additionalServices": "$200",
+        "totalIncome": "$3,800",
+        "date": "11 Dec 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12348",
+        "image": "car-04.jpg",
+        "car": "Toyota Tacoma 4",
+        "rentalFees": "$4,100",
+        "lateFees": "$200",
+        "additionalServices": "$200",
+        "totalIncome": "$4,700",
+        "date": "29 Nov 2024",
+        "status": "Overdue"
+      },
+      {
+        "invoiceNo": "#INV12349",
+        "image": "car-05.jpg",
+        "car": "Chevrolet Truck",
+        "rentalFees": "$3,400",
+        "lateFees": "$250",
+        "additionalServices": "$150",
+        "totalIncome": "$5,300",
+        "date": "03 Nov 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12350",
+        "image": "car-06.jpg",
+        "car": "Etios Carmen",
+        "rentalFees": "$4,300",
+        "lateFees": "$200",
+        "additionalServices": "$200",
+        "totalIncome": "$4,000",
+        "date": "31 Oct 2024",
+        "status": "Pending"
+      },
+      {
+        "invoiceNo": "#INV12351",
+        "image": "car-07.jpg",
+        "car": "Acura Sport",
+        "rentalFees": "$4,900",
+        "lateFees": "$250",
+        "additionalServices": "$150",
+        "totalIncome": "$3,600",
+        "date": "15 Oct 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12352",
+        "image": "car-08.jpg",
+        "car": "Kia Soul 2016",
+        "rentalFees": "$3,600",
+        "lateFees": "$250",
+        "additionalServices": "$150",
+        "totalIncome": "$5,800",
+        "date": "26 Sep 2024",
+        "status": "Failed"
+      },
+      {
+        "invoiceNo": "#INV12353",
+        "image": "car-09.jpg",
+        "car": "Camaro",
+        "rentalFees": "$3,300",
+        "lateFees": "$200",
+        "additionalServices": "$100",
+        "totalIncome": "$4,200",
+        "date": "01 Sep 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12354",
+        "image": "car-10.jpg",
+        "car": "Toyota Camry",
+        "rentalFees": "$5,300",
+        "lateFees": "$300",
+        "additionalServices": "$200",
+        "totalIncome": "$3,900",
+        "date": "15 Aug 2024",
+        "status": "Paid"
+      }
+    ],
+    "totalData": 10
+  }
+  

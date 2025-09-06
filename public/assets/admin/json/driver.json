@@ -1,0 +1,95 @@
+{
+    "data":[
+        {
+          "img": "customer-01.jpg",
+          "drivers": "Reuben Keen",
+          "phone": "+1 14782 14578",
+          "email": "reuben@example.com",
+          "licenseNo": "DL123456789",
+          "date": "24 Jan 2025",
+          "status": "Active"
+        },
+        {
+          "img": "customer-02.jpg",
+          "drivers": "William Jones",
+          "phone": "+1 32569 15458",
+          "email": "william@example.com",
+          "licenseNo": "DL1697453622",
+          "date": "19 Dec 2024",
+          "status": "Inactive"
+        },
+        {
+          "img": "customer-03.jpg",
+          "drivers": "Leonard Jandreau",
+          "phone": "+1 25669 88985",
+          "email": "leonard@example.com",
+          "licenseNo": "DL5694863152",
+          "date": "11 Dec 2024",
+          "status": "Active"
+        },
+        {
+          "img": "customer-04.jpg",
+          "drivers": "Adam Bolden",
+          "phone": "+1 54698 55468",
+          "email": "adam@example.com",
+          "licenseNo": "DL234567890",
+          "date": "29 Nov 2024",
+          "status": "Active"
+        },
+        {
+          "img": "customer-05.jpg",
+          "drivers": "Harvey Jimenez",
+          "phone": "+1 12488 14457",
+          "email": "harvey@example.com",
+          "licenseNo": "DL678901234",
+          "date": "03 Nov 2024",
+          "status": "Active"
+        },
+        {
+          "img": "customer-06.jpg",
+          "drivers": "William Ward",
+          "phone": "+1 65895 47878",
+          "email": "william@example.com",
+          "licenseNo": "DL012345678",
+          "date": "31 Oct 2024",
+          "status": "Inactive"
+        },
+        {
+          "img": "customer-07.jpg",
+          "drivers": "Norman Coleman",
+          "phone": "+1 32569 15458",
+          "email": "norman@example.com",
+          "licenseNo": "DL987654321",
+          "date": "15 Oct 2024",
+          "status": "Inactive"
+        },
+        {
+          "img": "customer-08.jpg",
+          "drivers": "Jay Beckman",
+          "phone": "+1 56598 98956",
+          "email": "jaybeckman@example.com",
+          "licenseNo": "DL345678901",
+          "date": "26 Sep 2024",
+          "status": "Active"
+        },
+        {
+          "img": "customer-09.jpg",
+          "drivers": "Francis Harris",
+          "phone": "+1 12781 02567",
+          "email": "francis@example.com",
+          "licenseNo": "DL456789012",
+          "date": "01 Sep 2024",
+          "status": "Active"
+        },
+        {
+          "img": "customer-10.jpg",
+          "drivers": "Renaldo Labarre",
+          "phone": "+1 12124 14255",
+          "email": "renaldo@example.com",
+          "licenseNo": "DL567890123",
+          "date": "15 Aug 2024",
+          "status": "Active"
+        }
+       ],
+       "totalData":10
+}

@@ -1,0 +1,113 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Other Settings</h5>
+    </div>
+    <div class="card-body">
+        <div class="payment-section">
+            <h6 class="mb-3">Sitemap</h6>
+                <!-- Table Header -->
+                <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
+                    <div class="top-search me-2">
+                        <div class="top-search-group">
+                            <span class="input-icon">
+                                <i class="ti ti-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>   
+                    <div>
+                        <div>
+                            <a href="javascript:void(0);" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#add_sitemap"><i class="ti ti-plus me-2"></i>Add New</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Table Header -->
+                <!-- Custom Data Table -->
+                <div class="custom-datatable-filter table-responsive brandstable country-table">
+                    <table class="table datatable">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>URL</th>
+                                <th>FILE NAME</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            
+                                <td>
+                                    <p class="text-gray-9 fw-semibold fs-14">https://localhost/dreamsrent</p>
+                                </td>
+                                <td>
+                                    <p class="text-gray-9">sitemap18725604.xml</p>
+                                </td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="ti ti-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end p-2">
+                                            <li>
+                                                <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_sitemap"><i class="ti ti-trash me-1"></i>Delete</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                
+                            </tr>                                                                                                  																	                                                                                              																	
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Custome Data Tabel -->
+    
+        </div>
+    </div>
+</div>
+
+<!-- Add Sitemap -->
+<div class="modal fade" id="add_sitemap">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Create Sitemap</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-0">
+                    <label class="form-label">Sitemap URL <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>                                   
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Sitemap -->
+
+
+<!-- Delete Sitemap  -->
+<div class="modal fade" id="delete_sitemap">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span class="avatar avatar-lg bg-transparent-danger rounded-circle text-danger mb-3">
+                    <i class="ti ti-trash-x fs-26"></i>
+                </span>
+                <h4 class="mb-1">Delete Sitemap</h4>
+                <p class="mb-3">Are you sure you want to delete sitemap?</p>
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Yes, Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- /Delete Sitemap -->

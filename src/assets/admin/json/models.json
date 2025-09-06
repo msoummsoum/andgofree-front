@@ -1,0 +1,66 @@
+{
+    "data": [
+      {
+        "model": "Urban Cruiser",
+        "brand": "Toyota",
+        "totalCars": "10",
+        "status": "Active"
+      },
+      {
+        "model": "Fortuner",
+        "brand": "Toyota",
+        "totalCars": "10",
+        "status": "Inactive"
+      },
+      {
+        "model": "V8",
+        "brand": "Audi",
+        "totalCars": "25",
+        "status": "Active"
+      },
+      {
+        "model": "Q3",
+        "brand": "Audi",
+        "totalCars": "15",
+        "status": "Active"
+      },
+      {
+        "model": "Huracan",
+        "brand": "Lamborghini",
+        "totalCars": "5",
+        "status": "Inactive"
+      },
+      {
+        "model": "Sian",
+        "brand": "Lamborghini",
+        "totalCars": "35",
+        "status": "Inactive"
+      },
+      {
+        "model": "X5",
+        "brand": "BMW",
+        "totalCars": "20",
+        "status": "Active"
+      },
+      {
+        "model": "XM",
+        "brand": "BMW",
+        "totalCars": "32",
+        "status": "Active"
+      },
+      {
+        "model": "Sonet",
+        "brand": "KIA",
+        "totalCars": "20",
+        "status": "Active"
+      },
+      {
+        "model": "Seltos",
+        "brand": "KIA",
+        "totalCars": "20",
+        "status": "Active"
+      }
+    ],
+    "totalData": 10
+  }
+  

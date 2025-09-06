@@ -1,0 +1,71 @@
+{
+    "data" : [
+        {
+          "CATEGORY": "Rental Policies",
+          "CREATEDDATE": "24 Jan 2025",
+          "NUMBEROFQUESTIONS": "15",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Payments",
+          "CREATEDDATE": "19 Dec 2024",
+          "NUMBEROFQUESTIONS": "13",
+          "STATUS": "Unpublish"
+        },
+        {
+          "CATEGORY": "Insurance",
+          "CREATEDDATE": "11 Dec 2024",
+          "NUMBEROFQUESTIONS": "4",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Rental Policies",
+          "CREATEDDATE": "29 Nov 2024",
+          "NUMBEROFQUESTIONS": "9",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Booking",
+          "CREATEDDATE": "03 Nov 2024",
+          "NUMBEROFQUESTIONS": "19",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Requirements",
+          "CREATEDDATE": "31 Oct 2024",
+          "NUMBEROFQUESTIONS": "17",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Drivers",
+          "CREATEDDATE": "15 Oct 2024",
+          "NUMBEROFQUESTIONS": "6",
+          "STATUS": "Unpublish"
+        },
+        {
+          "CATEGORY": "Drivers",
+          "CREATEDDATE": "26 Sep 2024",
+          "NUMBEROFQUESTIONS": "25",
+          "STATUS": "Unpublish"
+        },
+        {
+          "CATEGORY": "Pricing",
+          "CREATEDDATE": "01 Sep 2024",
+          "NUMBEROFQUESTIONS": "18",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Rental Policies",
+          "CREATEDDATE": "15 Aug 2024",
+          "NUMBEROFQUESTIONS": "18",
+          "STATUS": "Published"
+        },
+        {
+          "CATEGORY": "Roadside Assistance",
+          "CREATEDDATE": "15 Aug 2024",
+          "NUMBEROFQUESTIONS": "22",
+          "STATUS": "Published"
+        }
+       ],
+       "totalData": 11
+}

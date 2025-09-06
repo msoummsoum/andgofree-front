@@ -1,0 +1,41 @@
+{
+    "data" : [
+        {
+          "season": "Halloween",
+          "startDate": "20 Sep 2025",
+          "endDate": "25 Nov 2025",
+          "daily": "$200",
+          "weekly": "$1400",
+          "month": "$4800",
+          "status": "Active"
+        },
+        {
+          "season": "Easter",
+          "startDate": "01 Jun 2025",
+          "endDate": "15 Aug 2025",
+          "daily": "$220",
+          "weekly": "$1540",
+          "month": "$6160",
+          "status": "Active"
+        },
+        {
+          "season": "New Year",
+          "startDate": "15 Mar 2025",
+          "endDate": "20 May 2025",
+          "daily": "$240",
+          "weekly": "$1680",
+          "month": "$6720",
+          "status": "Active"
+        },
+        {
+          "season": "Christmas",
+          "startDate": "01 Dec 2024",
+          "endDate": "10 Jan 2025",
+          "daily": "$250",
+          "weekly": "$1750",
+          "month": "$7000",
+          "status": "Active"
+        }
+      ],
+      "totalData":4
+}

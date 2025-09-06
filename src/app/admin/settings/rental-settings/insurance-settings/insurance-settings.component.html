@@ -1,0 +1,334 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Rental Settings</h5>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-3">Insurance</h6>
+            <div class="d-flex align-items-center">
+                <div class="top-search me-2">
+                    <div class="top-search-group">
+                        <span class="input-icon">
+                            <i class="ti ti-search"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-insurance"><i class="ti ti-plus me-1"></i>Add Insurance</a>
+            </div>
+        </div>
+        <div class="custom-datatable-filter table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>INSURANCE NAME </th>
+                        <th>PRICE</th>
+                        <th>BENEFITS</th>
+                        <th>STATUS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium fs-14">Full Premium Insurance</h6>
+                        </td>
+                        <td>
+                            $200
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                4 Benefits
+                                <a href="javascript:void(0);" class="btn btn-xs btn-info-light border-info fs-14 py-0 px-1 ms-1" data-bs-toggle="modal" data-bs-target="#view-benifits"><i class="ti ti-external-link"></i></a>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-dark-transparent d-inline-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Active</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit-insurance"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_backup"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium fs-14">Roadside Assistance </h6>
+                        </td>
+                        <td>
+                            $250
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                6 Benefits
+                                <a href="javascript:void(0);" class="btn btn-xs btn-info-light border-info fs-14 py-0 px-1 ms-1" data-bs-toggle="modal" data-bs-target="#view-benifits"><i class="ti ti-external-link"></i></a>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-dark-transparent d-inline-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Active</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit-insurance"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_backup"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium fs-14">Liability Insurance</h6>
+                        </td>
+                        <td>
+                            $150
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                3 Benefits
+                                <a href="javascript:void(0);" class="btn btn-xs btn-info-light border-info fs-14 py-0 px-1 ms-1" data-bs-toggle="modal" data-bs-target="#view-benifits"><i class="ti ti-external-link"></i></a>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-dark-transparent d-inline-flex align-items-center"><i class="ti ti-point-filled text-danger me-1"></i>Inctive</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit-insurance"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_backup"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6 class="fw-medium fs-14">Personal Accident Insurance	</h6>
+                        </td>
+                        <td>
+                            $300
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                3 Benefits
+                                <a href="javascript:void(0);" class="btn btn-xs btn-info-light border-info fs-14 py-0 px-1 ms-1" data-bs-toggle="modal" data-bs-target="#view-benifits"><i class="ti ti-external-link"></i></a>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-dark-transparent d-inline-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Active</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ti ti-dots-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end p-2">
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit-insurance"><i class="ti ti-edit me-1"></i>Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_backup"><i class="ti ti-trash me-1"></i>Delete</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Add Insurance -->
+<div class="modal fade" id="add-insurance">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="mb-0">Add New Insurance</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Insurane Name <span class="text-danger"> *</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price Type <span class="text-danger"> *</span></label>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm4" checked>
+                                <label class="form-check-label" for="Radio-sm4">
+                                    Daily
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm5">
+                                <label class="form-check-label" for="Radio-sm5">
+                                    Fixed
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm6">
+                                <label class="form-check-label" for="Radio-sm6">
+                                    Percentage
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price <span class="text-danger"> *</span></label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="add-insurance-benifit">
+                        <div class="mb-1">
+                            <label class="form-label">Benefit <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center text-info add-new-benifit"><i class="ti ti-plus me-1"></i>Add New</a>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Create Insurance</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add Insurance -->
+
+<!-- Edit Insurance -->
+<div class="modal fade" id="edit-insurance">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="mb-0">Edit Insurance</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Insurane Name <span class="text-danger"> *</span></label>
+                        <input type="text" class="form-control" value="Full Premium Insurance">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price Type <span class="text-danger"> *</span></label>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm" checked>
+                                <label class="form-check-label" for="Radio-sm">
+                                    Daily
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm2">
+                                <label class="form-check-label" for="Radio-sm2">
+                                    Fixed
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radio" id="Radio-sm3">
+                                <label class="form-check-label" for="Radio-sm3">
+                                    Percentage
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price <span class="text-danger"> *</span></label>
+                        <input type="text" class="form-control" value="$200">
+                    </div>
+                    <div class="add-insurance-benifit-2">
+                        <div class="mb-1">
+                            <label class="form-label">Benefit <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control" value="No additional charges for emergency roadside services.">
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="d-inline-flex align-items-center text-info add-new-benifit-2"><i class="ti ti-plus me-1"></i>Add New</a>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="form-check form-check-md form-switch me-2">
+                            <label class="form-check-label form-label mt-0 mb-0">
+                            <input class="form-check-input form-label me-2" type="checkbox" role="switch" checked>
+                                Status
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Save Changes</button>
+                        </div>
+                    </div>		
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Edit  Insurance -->
+
+<!-- Benifits Insurance -->
+<div class="modal fade" id="view-benifits">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="mb-0">Benefits</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="d-flex align-items-center mb-2"><i class="ti ti-checks text-success me-1"></i>No additional charges for emergency roadside services.</p>
+                    <p class="d-flex align-items-center mb-2"><i class="ti ti-checks text-success me-1"></i>Quick assistance for unexpected breakdowns.</p>
+                    <p class="d-flex align-items-center mb-2"><i class="ti ti-checks text-success me-1"></i>Coverage for lost or stolen personal belongings</p>
+                    <p class="d-flex align-items-center"><i class="ti ti-checks text-success me-1"></i>Covers the cost if the rental car is stolen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Benifits Insurance -->
+
+<!-- Delete  -->
+<div class="modal fade" id="delete_backup">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+        <div class="modal-body text-center">
+            <span class="avatar avatar-lg bg-transparent-danger rounded-circle text-danger mb-3">
+                <i class="ti ti-trash-x fs-26"></i>
+            </span>
+            <h4 class="mb-1">Delete Insurance</h4>
+            <p class="mb-3">Are you sure you want to delete insurance?</p>
+            <div class="d-flex justify-content-center">
+                <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Yes, Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /Delete -->

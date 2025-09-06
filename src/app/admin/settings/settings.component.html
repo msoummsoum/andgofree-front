@@ -1,0 +1,248 @@
+<div class="content me-0 pb-0">
+                
+    <!-- Breadcrumb -->
+    <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+        <div class="my-auto mb-2">
+            <h2 class="mb-1">Settings</h2>
+            <nav>
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                        <a [routerLink]="routes.adminDashboard">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+    <!-- Settings Prefix -->
+    <div class="row">
+        <div class="col-lg-3">
+        <!-- inner sidebar -->
+        <div class="settings-sidebar slimscroll">
+            <ng-scrollbar>
+            <div class="sidebar-menu">
+                     <ul>
+                         <li class="menu-title"><span>ACCOUNT SETTING</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.profileSettings">
+                                         <i class="ti ti-user-edit me-2"></i>Profile
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.securitySettings">
+                                         <i class="ti ti-lock me-2"></i>Security
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.notificationsSettings">
+                                         <i class="ti ti-bell me-2"></i><span>Notifications</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.integrationsSettings">
+                                         <i class="ti ti-device-nintendo me-2"></i><span>Integrations</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.trackerSettings">
+                                         <i class="ti ti-brand-stackshare me-2"></i><span>Tracker</span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>WEBSITE SETTING</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active" >
+                                     <a [routerLink]="routes.companySettings">
+                                         <i class="ti ti-building me-2"></i><span>Company Settings</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.localizationSettings">
+                                         <i class="ti ti-settings-2 me-2"></i><span>Localization</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.prefixesSettings">
+                                         <i class="ti ti-corner-up-left-double me-2"></i><span>Prefixes</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.seoSetup">
+                                         <i class="ti ti-seo me-2"></i><span>SEO Setup</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.languageSetting">
+                                         <i class="ti ti-language me-2"></i><span>Language</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.maintenanceMode">
+                                         <i class="ti ti-color-filter me-2"></i><span>Maintenance Mode</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active" >
+                                     <a [routerLink]="routes.loginSetting">
+                                         <i class="ti ti-lock-bolt me-2"></i><span>Login & Register</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.aiConfiguration">
+                                         <i class="ti ti-grain me-2"></i><span>AI Configuration</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.pluginManagers">
+                                         <i class="ti ti-car-crash me-2"></i><span>Plugin Managers</span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>RENTAL SETTINGS</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.rentalSettings">
+                                         <i class="ti ti-file-invoice me-2"></i><span>Rental</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.insuranceSettings">
+                                         <i class="ti ti-file-delta me-2"></i><span>Insurance</span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>APP SETTINGS</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.invoiceSetting">
+                                         <i class="ti ti-file-invoice me-2"></i><span>Invoice Settings</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.invoiceTemplate">
+                                         <i class="ti ti-template me-2"></i><span>Invoice Templates</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.signaturesSetting">
+                                         <i class="ti ti-signature me-2"></i><span>Signatures</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.customFields">
+                                         <i class="ti ti-forms me-2"></i><span>Custom Fields</span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>SYSTEM SETTINGS</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.emailSetting">
+                                         <i class="ti ti-mail me-2"></i><span>Email Settings</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.emailTemplates">
+                                         <i class="ti ti-mail-fast me-2"></i><span>Email Templates</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.smsGateways">
+                                         <i class="ti ti-messages me-2"></i><span>SMS Gateways</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.gdprCookies">
+                                         <i class="ti ti-cookie me-2"></i><span>GDPR Cookies</span><span class="track-icon"></span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>FINANCE SETTINGS</span></li>
+                         <li>
+                             <ul class="sidebar-links pb-3 mb-3 border-bottom">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.paymentMethods">
+                                         <i class="ti ti-currency-dollar me-2"></i><span>Payment Methods</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.bankAccounts">
+                                         <i class="ti ti-file-dollar me-2"></i><span>Bank Accounts</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.taxRates">
+                                         <i class="ti ti-file-percent me-2"></i><span>Tax Rates</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.currencies">
+                                         <i class="ti ti-world-dollar me-2"></i><span>Currencies</span>
+                                     </a>
+                                 </li>
+                             </ul>							
+                         </li>
+                         <li class="menu-title"><span>OTHER SETTINGS</span></li>
+                         <li>
+                             <ul class="sidebar-links">
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.siteMap">
+                                         <i class="ti ti-map me-2"></i><span>Sitemap</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.clearCache">
+                                         <i class="ti ti-database-x me-2"></i><span>Clear Cache</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.storage">
+                                         <i class="ti ti-database me-2"></i><span>Storage</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.cronJob">
+                                         <i class="ti ti-clock-cog me-2"></i><span>Cronjob</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.systemBackup">
+                                         <i class="ti ti-file-check me-2"></i><span>System Backup</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.databaseBackup">
+                                         <i class="ti ti-file-database me-2"></i><span>Database Backup</span>
+                                     </a>
+                                 </li>
+                                 <li routerLinkActive="active">
+                                     <a [routerLink]="routes.systemUpdate">
+                                         <i class="ti ti-refresh-dot me-2"></i><span>System Update</span>
+                                     </a>
+                                 </li>
+                             </ul>
+                         </li>
+                     </ul>
+                    </div>
+                </ng-scrollbar>
+                </div>
+        <!-- /inner sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!-- /Settings Prefix -->		
+</div>	

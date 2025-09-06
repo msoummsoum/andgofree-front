@@ -1,0 +1,30 @@
+{
+    "data": [
+      {
+        "name": "Manual Steering",
+        "status": "Active"
+      },
+      {
+        "name": "Power Steering",
+        "status": "Inactive"
+      },
+      {
+        "name": "Rack & Pinion Steering",
+        "status": "Active"
+      },
+      {
+        "name": "Adjustable Steering",
+        "status": "Active"
+      },
+      {
+        "name": "Recirculating Ball Steering",
+        "status": "Active"
+      },
+      {
+        "name": "Electric Power Steering",
+        "status": "Active"
+      }
+    ],
+    "totalData": 6
+  }
+  

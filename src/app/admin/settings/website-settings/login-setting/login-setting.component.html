@@ -1,0 +1,124 @@
+<div class="card">
+    <div class="card-header">
+        <h5 class="fw-bold">Website Settings</h5>
+    </div>
+    <div class="card-body pb-0">
+        <h6 class="fw-bold mb-3">Login & Register</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                            <div class="d-flex align-items-center">
+                                <a href="javascript:void(0);" class="p-2 bg-light rounded-circle d-flex align-items-center justify-content-center me-2" data-bs-toggle="modal" data-bs-target="#google_login"><img src="assets/admin/img/brands/google.svg" alt="img"></a>
+                                <a href="javascript:void(0);" class="fs-13" data-bs-toggle="modal" data-bs-target="#google_login">Google</a>
+                            </div>
+                            <span class="badge badge-dark-transparent d-inline-flex align-items-center fs-12"><i class="ti ti-point-filled text-success"></i>Connected</span>
+                        </div>
+                        <p class="fs-14">Streamline your access using your Google account for secure and efficient login.</p>
+                    </div>
+                    <div class="card-footer py-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="javascript:void(0);" class="d-flex align-items-center fw-medium" data-bs-toggle="modal" data-bs-target="#google_login"><i class="ti ti-settings me-1"></i>Configure</a>
+                            <div class="form-check form-check-md form-switch">
+                                <input class="form-check-input form-label" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                            <div class="d-flex align-items-center">
+                                <span class="p-2 bg-light rounded-circle d-flex align-items-center justify-content-center me-2" data-bs-toggle="modal" data-bs-target="#facebook_login"><img src="assets/admin/img/brands/facebook.svg" alt="img"></span>
+                                <a href="javascript:void(0);" class="fs-13" data-bs-toggle="modal" data-bs-target="#facebook_login">Facebook</a>
+                            </div>
+                            <span class="badge badge-dark-transparent d-inline-flex align-items-center fs-12"><i class="ti ti-point-filled text-success"></i>Connected</span>
+                        </div>
+                        <p class="fs-14">Quickly log in or register using your Facebook account, making it easy to manage operations.</p>
+                    </div>
+                    <div class="card-footer py-2">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="javascript:void(0);" class="d-flex align-items-center fw-medium" data-bs-toggle="modal" data-bs-target="#facebook_login"><i class="ti ti-settings me-1"></i>Configure</a>
+                            <div class="form-check form-check-md form-switch">
+                                <input class="form-check-input form-label" type="checkbox" role="switch" checked>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Login Settings -->
+<div class="modal fade" id="google_login">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Google Login Settings</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Client ID<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Client Secret Key<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-0">
+                    <label class="form-label">Login Redirect URL<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Google Login Settings -->
+
+<!-- Facebook Login Settings -->
+<div class="modal fade" id="facebook_login">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Facebook Login Settings</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">API ID<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">API Secret Key<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-0">
+                    <label class="form-label">Login Redirect URL<span class="text-danger ms-1">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Facebook Login Settings -->

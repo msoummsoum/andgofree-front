@@ -1,0 +1,26 @@
+{
+    "data": [
+      {
+        "name": "Manual",
+        "status": "Active"
+      },
+      {
+        "name": "Automatic",
+        "status": "Inactive"
+      },
+      {
+        "name": "Semi Automatic",
+        "status": "Active"
+      },
+      {
+        "name": "CVT",
+        "status": "Active"
+      },
+      {
+        "name": "DCT",
+        "status": "Active"
+      }
+    ],
+    "totalData": 5
+  }
+  

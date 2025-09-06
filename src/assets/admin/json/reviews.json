@@ -1,0 +1,75 @@
+{
+    "data" : [
+        {
+          "author": "Shaun Farley",
+          "img": "avatar-01.jpg",
+          "date": "24 Jan 2025",
+          "rating": "(5.0)",
+          "review": "Super easy booking process and great car selection!"
+        },
+        {
+          "author": "Jenny Ellis",
+          "img": "avatar-12.jpg",
+          "date": "19 Dec 2024",
+          "rating": "(5.0)",
+          "review": "Transparent pricing with no hidden fees - highly recommend!"
+        },
+        {
+          "author": "Leon Baxter",
+          "img": "avatar-15.jpg",
+          "date": "11 Dec 2024",
+          "rating": "(5.0)",
+          "review": "Wide range of cars, from budget to luxury - perfect for any trip!"
+        },
+        {
+          "author": "Karen Flores",
+          "img": "avatar-17.jpg",
+          "date": "29 Nov 2024",
+          "rating": "(5.0)",
+          "review": "Pick-up and drop-off were seamless - best rental experience ever!"
+        },
+        {
+          "author": "Michael Dawson",
+          "img": "avatar-06.jpg",
+          "date": "03 Nov 2024",
+          "rating": "(5.0)",
+          "review": "Clean, well-maintained cars and excellent customer support"
+        },
+        {
+          "author": "Karen Galvan",
+          "img": "avatar-18.jpg",
+          "date": "31 Oct 2024",
+          "rating": "(5.0)",
+          "review": "Great deals and discounts - saved money on my rental!"
+        },
+        {
+          "author": "Thomas Ward",
+          "img": "avatar-03.jpg",
+          "date": "15 Oct 2024",
+          "rating": "(5.0)",
+          "review": "Fast check-in and check-out process, super convenient"
+        },
+        {
+          "author": "Aliza Duncan",
+          "img": "avatar-17.jpg",
+          "date": "26 Sep 2024",
+          "rating": "(5.0)",
+          "review": "Quick responses from customer support - very helpful"
+        },
+        {
+          "author": "James Higham",
+          "img": "avatar-05.jpg",
+          "date": "01 Sep 2024",
+          "rating": "(5.0)",
+          "review": "Best rental experience - I'll definitely use them again"
+        },
+        {
+          "author": "Jade Robinson",
+          "img": "avatar-08.jpg",
+          "date": "15 Aug 2024",
+          "rating": "(5.0)",
+          "review": "Booking was fast, and the car was ready on time!"
+        }
+      ],
+      "totalData":10
+}

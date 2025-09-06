@@ -1,0 +1,246 @@
+<!-- Header -->
+<header class="header" [ngClass]="{'header-fixed': isFixed,'header-four':base==='index','header-two':base==='index-4','header-three':base === 'index-3'}">
+  <div [ngClass]="base==='index'?'container':'container-fluid'">
+    <nav class="navbar navbar-expand-lg header-nav">
+      <div class="navbar-header">
+        <a (click)="toggleSidebar()" id="mobile_btn" href="javascript:void(0);">
+          <span class="bar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+        <a [routerLink]="routes.home" class="navbar-brand logo">
+          <img src="assets/img/logo.svg" class="img-fluid dark-logo" alt="Logo">
+          <img *ngIf="base==='index'" src="assets/img/logo-white.svg" class="img-fluid white-logo" alt="Logo">
+        </a>
+        <a [routerLink]="routes.home" class="navbar-brand logo-small">
+          <img src="assets/img/logo-small.png" class="img-fluid" alt="Logo" />
+        </a>
+      </div>
+      <div class="main-menu-wrapper">
+        <div class="menu-header">
+          <a [routerLink]="routes.home" class="menu-logo">
+            <img src="assets/img/logo.svg" class="img-fluid" alt="Logo" />
+          </a>
+          <a (click)="hideSidebar()" id="menu_close" class="menu-close" href="javascript:void(0);">
+            <i class="fas fa-times"></i></a>
+        </div>
+        <ul class="main-nav">
+          @for (mainMenus of header; track mainMenus;let i = $index) {
+          @if (mainMenus.separateRoute === false && mainMenus.tittle === 'Home') {
+          <li class="has-submenu megamenu" routerLinkActive="active" (mouseenter)="isHovered = true"
+            (mouseleave)="isHovered = false">
+            <a [routerLink]="mainMenus.routes" [ngClass]="{'submenu':isDropdownOpen}" (click)="openSubMenu()">{{mainMenus.tittle}} <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu mega-submenu" [ngStyle]="{'display':isDropdownOpen?'block':''}">
+              <li>
+                <div class="megamenu-wrapper">
+                  <div class="row">
+                    @for(menu of mainMenus.menu;track menu){
+                    <div class="col-lg-3">
+                      <div class="single-demo" routerLinkActive="active">
+                        <div class="demo-img">
+                          <a [routerLink]="menu.routes">
+                            <img src="assets/img/menu/{{menu.img}}" class="img-fluid " alt="img">
+                          </a>
+                        </div>
+                        <div class="demo-info">
+                          <a [routerLink]="menu.routes">{{menu.menuValue}}<span [ngClass]="menu.badge==='Hot'?'hot':'new'">{{menu.badge}}</span> </a>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          }
+          @if (mainMenus.separateRoute === true) {
+          <li routerLinkActive="active">
+            <a [routerLink]="mainMenus.routes">{{ mainMenus.tittle }}</a>
+          </li>
+          }
+          @if (mainMenus.separateRoute === false && mainMenus.tittle !== 'Home') {
+          <li class="has-submenu" routerLinkActive="active">
+            <a href="javascript:void(0);" (click)="mainMenus.showAsTab = !mainMenus.showAsTab" [ngClass]="{'submenu':openDropdownIndex === i}" (click)="toggleSubMenu(i)">{{ mainMenus.tittle }} <i
+                class="fas fa-chevron-down"></i></a>
+            <ul class="submenu"  [ngStyle]="{'display':openDropdownIndex === i?'block':''}">
+              @for (menu of mainMenus.menu; track menu) {
+              @if (menu.hasSubRoute === false) {
+              <li routerLinkActive="active">
+                <a [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+              </li>
+              }
+              @if (menu.hasSubRoute === true) {
+              <li class="has-submenu" routerLinkActive="active">
+                <a (click)="menu.showSubRoute = !menu.showSubRoute" [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+                <ul class="submenu" [ngClass]="{
+                            'd-block': menu.showSubRoute === true
+                          }">
+                  @for (subMenu of menu.subMenus; track subMenu) {
+                  <li routerLinkActive="active">
+                    <a [routerLink]="subMenu.routes">{{
+                      subMenu.menuValue
+                      }}</a>
+                  </li>
+                  }
+                </ul>
+              </li>
+              }
+              }
+            </ul>
+          </li>
+          }
+          }
+        </ul>
+      </div>
+      @if(base === 'index'){
+      <ul class="nav header-navbar-rht">
+						<li class="nav-item user-link">
+							<a class="nav-link btn-secondary btn d-inline-flex align-items-center" [routerLink]="routes.login"><i class="bx bx-user me-1"></i>Sign In</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header-reg  d-inline-flex align-items-center" [routerLink]="routes.register"><span><i class="bx bx-lock"></i></span>Sign Up</a>
+						</li>
+					</ul>
+        }
+
+      <ul class="nav header-navbar-rht" [hidden]="base==='index'||base === 'index-3'||base === 'user'">
+        <li class="nav-item">
+          <a class="nav-link header-login" [routerLink]="routes.login"><span><i
+                class="fa-regular fa-user"></i></span>Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-reg" [routerLink]="routes.register"><span><i
+                class="fa-solid fa-lock"></i></span>Sign Up</a>
+        </li>
+      </ul>
+      @if(base === 'index-3'){
+      <ul class="nav header-navbar-rht">
+						<li class="nav-item user-link">
+							<a class="nav-link header-user" [routerLink]="routes.register"><i class="bx bx-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link header-reg" [routerLink]="routes.addListing"><span><i class="bx bx-plus-circle"></i></span>Add Listing</a>
+						</li>
+					</ul>
+        }
+        @if(base === 'user'){
+          <ul class="nav header-navbar-rht">
+
+						<!-- Notifications -->
+						<li class="nav-item dropdown logged-item noti-nav noti-wrapper">
+							<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+								<span class="bell-icon"><img src="assets/img/icons/bell-icon.svg" alt="Bell"></span> 
+								<span class="badge badge-pill"></span>
+							</a>
+							<div class="dropdown-menu notifications">
+								<div class="topnav-dropdown-header">
+									<span class="notification-title">Notifications</span>
+									<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+								</div>
+								<div class="noti-content">
+									<ul class="notification-list">
+										<li class="notification-message">
+											<a href="javascript:void(0);">
+												<div class="media d-flex">
+													<span class="avatar avatar-lg flex-shrink-0">
+														<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-01.jpg">
+													</span>
+													<div class="media-body flex-grow-1">
+														<p class="noti-details"><span class="noti-title">Jonathan Doe </span> has booked <span class="noti-title">your service</span></p>
+														<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="notification-message">
+											<a href="javascript:void(0);">
+												<div class="media d-flex">
+													<span class="avatar avatar-lg flex-shrink-0">
+														<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-03.jpg">
+													</span>
+													<div class="media-body flex-grow-1">
+														<p class="noti-details"><span class="noti-title">Julie Pennington</span> has booked <span class="noti-title">your service</span></p>
+														<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="notification-message">
+											<a href="javascript:void(0);">
+												<div class="media d-flex">
+													<span class="avatar avatar-lg flex-shrink-0">
+														<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-02.jpg">
+													</span>
+													<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Tyrone Roberts</span> has booked <span class="noti-title">your service</span></p>
+													<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="notification-message">
+											<a href="javascript:void(0);">
+												<div class="media d-flex">
+													<span class="avatar avatar-lg flex-shrink-0">
+														<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-04.jpg">
+													</span>
+													<div class="media-body flex-grow-1">
+														<p class="noti-details"><span class="noti-title">Patricia Manzi</span> has booked <span class="noti-title">your service</span></p>
+														<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="notification-message">
+											<a href="javascript:void(0);">
+												<div class="media d-flex">
+													<span class="avatar avatar-lg flex-shrink-0">
+														<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-01.jpg">
+													</span>
+													<div class="media-body flex-grow-1">
+														<p class="noti-details"><span class="noti-title">Jonathan Doe</span> has booked <span class="noti-title">your service</span></p>
+														<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="topnav-dropdown-footer">
+									<a href="javascript:void(0);">View all Notifications</a>
+								</div>
+							</div>
+						</li>
+						<!-- /Notifications -->
+
+						<!-- User Menu -->
+						<li class="nav-item dropdown has-arrow logged-item">
+							<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="user-img">
+									<img class="rounded-circle" src="assets/img/profiles/avatar-14.jpg" alt="Profile">
+								</span>
+								<span class="user-text">Daniel Johshuva</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" [routerLink]="routes.userDashboard">
+									<i class="feather-user-check"></i> Dashboard
+								</a>
+								<a class="dropdown-item" [routerLink]="routes.userSettings">
+									<i class="feather-settings"></i> Settings
+								</a>
+								<a class="dropdown-item" [routerLink]="routes.index">
+									<i class="feather-power"></i> Logout
+								</a>
+							</div>
+						</li>
+						<!-- /User Menu -->
+
+					</ul>
+        }
+    </nav>
+  </div>
+</header>
+<!-- /Header -->

@@ -1,0 +1,22 @@
+{
+    "data": [
+      {
+        "doorType": "2 Doors",
+        "status": "Active"
+      },
+      {
+        "doorType": "3 Doors",
+        "status": "Active"
+      },
+      {
+        "doorType": "4 Doors",
+        "status": "Inactive"
+      },
+      {
+        "doorType": "5 Doors",
+        "status": "Active"
+      }
+    ],
+    "totalData": 4
+  }
+  

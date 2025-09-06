@@ -1,0 +1,60 @@
+{
+    "data" : [
+        {
+            "TAGS": "Road Trip Essentials",
+            "CREATEDDATE": "24 Jan 2025",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Best SUVs",
+            "CREATEDDATE": "19 Dec 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "TAGS": "Affordable Rides",
+            "CREATEDDATE": "11 Dec 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Exotic Cars",
+            "CREATEDDATE": "29 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Insurance Coverage",
+            "CREATEDDATE": "03 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Electric Cars",
+            "CREATEDDATE": "31 Oct 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Holiday Offers",
+            "CREATEDDATE": "15 Oct 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "TAGS": "Cross-Country Trips",
+            "CREATEDDATE": "26 Sep 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "TAGS": "Cross-Country Trips",
+            "CREATEDDATE": "01 Sep 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Rental Car Care",
+            "CREATEDDATE": "15 Aug 2024",
+            "STATUS": "Published"
+          },
+          {
+            "TAGS": "Must-Visit Cities",
+            "CREATEDDATE": "15 Aug 2024",
+            "STATUS": "Published"
+          }
+    ],
+    "totalData": 11
+}

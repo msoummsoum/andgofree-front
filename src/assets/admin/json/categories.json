@@ -1,0 +1,71 @@
+{
+    "data" : [        
+        {
+            "CATEGORY": "Travel Tips",
+            "NUMBEROFBLOGS": "15",
+            "CREATEDDATE": "24 Jan 2025",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Car Reviews",
+            "NUMBEROFBLOGS": "13",
+            "CREATEDDATE": "19 Dec 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "CATEGORY": "Rental Policies",
+            "NUMBEROFBLOGS": "4",
+            "CREATEDDATE": "11 Dec 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Insurance & Coverage",
+            "NUMBEROFBLOGS": "9",
+            "CREATEDDATE": "29 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Budget Rentals",
+            "NUMBEROFBLOGS": "19",
+            "CREATEDDATE": "03 Nov 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Luxury Car Rentals",
+            "NUMBEROFBLOGS": "17",
+            "CREATEDDATE": "31 Oct 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Road Trip Guides",
+            "NUMBEROFBLOGS": "6",
+            "CREATEDDATE": "15 Oct 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "CATEGORY": "Eco-Friendly Rentals",
+            "NUMBEROFBLOGS": "25",
+            "CREATEDDATE": "26 Sep 2024",
+            "STATUS": "Unpublish"
+          },
+          {
+            "CATEGORY": "Seasonal Deals",
+            "NUMBEROFBLOGS": "18",
+            "CREATEDDATE": "01 Sep 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Customer Stories",
+            "NUMBEROFBLOGS": "18",
+            "CREATEDDATE": "15 Aug 2024",
+            "STATUS": "Published"
+          },
+          {
+            "CATEGORY": "Budget Rentals",
+            "NUMBEROFBLOGS": "22",
+            "CREATEDDATE": "15 Aug 2024",
+            "STATUS": "Published"
+          }   
+    ],
+    "totalData": 11
+}

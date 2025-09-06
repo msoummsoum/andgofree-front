@@ -1,0 +1,26 @@
+{
+    "data": [
+      {
+        "name": "Petrol",
+        "status": "Active"
+      },
+      {
+        "name": "Diesel",
+        "status": "Inactive"
+      },
+      {
+        "name": "Electric",
+        "status": "Active"
+      },
+      {
+        "name": "CNG",
+        "status": "Active"
+      },
+      {
+        "name": "Hybrid",
+        "status": "Active"
+      }
+    ],
+    "totalData": 5
+  }
+  

@@ -1,0 +1,105 @@
+{
+    "data" : [
+        {
+          "car": "Ford Endeavour",
+          "type": "Sedan",
+          "img": "car-01.jpg",
+          "status1": "Completed",
+          "date": "24 Jan 2025",
+          "inspectedBy": "Shaun Farley",
+          "img2": "avatar-01.jpg",
+          "status2": "Completed"
+        },
+        {
+          "car": "Ferrari 458 MM",
+          "type": "Convertible",
+          "img": "car-02.jpg",
+          "status1": "Inprogress",
+          "date": "19 Dec 2024",
+          "inspectedBy": "Jenny Ellis",
+          "img2": "avatar-12.jpg",
+          "status2": "Pending"
+        },
+        {
+          "car": "Ford Mustang",
+          "type": "Coupe",
+          "img": "car-03.jpg",
+          "status1": "Completed",
+          "date": "11 Dec 2024",
+          "inspectedBy": "Leon Baxter",
+          "img2": "avatar-15.jpg",
+          "status2": "Need Repair"
+        },
+        {
+          "car": "Toyota Tacoma 4",
+          "type": "Hatchback",
+          "img": "car-04.jpg",
+          "status1": "Pending",
+          "date": "29 Nov 2024",
+          "inspectedBy": "Karen Flores",
+          "img2": "avatar-17.jpg",
+          "status2": "Inprogress"
+        },
+        {
+          "car": "Chevrolet Truck",
+          "type": "Sedan",
+          "img": "car-05.jpg",
+          "status1": "Completed",
+          "date": "03 Nov 2024",
+          "inspectedBy": "Michael Dawson",
+          "img2": "avatar-06.jpg",
+          "status2": "Completed"
+        },
+        {
+          "car": "Etios Carmen",
+          "type": "Hatchback",
+          "img": "car-06.jpg",
+          "status1": "On Hold",
+          "date": "31 Oct 2024",
+          "inspectedBy": "Karen Galvan",
+          "img2": "avatar-18.jpg",
+          "status2": "On Hold"
+        },
+        {
+          "car": "Acura Sport",
+          "type": "Crossover",
+          "img": "car-07.jpg",
+          "status1": "Completed",
+          "date": "15 Oct 2024",
+          "inspectedBy": "Thomas Ward",
+          "img2": "avatar-03.jpg",
+          "status2": "Completed"
+        },
+        {
+          "car": "Kia Soul 2016",
+          "type": "Delivery",
+          "img": "car-08.jpg",
+          "status1": "Rejected",
+          "date": "26 Sep 2024",
+          "inspectedBy": "Aliza Duncan",
+          "img2": "avatar-17.jpg",
+          "status2": "Need Repair"
+        },
+        {
+          "car": "Camaro",
+          "type": "Station Wagon",
+          "img": "car-09.jpg",
+          "status1": "Completed",
+          "date": "01 Sep 2024",
+          "inspectedBy": "James Higham",
+          "img2": "avatar-05.jpg",
+          "status2": "Completed"
+        },
+        {
+          "car": "Toyota Camry",
+          "type": "Mini Van",
+          "img": "car-10.jpg",
+          "status1": "Completed",
+          "date": "15 Aug 2024",
+          "inspectedBy": "Jade Robinson",
+          "img2": "avatar-08.jpg",
+          "status2": "Completed"
+        }
+      ],
+      "totalData":10
+}

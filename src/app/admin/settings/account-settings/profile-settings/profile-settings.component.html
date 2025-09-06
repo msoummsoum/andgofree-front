@@ -1,0 +1,118 @@
+<div class="card profile-setting-section">
+    <div class="card-header">
+        <h5 class="fw-bold">Account Settings</h5>
+    </div>
+    <form>
+        <div class="card-body pb-1">
+            <h6 class="fw-bold mb-3">Basic Information</h6>
+            <div class="border-bottom mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label class="form-label">Profile Photo</label>
+                            <div class="d-flex align-items-center flex-wrap row-gap-3 mb-3">                                                
+                                <div class="d-flex align-items-center justify-content-center avatar avatar-xxl me-3 flex-shrink-0 text-dark frames">
+                                    <img src="assets/admin/img/customer/customer-01.jpg" class="img-fluid" alt="brands">
+                                    <a href="javascript:void(0);" class="upload-img-trash btn btn-sm rounded-circle">
+                                        <i class="ti ti-trash fs-12"></i>
+                                    </a>
+                                </div>                                              
+                                <div class="profile-upload">
+                                    <div class="profile-uploader d-flex align-items-center">
+                                        <div class="drag-upload-btn btn btn-md btn-dark">
+                                            <i class="ti ti-photo-up fs-14"></i>
+                                            Change
+                                            <input type="file" class="form-control image-sign" multiple="">
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p class="fs-14">Recommended size is 500px x 500px</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">First Name<span class="text-danger ms-1">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Last Name<span class="text-danger ms-1">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address<span class="text-danger ms-1">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number<span class="text-danger ms-1">*</span></label>
+                            <input id="phone" type="tel" class="form-control pass-input" placeholder="(201) 555-0123"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="fw-bold mb-3">Address Information</h6>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label class="form-label">Address Line</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Country</label>
+                        <mat-select class="custom-mat-select select" placeholder="Select">
+                            <mat-option value="1">Select</mat-option>
+                            <mat-option value="1">USA</mat-option>
+                            <mat-option value="1">Canada</mat-option>
+                            <mat-option value="1">UK</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">State</label>
+                        <mat-select class="custom-mat-select select" placeholder="Select">
+                            <mat-option value="1">Select</mat-option>
+                            <mat-option value="1">California</mat-option>
+                            <mat-option value="1">New York</mat-option>
+                            <mat-option value="1">Florida</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">City</label>
+                        <mat-select class="custom-mat-select select" placeholder="Select">
+                            <mat-option value="1">Select</mat-option>
+                            <mat-option value="1">Los Angeles</mat-option>
+                            <mat-option value="1">San Diego</mat-option>
+                            <mat-option value="1">Fresno</mat-option>
+                        </mat-select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Postal Code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-flex justify-content-end">
+                <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </form>
+</div>
+

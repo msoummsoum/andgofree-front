@@ -1,0 +1,35 @@
+import { Component } from '@angular/core';
+import { routes } from '../../../shared/routes';
+import { Router, RouterLink } from '@angular/router';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+interface data {
+  value: string;
+}
+@Component({
+  selector: 'app-booking-details',
+  imports: [RouterLink,MatSelectModule,FormsModule],
+  templateUrl: './booking-details.component.html',
+  styleUrl: './booking-details.component.scss'
+})
+export class BookingDetailsComponent {
+  routes = routes
+  public selectedValue1!: string;
+  public selectedValue2!: string;
+  selectedList1: data[] = [
+    { value: '2 Adults, 1 Child' },
+    { value: '5 Adults, 2 Child' },
+    
+  ];
+  selectedList2: data[] = [
+    { value: 'Country' },
+    { value: 'USA' },
+    { value: 'UK' },
+    
+  ];
+  constructor(private router: Router) { }
+
+  continueBooking():void {
+    this.router.navigate([routes.bookingPayment]);
+  }
+}

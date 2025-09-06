@@ -1,0 +1,58 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Account Settings</h5>
+    </div>
+    <div class="card-body">
+        <div class="tracker-content">
+            <h6 class="mb-3">Tacker</h6>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="mb-3">
+                        <label class="form-label">Status <span class="text-danger">*</span></label>
+                        <mat-select class="custom-mat-select select" placeholder="Select">
+                            <mat-option value="1">Select</mat-option>
+                            <mat-option value="1">Enabled</mat-option>
+                            <mat-option value="1">Disabled</mat-option>
+                        </mat-select>
+                    </div>  
+                    <div class="mb-3">
+                        <label class="form-label">URL  <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>  
+                    <div class="mb-3">
+                        <label class="form-label">User Name  <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control">
+                    </div>  
+                    <div class="mb-3">
+                        <label class="form-label">Password <span class="text-danger">*</span></label>
+                        <div class="pass-group">
+                            <input  [type]="password[1] ? 'text' : 'password'"
+                                class="pass-inputs form-control">
+                                <span
+                                class="ti toggle-password"
+                                [ngClass]="password[1] ? 'ti-eye' : 'ti-eye-off'"
+                                (click)="togglePassword(1)"
+                                (keydown.enter)="togglePassword(1)"
+                                tabindex="0"
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <a href="javascript:void(0);" class="btn btn-dark">Configure</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="tracker-links">
+                <li>
+                    <p class="text-truncate"><span class="fw-bold fs-14 text-gray-9">CRON URL : </span>https://example.com/tracker</p>
+                </li>
+                <li>
+                    <p class="text-truncate"><span class="fw-bold fs-14 text-gray-9">CRON COMMAND : </span>0 * * * * /path/to/car_tracker_script.sh</p>
+                </li>
+                <li>
+                    <p class="text-truncate text-info">Run Cron Manually</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

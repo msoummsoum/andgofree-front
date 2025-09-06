@@ -1,0 +1,66 @@
+{
+    "data": [
+      {
+        "name": "Toyota",
+        "image": "toyota.svg",
+        "totalCars": "20",
+        "status": "Active"
+      },
+      {
+        "name": "Audi",
+        "image": "audi.svg",
+        "totalCars": "15",
+        "status": "Inactive"
+      },
+      {
+        "name": "Lamborghini",
+        "image": "lamborghini.svg",
+        "totalCars": "45",
+        "status": "Active"
+      },
+      {
+        "name": "BMW",
+        "image": "bmw.svg",
+        "totalCars": "30",
+        "status": "Active"
+      },
+      {
+        "name": "Ferrari",
+        "image": "ferrari.svg",
+        "totalCars": "45",
+        "status": "Inactive"
+      },
+      {
+        "name": "Honda",
+        "image": "toyota.svg",
+        "totalCars": "20",
+        "status": "Active"
+      },
+      {
+        "name": "Ford",
+        "image": "honda.svg",
+        "totalCars": "22",
+        "status": "Active"
+      },
+      {
+        "name": "KIA",
+        "image": "ford.svg",
+        "totalCars": "22",
+        "status": "Active"
+      },
+      {
+        "name": "Hyundai",
+        "image": "kia-new.svg",
+        "totalCars": "32",
+        "status": "Active"
+      },
+      {
+        "name": "MercedesBenz",
+        "image": "hyundai.svg",
+        "totalCars": "40",
+        "status": "Active"
+      }
+    ],
+    "totalData": 10
+  }
+  

@@ -1,0 +1,46 @@
+{
+    "data": [
+      {
+        "name": "Red",
+        "shape": "coloredsquare",
+        "status": "Active"
+      },
+      {
+        "name": "Black",
+        "shape": "coloredsquare black",
+        "status": "Inactive"
+      },
+      {
+        "name": "White",
+        "shape": "coloredsquare white",
+        "status": "Active"
+      },
+      {
+        "name": "Maroon",
+        "shape": "coloredsquare maroon",
+        "status": "Active"
+      },
+      {
+        "name": "Yellow",
+        "shape": "coloredsquare yellow",
+        "status": "Active"
+      },
+      {
+        "name": "Orange",
+        "shape": "coloredsquare orange",
+        "status": "Active"
+      },
+      {
+        "name": "Green",
+        "shape": "coloredsquare green",
+        "status": "Active"
+      },
+      {
+        "name": "Blue",
+        "shape": "coloredsquare blue",
+        "status": "Active"
+      }
+    ],
+    "totalData": 8
+  }
+  

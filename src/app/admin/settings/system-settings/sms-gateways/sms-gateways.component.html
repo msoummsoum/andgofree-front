@@ -1,0 +1,103 @@
+<div class="card">
+    <div class="card-header">
+        <h5>System Settings</h5>
+    </div>
+    <div class="card-body pb-0">
+        <div class="sms-gateway">
+            <h6 class="mb-3">SMS Gateways</h6>
+            <div class="row">
+                <div class="col-xxl-4 col-md-6 d-flex">
+                    <div class="card flex-fill">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <img src="assets/admin/img/icons/nexmo-logo-icon.svg" alt="image" class="img-flui">
+                                <span class="badge badge-outline d-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Connected</span>
+                            </div>
+                            <p class="mb-0">Enables seamless communication through SMS, voice, and APIs.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:void(0);" class="d-inline-flex align-items-center text-gray-9" data-bs-toggle="modal" data-bs-target="#add_nexmo"><i class="ti ti-settings me-1"></i>Configure</a>
+                                <div class="form-check form-check-md form-switch">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-md-6 d-flex">
+                    <div class="card flex-fill">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <img src="assets/admin/img/icons/two-factor-icon.svg" alt="image" class="img-flui">
+                                <span class="badge badge-outline d-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Connected</span>
+                            </div>
+                            <p class="mb-0">2Factor offers simple sms integration API and sample code to send SMS</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:void(0);" class="d-inline-flex align-items-center text-gray-9"><i class="ti ti-settings me-1"></i>Configure</a>
+                                <div class="form-check form-check-md form-switch">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-md-6 d-flex">
+                    <div class="card flex-fill">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <img src="assets/admin/img/icons/twilio-icon.svg" alt="image" class="img-flui">
+                                <span class="badge badge-outline d-flex align-items-center"><i class="ti ti-point-filled text-success me-1"></i>Connected</span>
+                            </div>
+                            <p class="mb-0">Twilio provides APIs for messaging, voice, and video integration.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:void(0);" class="d-inline-flex align-items-center text-gray-9"><i class="ti ti-settings me-1"></i>Configure</a>
+                                <div class="form-check form-check-md form-switch">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="add_nexmo">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Nexmo</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">API Key  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>                     
+                <div class="mb-3">
+                    <label class="form-label">API Secret Key <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>                     
+                <div class="mb-3">
+                    <label class="form-label">Sender ID <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

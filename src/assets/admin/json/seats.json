@@ -1,0 +1,34 @@
+{
+    "data": [
+      {
+        "seatType": "2 Seater",
+        "status": "Active"
+      },
+      {
+        "seatType": "4 Seater",
+        "status": "Active"
+      },
+      {
+        "seatType": "5 Seater",
+        "status": "Inactive"
+      },
+      {
+        "seatType": "6 Seater",
+        "status": "Inactive"
+      },
+      {
+        "seatType": "7 Seater",
+        "status": "Active"
+      },
+      {
+        "seatType": "8 Seater",
+        "status": "Active"
+      },
+      {
+        "seatType": "9+ Seater",
+        "status": "Active"
+      }
+    ],
+    "totalData": 7
+  }
+  

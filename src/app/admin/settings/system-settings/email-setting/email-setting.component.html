@@ -1,0 +1,238 @@
+<div class="card">
+    <div class="card-header">
+        <h5>System Settings</h5>
+    </div>
+    <div class="card-body pb-0">
+        <div class="d-flex align-items-center justify-content-between">
+            <h6 class="mb-3">Email Settings</h6>
+            <a href="javascript:void(0);" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#sendgrid"><i class="ti ti-send me-1"></i>Send Test Email</a>
+        </div>
+        <div class="row">
+            <div class="col-md-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-body">
+                    <div class="border-bottom mb-3">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                                <span class="avatar avatar-lg bg-light me-2 p-2">
+                                    <img src="assets/admin/img/settings/phpmail.svg" class="img-fluid" alt="img">
+                                </span>
+                                <p class="text-gray-9">PHP Mailer</p>
+                            </div>
+                            <span class="badge badge-dark-transparent text-gray-9">
+                                <i class="ti ti-point-filled text-success"></i>
+                                Connected
+                            </span>
+                        </div>
+                        <p class="fs-13 mb-3">Used to send emails safely and easily via PHP code from a web server.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                            <a href="javascript:coid(0);" class="fw-medium text-gray-9 d-flex align-items-center mb-0" data-bs-toggle="modal" data-bs-target="#phpmailersettings">
+                                <i class="ti ti-settings me-1"></i>
+                                Configure
+                            </a>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-body">
+                    <div class="border-bottom mb-3">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                                <span class="avatar avatar-lg bg-light me-2 p-2">
+                                    <img src="assets/admin/img/settings/smtp.svg" class="img-fluid" alt="img">
+                                </span>
+                                <p class="text-gray-9">SMTP</p>
+                            </div>
+                            <span class="badge badge-dark-transparent text-gray-9">
+                                <i class="ti ti-point-filled text-success"></i>
+                                Connected
+                            </span>
+                        </div>
+                        <p class="fs-13 mb-3">SMTP is used to send, relay or forward messages from a mail client.</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="javascript:coid(0);" class="fw-medium text-gray-9 d-flex align-items-center mb-0" data-bs-toggle="modal" data-bs-target="#smtpsettings">
+                            <i class="ti ti-settings me-1"></i>
+                            Configure
+                        </a>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-body">
+                    <div class="border-bottom mb-3">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                                <span class="avatar avatar-lg bg-light me-2 p-2">
+                                    <img src="assets/admin/img/settings/sendgrid.svg" class="img-fluid" alt="img">
+                                </span>
+                                <p class="text-gray-9">Send Grid</p>
+                            </div>
+                            <span class="badge badge-dark-transparent text-gray-9">
+                                <i class="ti ti-point-filled text-success"></i>
+                                Connected
+                            </span>
+                        </div>
+                        <p class="fs-13 mb-3">Cloud-based email marketing tool that assists marketers and developers .</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="javascript:coid(0);" class="fw-medium text-gray-9 d-flex align-items-center mb-0">
+                            <i class="ti ti-settings me-1"></i>
+                            Configure
+                        </a>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Add php mailer -->
+  <div class="modal fade" id="phpmailersettings">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">PHP Mailer</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body pb-1">
+                    <div class="row">
+                    
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">From Email Address <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Email Password <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">From Email Name <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <button type="button" class="btn btn-outline-light border me-3"  data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary"  data-bs-dismiss="modal">Submit</button>
+                    </div>   
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add php mailer -->
+
+  <!-- Add sendgrid -->
+<div class="modal fade" id="sendgrid">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">Test Mail</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body pb-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Enter Email Address <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <button type="button" class="btn btn-outline-light border me-3"  data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary"  data-bs-dismiss="modal">Submit</button>
+                    </div>   
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add sendgrid -->
+
+<!-- Add sendgrid -->
+<div class="modal fade" id="smtpsettings">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="mb-0">SMTP</h5>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x fs-16"></i>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body pb-1">
+                    <div class="row">
+                    
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">From Email Address <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Email Password <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Email Host <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label">Port <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <button type="button" class="btn btn-outline-light border me-3"  data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary"  data-bs-dismiss="modal">Submit</button>
+                    </div>   
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add sendgrid -->

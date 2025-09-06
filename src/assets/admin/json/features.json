@@ -1,0 +1,46 @@
+{
+    "data": [
+      {
+        "name": "Air Conditioner",
+        "status": "Active"
+      },
+      {
+        "name": "USB",
+        "status": "Inactive"
+      },
+      {
+        "name": "Panoramic Sunroof",
+        "status": "Active"
+      },
+      {
+        "name": "Parking Sensors",
+        "status": "Active"
+      },
+      {
+        "name": "360-degree Camera",
+        "status": "Inactive"
+      },
+      {
+        "name": "Air Bags",
+        "status": "Inactive"
+      },
+      {
+        "name": "Adaptive Cruise Control",
+        "status": "Active"
+      },
+      {
+        "name": "Rear View Camera",
+        "status": "Active"
+      },
+      {
+        "name": "Adaptive Headlights",
+        "status": "Active"
+      },
+      {
+        "name": "Bluetooth",
+        "status": "Active"
+      }
+    ],
+    "totalData": 10
+  }
+  

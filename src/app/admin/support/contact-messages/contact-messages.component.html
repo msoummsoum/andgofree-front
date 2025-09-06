@@ -1,0 +1,190 @@
+<div class="content me-4">
+                
+    <!-- Breadcrumb -->
+    <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb mb-3">
+        <div class="my-auto mb-2">
+            <h4 class="mb-1">Contact Messages</h4>
+            <nav>
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                        <a [routerLink]="routes.adminDashboard">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Messages</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+    <!-- Table Header -->
+    <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3">
+        <div class="d-flex align-items-center flex-wrap row-gap-3">
+            <div class="dropdown me-2">
+                <a href="javascript:void(0);" class="dropdown-toggle btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                    <i class="ti ti-filter me-1"></i> Sort By : Latest
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end p-2">
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Latest</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Ascending</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Desending</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
+            <div class="top-search me-2">
+                <div class="top-search-group">
+                    <span class="input-icon">
+                        <i class="ti ti-search"></i>
+                    </span>
+                    <input  [(ngModel)]="searchDataValue" [ngModelOptions]="{ standalone: true }" type="search" (ngModelChange)="searchData(searchDataValue)" class="form-control form-control-md" placeholder="Search">
+                </div>
+            </div>                        
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle coloumn btn btn-white d-inline-flex align-items-center" data-bs-toggle="dropdown">
+                    <i class="ti ti-layout-board me-1"></i> Columns
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg p-2">
+                    <ul>
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-between rounded-1">
+                                <span class="d-inline-flex align-items-center"><i class="ti ti-grip-vertical me-1"></i>FROM</span>
+                                <div class="form-check form-check-sm form-switch mb-0">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-between rounded-1">
+                                <span><i class="ti ti-grip-vertical me-1"></i>PHONE</span>
+                                <div class="form-check form-check-sm form-switch mb-0">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-between rounded-1">
+                                <span><i class="ti ti-grip-vertical me-1"></i>EMAIL</span>
+                                <div class="form-check form-check-sm form-switch mb-0">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-between rounded-1">
+                                <span><i class="ti ti-grip-vertical me-1"></i>CREATED DATE</span>
+                                <div class="form-check form-check-sm form-switch mb-0">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked="">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-between rounded-1">
+                                <span><i class="ti ti-grip-vertical me-1"></i>MESSAGE</span>
+                                <div class="form-check form-check-sm form-switch mb-0">
+                                    <input class="form-check-input form-label" type="checkbox" role="switch" checked="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /Table Header -->
+
+    <!-- Custom Data Table -->
+    <div class="custom-datatable-filter table-responsive">
+        <table matSort (matSortChange)="sortData($event)" class="table datatable">
+            <thead class="thead-light">
+                <tr>
+                    <th mat-sort-header="role">FROM</th>
+                    <th mat-sort-header="created">PHONE</th>
+                    <th mat-sort-header="email">EMAIL</th>
+                    <th mat-sort-header="created">CREATED DATE</th>
+                    <th mat-sort-header="status">MESSAGE</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>        
+                @for (data of tableData;track data){
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <a href="car-details" class="avatar me-2 flex-shrink-0">
+                                <img src="assets/admin/img/profiles/{{data.IMAGE}}" class="rounded-circle" alt="">
+                            </a>
+                            <h6><a href="#javascript:void(0);" class="fs-14 fw-semibold">{{data.FROM }}</a></h6>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="text-gray-9">{{data.PHONE}}</p>
+                    </td>
+                    <td>
+                        <p class="text-gray-9">{{data.EMAIL}}</p>
+                    </td>
+                    <td>
+                        <p class="text-gray-9">{{data.CREATEDDATE}}</p>
+                    </td>
+                    <td>
+                        <span class="avatar avatar-md bg-light rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Hi, I booked a car but haven't received a confirmation email. Can you check?">
+                        <i class="ti ti-file-invoice text-gray-9"></i>
+                        </span>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-icon btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ti ti-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end p-2">
+                                
+                                <li>
+                                    <a class="dropdown-item rounded-1" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_contact"><i class="ti ti-trash me-1"></i>Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            }        @if(tableData.length===0){
+                    <tr>
+                        <td class="text-center" colspan="12">No Matching Found</td>
+                    </tr>
+                }                                        
+            </tbody>	
+        </table>
+    </div>
+    <!-- Custom Data Table -->
+    <div class="table-footer"></div>	
+    <app-custom-pagination></app-custom-pagination>			
+</div>
+
+<div class="modal fade" id="delete_contact">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <span class="avatar avatar-lg bg-transparent-danger rounded-circle text-danger mb-3">
+                    <i class="ti ti-trash-x fs-26"></i>
+                </span>
+                <h4 class="mb-1">Delete Message</h4>
+                <p class="mb-3">Are you sure you want to delete message?</p>
+                <div class="d-flex justify-content-center">
+                    <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" data-bs-dismiss="modal">Yes, Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

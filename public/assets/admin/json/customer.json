@@ -1,0 +1,105 @@
+{
+    "data": [
+        {
+          "img": "customer-11.jpg",
+          "customer": "Andrew Simons",
+          "phone": "+1 56598 98956",
+          "email": "andrewsimons@example.com",
+          "img2": "gb.svg",
+          "language": "English",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "customer-12.jpg",
+          "customer": "David Steiger",
+          "phone": "+1 24558 56599",
+          "email": "davidsteiger@example.com",
+          "img2": "it-flag.svg",
+          "language": "Italian",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "customer-13.jpg",
+          "customer": "Darin Mabry",
+          "phone": "+1 24558 56599",
+          "email": "darinmabry@example.com",
+          "img2": "fr-flag.svg",
+          "language": "French",
+          "documents": "No Documents",
+          "rents": ""
+        },
+        {
+          "img": "customer-14.jpg",
+          "customer": "Mark Neiman",
+          "phone": "+1 56598 98956",
+          "email": "markneiman@example.com",
+          "img2": "gb.svg",
+          "language": "English",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "customer-15.jpg",
+          "customer": "Jacob Johnson",
+          "phone": "+1 56598 98956",
+          "email": "jacobjohnson@example.com",
+          "img2": "fr-flag.svg",
+          "language": "German",
+          "documents": "No Documents",
+          "rents": ""
+        },
+        {
+          "img": "customer-16.jpg",
+          "customer": "Walter Hartmann",
+          "phone": "+1 24558 56599",
+          "email": "walterhartmann@example.com",
+          "img2": "it-flag.svg",
+          "language": "Italian",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "customer-17.jpg",
+          "customer": "Andrea Jermaine",
+          "phone": "+1 12488 14457",
+          "email": "andreajermaine@example.com",
+          "img2": "gb.svg",
+          "language": "English",
+          "documents": "No Documents",
+          "rents": ""
+        },
+        {
+          "img": "customer-18.jpg",
+          "customer": "Dennis Eckhardt",
+          "phone": "+1 32569 15458",
+          "email": "denniseckhardt@example.com",
+          "img2": "it-flag.svg",
+          "language": "Italian",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "customer-19.jpg",
+          "customer": "Lan Adams",
+          "phone": "+1 14782 14578",
+          "email": "lanadams@example.com",
+          "img2": "fr-flag.svg",
+          "language": "French",
+          "documents": "No Documents",
+          "rents": ""
+        },
+        {
+          "img": "customer-20.jpg",
+          "customer": "Julie Black",
+          "phone": "+1 12124 14255",
+          "email": "julieblack@example.com",
+          "img2": "gb.svg",
+          "language": "English",
+          "documents": "Show Documents",
+          "rents": "Recent Rents"
+        }
+       ],
+       "totalData":10
+}

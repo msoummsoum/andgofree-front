@@ -1,0 +1,35 @@
+{
+    "data" : [
+    {
+        "ROLE": "Owner",
+        "CREATEDDATE": "24 Jan 2025",
+        "STATUS": "Active"
+    },
+    {
+        "ROLE": "Admin",
+        "CREATEDDATE": "24 Jan 2025",
+        "STATUS": "Active"
+    },
+    {
+        "ROLE": "Manager",
+        "CREATEDDATE": "19 Dec 2024",
+        "STATUS": "Inactive"
+    },
+    {
+        "ROLE": "Customer",
+        "CREATEDDATE": "11 Dec 2024",
+        "STATUS": "Active"
+    },
+    {
+        "ROLE": "Accountant",
+        "CREATEDDATE": "29 Nov 2024",
+        "STATUS": "Active"
+    },
+    {
+        "ROLE": "Inspector",
+        "CREATEDDATE": "18 Oct 2024",
+        "STATUS": "Active"
+      }
+    ],
+    "totalData": 6
+}

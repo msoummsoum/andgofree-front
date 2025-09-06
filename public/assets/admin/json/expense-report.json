@@ -1,0 +1,106 @@
+{
+    "data": [
+      {
+        "invoiceNo": "#INV12345",
+        "category": "Vehicle Repairs",
+        "vehicleRelated": "$3,800",
+        "operational": "$200",
+        "miscellaneous": "$200",
+        "totalExpense": "$5,100",
+        "date": "24 Jan 2025",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12346",
+        "category": "Vehicle Repairs",
+        "vehicleRelated": "$1,500",
+        "operational": "$300",
+        "miscellaneous": "0",
+        "totalExpense": "$1,800",
+        "date": "19 Dec 2024",
+        "status": "Pending"
+      },
+      {
+        "invoiceNo": "#INV12347",
+        "category": "Staff Salaries",
+        "vehicleRelated": "0",
+        "operational": "$5,000",
+        "miscellaneous": "0",
+        "totalExpense": "$5,000",
+        "date": "11 Dec 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12348",
+        "category": "Office Rent",
+        "vehicleRelated": "$0",
+        "operational": "$3,000",
+        "miscellaneous": "$0",
+        "totalExpense": "$3,000",
+        "date": "29 Nov 2024",
+        "status": "Overdue"
+      },
+      {
+        "invoiceNo": "#INV12349",
+        "category": "Marketing",
+        "vehicleRelated": "$0",
+        "operational": "$0",
+        "miscellaneous": "$1,200",
+        "totalExpense": "$1,200",
+        "date": "03 Nov 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12350",
+        "category": "Insurance",
+        "vehicleRelated": "$1,800",
+        "operational": "$500",
+        "miscellaneous": "$0",
+        "totalExpense": "$2,300",
+        "date": "31 Oct 2024",
+        "status": "Pending"
+      },
+      {
+        "invoiceNo": "#INV12351",
+        "category": "Website Hosting",
+        "vehicleRelated": "$0",
+        "operational": "$0",
+        "miscellaneous": "$600",
+        "totalExpense": "$600",
+        "date": "15 Oct 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12352",
+        "category": "Cleaning Supplies",
+        "vehicleRelated": "$500",
+        "operational": "$200",
+        "miscellaneous": "$0",
+        "totalExpense": "$700",
+        "date": "26 Sep 2024",
+        "status": "Failed"
+      },
+      {
+        "invoiceNo": "#INV12353",
+        "category": "Car Loan Payment",
+        "vehicleRelated": "$4,500",
+        "operational": "$0",
+        "miscellaneous": "$0",
+        "totalExpense": "$4,500",
+        "date": "01 Sep 2024",
+        "status": "Paid"
+      },
+      {
+        "invoiceNo": "#INV12354",
+        "category": "Software Subscription",
+        "vehicleRelated": "$0",
+        "operational": "$0",
+        "miscellaneous": "$900",
+        "totalExpense": "$900",
+        "date": "15 Aug 2024",
+        "status": "Paid"
+      }
+    ],
+    "totalData": 10
+  }
+  

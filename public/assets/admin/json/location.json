@@ -1,0 +1,174 @@
+{
+    "data":[
+        {
+           
+          "IMAGE": "location-01.jpg",
+          "LOCATION_TITLE": "Johnson Dealer Zone",
+          "ADDRESS": "2881 Jarvis Street",
+          "PHONE": "+1 56598 98956",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": true},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-02.jpg",
+          "LOCATION_TITLE": "Miller Auto Trade Zone",
+          "ADDRESS": "354 Java Lane",
+          "PHONE": "+1 24558 56599",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "F", "active": false},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": true}
+           ],
+          "STATUS": "Disabled"
+        },
+        {
+           
+          "IMAGE": "location-03.jpg",
+          "LOCATION_TITLE": "Thompson Dealer Parking",
+          "ADDRESS": "849 Circle Drive",
+          "PHONE": "+1 25669 88985",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": false},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-04.jpg",
+          "LOCATION_TITLE": "Smith Auto Dealer Lot",
+          "ADDRESS": "239 Clousson Road",
+          "PHONE": "+1 54698 55468",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": false},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "F", "active": false},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": true}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-05.jpg",
+          "LOCATION_TITLE": "Anderson Dealer Zone",
+          "ADDRESS": "728 Glenview Drive",
+          "PHONE": "+1 32569 15458",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-06.jpg",
+          "LOCATION_TITLE": "Carter Dealer Holding Lot",
+          "ADDRESS": "39 Blackwell Street",
+          "PHONE": "+1 65895 47878",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": true}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-07.jpg",
+          "LOCATION_TITLE": "Walker Auto Trade Yard",
+          "ADDRESS": "75 Cambridge Place",
+          "PHONE": "+1 14782 14578",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": false},
+               { "DAYS": "W", "active": false},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-08.jpg",
+          "LOCATION_TITLE": "Taylor Auto Dealer Zone",
+          "ADDRESS": "56 Garfield Road",
+          "PHONE": "+1 12488 14457",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": false},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": false},
+               { "DAYS": "S", "active": true},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Enabled"
+        },
+        {
+           
+          "IMAGE": "location-09.jpg",
+          "LOCATION_TITLE": "Evans Dealer Car Zone",
+          "ADDRESS": "2042 Strother Street",
+          "PHONE": "+1 12781 02567",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": true},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": false}
+           ],
+          "STATUS": "Disabled"
+        },
+        {
+          "IMAGE": "location-10.jpg",
+          "LOCATION_TITLE": "Allen Dealer Parking Lot",
+          "ADDRESS": "743 Simpson Square",
+          "PHONE": "+1 12124 1425556",
+          "WORKING_DAYS": [
+               { "DAYS": "M", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "W", "active": true},
+               { "DAYS": "T", "active": true},
+               { "DAYS": "F", "active": false},
+               { "DAYS": "S", "active": false},
+               { "DAYS": "S", "active": true}
+           ],
+          "STATUS": "Enabled"
+        }
+       ],
+       "totalData":10
+}

@@ -1,0 +1,115 @@
+{
+    "data":[
+        {
+          "img": "company-1.jpg",
+          "company": "Elite Solutions",
+          "contact": "Andrew Simons",
+          "img2": "customer-11.jpg",
+          "phone": "+1 56598 98956",
+          "email": "andrewsimons@example.com",
+          "img3": "gb.svg",
+          "language": "English",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "company-2.jpg",
+          "company": "Violet Photography",
+          "contact": "David Steiger",
+          "img2": "customer-12.jpg",
+          "phone": "+1 24558 56599",
+          "email": "davidsteiger@example.com",
+          "img3": "it-flag.svg",
+          "language": "Italian",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "company-3.jpg",
+          "company": "Dynasty",
+          "contact": "Darin Mabry",
+          "img2": "customer-13.jpg",
+          "phone": "+1 24558 56599",
+          "email": "darinmabry@example.com",
+          "img3": "fr-flag.svg",
+          "language": "French",
+          "rents": ""
+        },
+        {
+          "img": "company-4.jpg",
+          "company": "Flame Quill",
+          "contact": "Mark Neiman",
+          "img2": "customer-14.jpg",
+          "phone": "+1 56598 98956",
+          "email": "markneiman@example.com",
+          "img3": "gb.svg",
+          "language": "English",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "company-5.jpg",
+          "company": "Quill Pen Finance",
+          "contact": "Jacob Johnson",
+          "img2": "customer-15.jpg",
+          "phone": "+1 56598 98956",
+          "email": "jacobjohnson@example.com",
+          "img3": "gb.svg",
+          "language": "German",
+          "rents": ""
+        },
+        {
+          "img": "company-6.jpg",
+          "company": "Heavenly Flow",
+          "contact": "Walter Hartmann",
+          "img2": "customer-16.jpg",
+          "phone": "+1 24558 56599",
+          "email": "walterhartmann@example.com",
+          "img3": "it-flag.svg",
+          "language": "Italian",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "company-7.jpg",
+          "company": "Butterfly Creative",
+          "contact": "Andrea Jermaine",
+          "img2": "customer-17.jpg",
+          "phone": "+1 12488 14457",
+          "email": "andreajermaine@example.com",
+          "img3": "gb.svg",
+          "language": "English",
+          "rents": ""
+        },
+        {
+          "img": "company-8.jpg",
+          "company": "Sand Studios",
+          "contact": "Dennis Eckhardt",
+          "img2": "customer-18.jpg",
+          "phone": "+1 32569 15458",
+          "email": "denniseckhardt@example.com",
+          "img3": "it-flag.svg",
+          "language": "Italian",
+          "rents": "Recent Rents"
+        },
+        {
+          "img": "company-9.jpg",
+          "company": "Colibri Solutions",
+          "contact": "Lan Adams",
+          "img2": "customer-19.jpg",
+          "phone": "+1 14782 14578",
+          "email": "lanadams@example.com",
+          "img3": "fr-flag.svg",
+          "language": "French",
+          "rents": ""
+        },
+        {
+          "img": "company-10.jpg",
+          "company": "Bishu Infotech",
+          "contact": "Julie Black",
+          "img2": "customer-20.jpg",
+          "phone": "+1 12124 14255",
+          "email": "julieblack@example.com",
+          "img3": "gb.svg",
+          "language": "English",
+          "rents": "Recent Rents"
+        }
+       ],
+       "totalData":10
+}
