@@ -69,6 +69,7 @@ export interface UserRequest {
 
 export interface VehicleDTO {
     id: number;
+    title: string;
     brand: string;
     model: string;
     licensePlateNumber: string;
