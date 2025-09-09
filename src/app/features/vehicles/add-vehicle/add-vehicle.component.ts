@@ -1,7 +1,9 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { routes } from '../../../shared/routes';
 import { MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
+import { VehicleConfigurationResponse } from '../../../shared/backDto';
+import { VehicleService } from '../vehicle-service';
 
 @Component({
   selector: 'app-add-vehicle',
@@ -9,7 +11,10 @@ import { RouterLink } from '@angular/router';
   templateUrl: './add-vehicle.component.html',
   styleUrl: './add-vehicle.component.scss'
 })
-export class AddVehicleComponent {
+export class AddVehicleComponent implements OnInit {
+  private readonly vehicleService = inject(VehicleService);
+  vehicleConfiguration?: VehicleConfigurationResponse;
+
 routes=routes
   tabs = [
     { id: 'info', label: 'Basic Info' },
@@ -52,5 +57,16 @@ routes=routes
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       this.activeTab = id; // Update the active tab
     }
+  }
+
+    
+
+  ngOnInit() {
+    this.vehicleService.getVehiclesConfiguration().subscribe({
+      next: (vehicleConfiguration: VehicleConfigurationResponse) => {
+        this.vehicleConfiguration = vehicleConfiguration;
+        console.log(vehicleConfiguration)
+      }
+    })
   }
 }

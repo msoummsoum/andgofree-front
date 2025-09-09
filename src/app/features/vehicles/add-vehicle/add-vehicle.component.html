@@ -67,9 +67,10 @@
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Vehicle condition <span class="text-danger">*</span></label>
-                                     <mat-select class="custom-mat-select select" placeholder="Select">
-                                        <mat-option value="1">Used Vehicle</mat-option>
-                                        <mat-option value="1">New Vehicle</mat-option>
+                                     <mat-select class="custom-mat-select select" placeholder="Select" formControlName="condition">
+                                        @for(condition of vehicleConfiguration?.conditions ;track condition.key) {
+                                            <mat-option value="condition.key">{{ condition?.value }}</mat-option>
+                                        }
                                     </mat-select>
                                 </div>
                             </div>
