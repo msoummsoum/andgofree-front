@@ -937,7 +937,8 @@ tag-input{
     display: none;
   }
   mat-option.mat-mdc-option:hover:not(.mdc-list-item--disabled){
-    background: #FFA633 !important; /*primary color*/
+    /* V_ORIGINAL background: #FFA633 !important; *//*primary color*/
+    background: #127384 !important; /*primary color*/
   }
   mat-option.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple) {
     background-color: #ffdeda;
@@ -954,7 +955,8 @@ tag-input{
     color: #22100d !important;
   }
   .mat-mdc-option.mdc-list-item.mat-mdc-option-active{
-    background: #FFA633 !important; /*primary color*/
+    /* V_ORIGINAL background: #FFA633 !important; *//*primary color*/
+    background: #989898 !important; /*primary color*/
     .mdc-list-item__primary-text{
 
       color: white !important;
