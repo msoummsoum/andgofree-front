@@ -956,10 +956,10 @@ tag-input{
   }
   .mat-mdc-option.mdc-list-item.mat-mdc-option-active{
     /* V_ORIGINAL background: #FFA633 !important; *//*primary color*/
-    background: #989898 !important; /*primary color*/
+    background: none !important; /*primary color*/
     .mdc-list-item__primary-text{
 
-      color: white !important;
+     /* V_ORIGINAL color: white !important;*/
     }
   }
 /* Multi Select */
