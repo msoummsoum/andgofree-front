@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { VehicleConfigurationResponse, VehicleDTO } from '../../shared/backDto';
+import { VehicleConfigurationResponse, VehicleRequest } from '../../shared/backDto';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -13,12 +13,12 @@ export class VehicleService {
 
     constructor(private http: HttpClient) {}
 
-    getVehicles(): Observable<VehicleDTO[]> {
-      return this.http.get<VehicleDTO[]>(this.apiUrl);
+    getVehicles(): Observable<VehicleRequest[]> {
+      return this.http.get<VehicleRequest[]>(this.apiUrl);
     }
 
-    createVehicle(vehicle: VehicleDTO): Observable<VehicleDTO> {
-      return this.http.post<VehicleDTO>(this.apiUrl, vehicle);
+    createVehicle(vehicle: VehicleRequest): Observable<VehicleRequest> {
+      return this.http.post<VehicleRequest>(this.apiUrl, vehicle);
     }
 
     getVehiclesConfiguration(): Observable<VehicleConfigurationResponse> {

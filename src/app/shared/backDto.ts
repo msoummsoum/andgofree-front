@@ -1,6 +1,6 @@
 /* tslint:disable */
 /* eslint-disable */
-// Generated using typescript-generator version 3.2.1263 on 2025-09-11 21:08:55.
+// Generated using typescript-generator version 3.2.1263 on 2025-09-13 15:42:57.
 
 export interface AvailabilityDTO {
     id: number;
@@ -10,8 +10,11 @@ export interface AvailabilityDTO {
     pickupLocation: string;
     returnLocation: string;
     vehicleId: number;
-    rentalType: RentalType;
+    deliveryMethod: DeliveryMethod;
     rentalPeriod: RentalPeriod;
+    dailyRate: number;
+    weeklyRate: number;
+    monthlyRate: number;
 }
 
 export interface BookingRequest {
@@ -90,7 +93,7 @@ export interface UserRequest {
     verified: boolean;
 }
 
-export interface VehicleDTO {
+export interface VehicleRequest {
     id: number;
     title: string;
     brand: string;
@@ -99,9 +102,10 @@ export interface VehicleDTO {
     year: number;
     color: string;
     seats: number;
-    dailyRate: number;
-    weeklyRate: number;
-    monthlyRate: number;
+    vehicleCategory: VehicleCategory;
+    fuelType: FuelType;
+    specifications: VehicleSpecification[];
+    transmission: Transmission;
 }
 
 export interface EnumConfiguration {
@@ -134,6 +138,7 @@ export interface VehicleConfigurationResponse {
     brakes: EnumDTO[];
     drivetrians: EnumDTO[];
     fuelTypes: EnumDTO[];
+    specifications: EnumDTO[];
     doors: number[];
     seats: number[];
 }
@@ -160,8 +165,14 @@ export type FuelType = "GASOLINE" | "DIESEL" | "ELECTRIC" | "HYBRID" | "PLUGIN_H
 
 export type VehicleCondition = "USED" | "NEW";
 
-export type RentalType = "DELIVERY" | "PICKUP";
+export type DeliveryMethod = "DELIVERY" | "PICKUP";
 
 export type RentalPeriod = "DAILY" | "WEEKLY" | "MONTHLY";
 
 export type PhotoType = "VEHICLE_COVER" | "VEHICLE_FRONT" | "VEHICLE_BACK" | "VEHICLE_LEFT" | "VEHICLE_RIGHT" | "VEHICLE_INTERIOR" | "VEHICLE_DASHBOARD" | "VEHICLE_TRUNK" | "VEHICLE_DETAIL" | "USER_PROFILE";
+
+export type VehicleCategory = "CONVERTIBLE" | "COUPE" | "SEDAN" | "HATCHBACK" | "SUV" | "WAGON";
+
+export type VehicleSpecification = "AIR_CONDITIONERS" | "KEYLESS" | "PANORAMIC" | "BLUETOOTH" | "AUX" | "TOP_WINDOW" | "SPEAKERS" | "AUTOMATIC_WINDOW" | "USB";
+
+export type Transmission = "MANUAL" | "AUTOMATIC" | "SEMI_AUTOMATIC";

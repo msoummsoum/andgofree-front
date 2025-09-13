@@ -4,15 +4,20 @@ import { MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
 import { VehicleConfigurationResponse } from '../../../shared/backDto';
 import { VehicleService } from '../vehicle-service';
+import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-vehicle',
-  imports: [MatSelectModule,RouterLink],
+  imports: [MatSelectModule,RouterLink, FormsModule, ReactiveFormsModule],
   templateUrl: './add-vehicle.component.html',
-  styleUrl: './add-vehicle.component.scss'
+  styleUrl: './add-vehicle.component.scss',
+  standalone: true
 })
 export class AddVehicleComponent implements OnInit {
   private readonly vehicleService = inject(VehicleService);
+  private readonly fb = inject(FormBuilder);
+  addVehicleForm!: FormGroup;
+
   vehicleConfiguration?: VehicleConfigurationResponse;
 
 routes=routes
@@ -52,14 +57,51 @@ routes=routes
     }
   }
 
-    
+
 
   ngOnInit() {
     this.vehicleService.getVehiclesConfiguration().subscribe({
       next: (vehicleConfiguration: VehicleConfigurationResponse) => {
         this.vehicleConfiguration = vehicleConfiguration;
-        console.log(vehicleConfiguration)
+        const specsArray = this.vehicleConfiguration.specifications.map(() => this.fb.control(false));
+        this.addVehicleForm.setControl('specifications', this.fb.array(specsArray));
       }
-    })
+    });
+     this.addVehicleForm = this.fb.group({
+           title: ['', Validators.required],
+           condition: ['', Validators.required],
+           year: ['', Validators.required],
+           category: ['', Validators.required],
+           brand: ['', Validators.required],
+           model: ['', Validators.required],
+           registrationNumber: ['', Validators.required],
+           fuelType: ['', Validators.required],
+           mileage: ['', Validators.required],
+           doors: ['', Validators.required],
+           seats: ['', Validators.required],
+           specifications: this.fb.array([])
+         });
+  }
+
+ get specificationsArray(): FormArray {
+    return this.addVehicleForm.get('specifications') as FormArray;
+  }
+
+ onSubmit() {
+    //if (this.addVehicleForm.invalid) return;
+
+    const formValue = this.addVehicleForm.value;
+
+    // Récupérer les specs cochées
+    const selectedSpecs = formValue.specifications
+      .map((checked: boolean, i: number) =>
+        checked ? this.vehicleConfiguration!.specifications[i].key : null
+      )
+      .filter((v: string | null) => v !== null);
+
+    console.log({
+      ...formValue,
+      specifications: selectedSpecs
+    });
   }
 }
