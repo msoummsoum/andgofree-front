@@ -1,17 +1,16 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { routes } from '../../../shared/routes';
-import { MatError, MatLabel, MatSelectModule } from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
-import { VehicleConfigurationResponse } from '../../../shared/backDto';
+import { VehicleConfigurationResponse, VehicleRequest } from '../../../shared/backDto';
 import { VehicleService } from '../vehicle-service';
 import { FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-add-vehicle',
   imports: [MatSelectModule,RouterLink, FormsModule, ReactiveFormsModule,
-    MatFormFieldModule, MatSelectModule, MatError, MatLabel, CommonModule],
+    MatFormFieldModule, MatSelectModule],
   templateUrl: './add-vehicle.component.html',
   styleUrl: './add-vehicle.component.scss',
   standalone: true
@@ -75,9 +74,10 @@ routes=routes
            condition: ['', Validators.required],
            year: ['', Validators.required],
            category: ['', Validators.required],
+           color: ['', Validators.required],
            brand: ['', Validators.required],
            model: ['', Validators.required],
-           registrationNumber: ['', Validators.required],
+           licensePlateNumber: ['', Validators.required],
            fuelType: ['', Validators.required],
            mileage: ['', Validators.required],
            doors: ['', Validators.required],
@@ -91,12 +91,11 @@ routes=routes
   }
 
  onSubmit() {
-    //if (this.addVehicleForm.invalid) return;
+    if (this.addVehicleForm.invalid) return;
 
     const formValue = this.addVehicleForm.value;
 
-    // Récupérer les specs cochées
-    const selectedSpecs = formValue.specifications
+    const selectedSpecifications = formValue.specifications
       .map((checked: boolean, i: number) =>
         checked ? this.vehicleConfiguration!.specifications[i].key : null
       )
@@ -104,7 +103,26 @@ routes=routes
 
     console.log({
       ...formValue,
-      specifications: selectedSpecs
+      specifications: selectedSpecifications
     });
+     const vehicleRequest: VehicleRequest = {
+    id: 0,
+    title: formValue.title,
+    brand: formValue.brand,
+    model: formValue.model,
+    licensePlateNumber: formValue.licensePlateNumber,
+    year: formValue.year,
+    color: formValue.color,
+    seats: formValue.seats,
+    vehicleCategory: formValue.category,
+    fuelType: formValue.fuelType,
+    transmission: formValue.transmission,
+    specifications: selectedSpecifications
+  };
+
+  this.vehicleService.createVehicle(vehicleRequest).subscribe({
+    next: (res) => console.log('Véhicule créé', res),
+    error: (err) => console.error(err)
+  });
   }
 }

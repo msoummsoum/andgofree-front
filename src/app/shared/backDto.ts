@@ -1,6 +1,6 @@
 /* tslint:disable */
 /* eslint-disable */
-// Generated using typescript-generator version 3.2.1263 on 2025-09-13 15:42:57.
+// Generated using typescript-generator version 3.2.1263 on 2025-09-13 21:57:09.
 
 export interface AvailabilityDTO {
     id: number;
@@ -139,6 +139,7 @@ export interface VehicleConfigurationResponse {
     drivetrians: EnumDTO[];
     fuelTypes: EnumDTO[];
     specifications: EnumDTO[];
+    colors: EnumDTO[];
     doors: number[];
     seats: number[];
 }
@@ -162,6 +163,8 @@ export type Brake = "DISC" | "DRUM" | "REGENERATIVE" | "ABS";
 export type Drivetrian = "FWD" | "RWD" | "AWD" | "OTHER";
 
 export type FuelType = "GASOLINE" | "DIESEL" | "ELECTRIC" | "HYBRID" | "PLUGIN_HYBRID" | "LPG" | "CNG";
+
+export type VehicleColor = "WHITE" | "BLACK" | "RED" | "BLUE" | "SILVER" | "GREY" | "GREEN" | "YELLOW" | "ORANGE" | "BROWN" | "PURPLE";
 
 export type VehicleCondition = "USED" | "NEW";
 

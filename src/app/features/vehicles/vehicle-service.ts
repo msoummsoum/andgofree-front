@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VehicleService {
-    private apiUrl = `${environment.apiUrl}/vehicles/list`;
+    private apiUrl = `${environment.apiUrl}/vehicles`;
     private apiUrlConfig = `${environment.apiUrl}/config/vehicles`;
 
     constructor(private http: HttpClient) {}

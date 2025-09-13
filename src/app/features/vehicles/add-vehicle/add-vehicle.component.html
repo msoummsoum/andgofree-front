@@ -57,7 +57,7 @@
                     </mat-select>
                   </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                   <div class="mb-3">
                     <label class="form-label">Catégorie <span class="text-danger"> *</span></label>
                     <mat-select class="custom-mat-select select" placeholder="Sélectionnez" formControlName="category">
@@ -67,9 +67,19 @@
                     </mat-select>
                   </div>
                 </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label">Couleur <span class="text-danger"> *</span></label>
+                    <mat-select class="custom-mat-select select" placeholder="Sélectionnez" formControlName="color">
+                      @for(color of vehicleConfiguration?.colors ;track color.key) {
+                      <mat-option [value]="color.key">{{ color.value }}</mat-option>
+                      }
+                    </mat-select>
+                  </div>
+                </div>
                 <div class="col-lg-6 col-md-12">
                   <div class="mb-3">
-                    <label class="form-label">Make<span class="text-danger"> *</span></label>
+                    <label class="form-label">Marque<span class="text-danger"> *</span></label>
                     <input type="text" class="form-control" placeholder="Cliquez pour choisir ou saisir une marque"
                            formControlName="brand">
                   </div>
@@ -103,7 +113,7 @@
                   <div class="mb-3">
                     <label class="form-label">Numéro immatriculation<span class="text-danger"> *</span></label>
                     <input type="text" class="form-control" placeholder="Entrez l'immatriculation"
-                           formControlName="registrationNumber">
+                           formControlName="licensePlateNumber">
                   </div>
                 </div>
               </div>
