@@ -17,18 +17,11 @@ export class AddVehicleComponent implements OnInit {
 
 routes=routes
   tabs = [
-    { id: 'info', label: 'Basic Info' },
+    { id: 'info', label: 'Informations de base' },
     { id: 'registration', label: 'Registration' },
-    { id: 'pricing', label: 'Pricing' },
-    { id: 'service', label: 'Service' },
     { id: 'specifications', label: 'Specifications' },
-    { id: 'description', label: 'Description' },
-    { id: 'terms', label: 'Terms' },
-    { id: 'policy', label: 'policy' },
-    { id: 'cancellation', label: 'Cancellation' },
     { id: 'features', label: 'Features' },
     { id: 'gallery', label: 'Gallery' },
-    { id: 'location', label: 'Location' },
   ];
 
   activeTab: string = this.tabs[0].id ; // Default to the first tab

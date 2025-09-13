@@ -1,13 +1,22 @@
 /* tslint:disable */
 /* eslint-disable */
-// Generated using typescript-generator version 3.2.1263 on 2025-09-08 22:24:27.
+// Generated using typescript-generator version 3.2.1263 on 2025-09-11 21:08:55.
 
 export interface AvailabilityDTO {
     id: number;
-    startDate: string;
-    endDate: string;
-    rentalPeriod: string;
+    startDate: Date;
+    endDate: Date;
     city: string;
+    pickupLocation: string;
+    returnLocation: string;
+    vehicleId: number;
+    rentalType: RentalType;
+    rentalPeriod: RentalPeriod;
+}
+
+export interface BookingRequest {
+    vehicleId: number;
+    availableId: number;
 }
 
 export interface FeedbackRequest {
@@ -95,7 +104,13 @@ export interface VehicleDTO {
     monthlyRate: number;
 }
 
-export interface JsonSerializableEnum {
+export interface EnumConfiguration {
+    label: string;
+}
+
+export interface EnumDTO {
+    key: string;
+    value: string;
 }
 
 export interface PhotoTypeConfigResponse {
@@ -113,20 +128,19 @@ export interface VehicleBrand {
 export interface VehicleConfigurationResponse {
     brands: VehicleBrand[];
     years: number[];
-    conditions: VehicleCondition[];
-    categories: VehicleCategory[];
-    transmissions: Transmission[];
-    fuelTypes: FuelType[];
+    conditions: EnumDTO[];
+    categories: EnumDTO[];
+    transmissions: EnumDTO[];
+    brakes: EnumDTO[];
+    drivetrians: EnumDTO[];
+    fuelTypes: EnumDTO[];
     doors: number[];
     seats: number[];
-    brakes: Brake[];
-    drivetrians: Drivetrain[];
 }
 
 export interface VehicleModelResponse {
-    brandId: number;
-    model: string;
-    motorization: string;
+    modelId: number;
+    name: string;
 }
 
 export interface Feedback {
@@ -138,37 +152,16 @@ export interface Feedback {
     replies: Feedback[];
 }
 
-export interface Brand {
-  id: number;
-  brandName: string;
-}
+export type Brake = "DISC" | "DRUM" | "REGENERATIVE" | "ABS";
 
-export interface VehicleCondition {
-  key: string;
-  value: string;
-}
+export type Drivetrian = "FWD" | "RWD" | "AWD" | "OTHER";
 
-export interface Transmission {
-  key: string;
-  value: string;
-}
+export type FuelType = "GASOLINE" | "DIESEL" | "ELECTRIC" | "HYBRID" | "PLUGIN_HYBRID" | "LPG" | "CNG";
 
-export interface FuelType {
-  key: string;
-  value: string;
-}
+export type VehicleCondition = "USED" | "NEW";
 
-export interface Brake {
-  key: string;
-  value: string;
-}
+export type RentalType = "DELIVERY" | "PICKUP";
 
-export interface Drivetrain {
-  key: string;
-  value: string;
-}
+export type RentalPeriod = "DAILY" | "WEEKLY" | "MONTHLY";
 
 export type PhotoType = "VEHICLE_COVER" | "VEHICLE_FRONT" | "VEHICLE_BACK" | "VEHICLE_LEFT" | "VEHICLE_RIGHT" | "VEHICLE_INTERIOR" | "VEHICLE_DASHBOARD" | "VEHICLE_TRUNK" | "VEHICLE_DETAIL" | "USER_PROFILE";
-
-export type VehicleCategory = "CONVERTIBLE" | "COUPE" | "SEDAN" | "EV" | "HATCHBACK" | "LUXURY" | "SUV" | "WAGON";
-

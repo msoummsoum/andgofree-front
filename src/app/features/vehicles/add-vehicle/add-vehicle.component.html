@@ -3,12 +3,12 @@
     <div class="container">
         <div class="row align-items-center text-center">
             <div class="col-md-12 col-12">
-                <h2 class="breadcrumb-title">Add Your Vehicle Information</h2>
+                <h2 class="breadcrumb-title">Ajouter les informations sur votre véhicule</h2>
                 <nav aria-label="breadcrumb" class="page-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a [routerLink]="routes.index">Home</a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Listings</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Add your Car Information  </li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.index">Accueil</a></li>
+                        <li class="breadcrumb-item"><a [routerLink]="routes.vehicleList">Voitures</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Informations voiture</li>
                     </ol>
                 </nav>
             </div>
@@ -18,7 +18,7 @@
 <!-- /Breadscrumb Section -->
 
 <!-- Detail Page Head-->
-<section class="product-detail-head">
+<!--section class="product-detail-head">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 <!-- /Detail Page Head-->
 
 <section class="section product-details add-vehicle">
@@ -50,8 +50,8 @@
         <div class="row" id="info">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
-                    <h4>Basic Info</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <h4>Informations basiques</h4>
+                    <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p-->
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -60,13 +60,13 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Titre/Description <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <label class="form-label">Titre/Description <span class="text-danger"> *</span></label>
+                                    <input type="text" class="form-control" placeholder="Entrez le titre qui sera visible dans votre annonce">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
-                                    <label class="form-label">État du véhicule<span class="text-danger">*</span></label>
+                                    <label class="form-label">État du véhicule<span class="text-danger"> *</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select" formControlName="condition">
                                         @for(condition of vehicleConfiguration?.conditions ;track condition.key) {
                                             <mat-option value="condition.key">{{ condition?.value }}</mat-option>
@@ -76,7 +76,7 @@
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Année<span class="text-danger">*</span></label>
+                                    <label class="form-label">Année<span class="text-danger"> *</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select" formControlName="year">
                                         @for(year of vehicleConfiguration?.years ;track year) {
                                             <mat-option value="year">{{ year }}</mat-option>
@@ -86,7 +86,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Catégorie <span class="text-danger">*</span></label>
+                                    <label class="form-label">Catégorie <span class="text-danger"> *</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select" formControlName="year">
                                         @for(category of vehicleConfiguration?.categories ;track category.key) {
                                             <mat-option value="category.key">{{ category.value }}</mat-option>
@@ -96,13 +96,13 @@
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Make <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Audi">
+                                    <label class="form-label">Make<span class="text-danger"> *</span></label>
+                                    <input type="text" class="form-control" placeholder="Cliquez pour choisir ou saisir une marque">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Model <span class="text-danger">*</span></label>
+                                    <label class="form-label">Model<span class="text-danger"> *</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select">
                                         <mat-option value="1">A8</mat-option>
                                         <mat-option value="1">A7</mat-option>
@@ -128,8 +128,8 @@
         <div class="row" id="registration">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
-                    <h4>Registration & VIN</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <h4>Immatriculation</h4>
+                    <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p-->
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -138,16 +138,16 @@
                         <div class="row">
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
-                                    <label class="form-label">Numéro immatriculation<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
+                                    <label class="form-label">Numéro immatriculation<span class="text-danger"> *</span></label>
+                                    <input type="text" class="form-control" placeholder="Entrez l'immatriculation">
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <!--div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Vehicle VIN <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control">
                                 </div>
-                            </div>
+                            </div-->
                             <!--div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Vehicle Registration Number<span class="text-danger">*</span></label>
@@ -165,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" id="pricing">
+        <!--div class="row" id="pricing">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
                     <h4>Vehicle Price</h4>
@@ -212,7 +212,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!--div class="col-lg-12">
+                            <div class="col-lg-12">
                                 <div class="mb-3">
                                     <label class="form-label">Curency <span class="text-danger">*</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select">
@@ -220,7 +220,7 @@
                                         <mat-option value="1">INR</mat-option>
                                     </mat-select>
                                 </div>
-                            </div-->
+                            </div>
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Hourly<span class="text-danger">*</span></label>
@@ -265,8 +265,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row" id="service">
+        </div-->
+        <!--div class="row" id="service">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
                     <h4>Additional Service</h4>
@@ -278,13 +278,13 @@
                     <div class="card-body">
                         <div class="service-Price">
                             <div class="row ">
-                                <!--div class="col-lg-6 col-12">
+                                <div class="col-lg-6 col-12">
                                     <div class="mb-3">
                                         <label class="form-label">Name of the Service  <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" placeholder="Enter the Name">
                                     </div>
                                 </div-->
-                                <div class="col-lg-6 col-12">
+                                <!--div class="col-lg-6 col-12">
                                     <div class="mb-3">
                                         <label class="form-label">Price <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" placeholder="Enter the Amount">
@@ -303,12 +303,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
         <div class="row" id="specifications">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
-                    <h4>Specifications</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <h4>Caractéristiques techniques</h4>
+                    <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p-->
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -335,7 +335,7 @@
                                     </mat-select>
                                 </div>
                             </div-->
-                            <div class="col-lg-4 col-12">
+                            <div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Type de carburant <span class="text-danger">*</span></label>
                                      <mat-select class="custom-mat-select select" placeholder="Select" formControlName="year">
@@ -345,18 +345,18 @@
                                     </mat-select>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-12">
+                            <div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Kilométrage  <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Mileage">
+                                    <input type="text" class="form-control" placeholder="Entrez le kilométrage">
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-12">
+                            <!--div class="col-lg-4 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">VIN   <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" placeholder="Enter VIN number">
                                 </div>
-                            </div>
+                            </div-->
                             <div class="col-lg-6 col-12">
                                 <div class="mb-3">
                                     <label class="form-label">Nombre de portes <span class="text-danger">*</span></label>
@@ -515,8 +515,8 @@
         <div class="row" id="features">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
-                    <h4>Vehicle Features</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <h4>Équipements et options</h4>
+                    <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p-->
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -653,8 +653,8 @@
         <div class="row" id="gallery ">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
-                    <h4>Car Gallery</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                    <h4>Photos</h4>
+                    <!--p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p-->
                 </div>
             </div>
             <div class="col-lg-8 col-md-12">
@@ -671,8 +671,7 @@
                                 </div>
                                 <div class="upload-list">
                                     <ul>
-                                        <li>The maximum photo size is 8 MB. Formats: jpeg, jpg, png. Put the main picture first</li>
-                                        <li>The maximum video size is 10MB. Formats: mp4, mov.</li>
+                                        <li>La taille maximale est de 10MB. Formats: jpeg, jpg, png.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -681,7 +680,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" id="location">
+        <!--div class="row" id="location">
             <div class="col-lg-4 col-md-12">
                 <div class="heading-lising">
                     <h4>Location</h4>
@@ -717,7 +716,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
         <div class="booking-info-btns d-flex justify-content-end">
             <a [routerLink]="routes.bookingCheckout" class="btn btn-secondary">Preview</a>
             <button class="btn btn-primary continue-book-btn" type="submit">Save Listing</button>
