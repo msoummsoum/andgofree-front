@@ -1,0 +1,13 @@
+input.ng-dirty.ng-invalid,
+mat-select.ng-dirty.ng-invalid {
+  border: 1px solid red;
+}
+
+input.ng-dirty.ng-valid,
+mat-select.ng-dirty.ng-valid {
+  border: 1px solid green;
+}
+
+.mat-mdc-form-field.ng-invalid.ng-touched .mdc-notched-outline {
+  border-color: red !important;
+}

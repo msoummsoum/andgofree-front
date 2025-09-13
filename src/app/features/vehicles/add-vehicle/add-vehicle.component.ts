@@ -1,14 +1,17 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { routes } from '../../../shared/routes';
-import { MatSelectModule } from '@angular/material/select';
+import { MatError, MatLabel, MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
 import { VehicleConfigurationResponse } from '../../../shared/backDto';
 import { VehicleService } from '../vehicle-service';
-import { FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-add-vehicle',
-  imports: [MatSelectModule,RouterLink, FormsModule, ReactiveFormsModule],
+  imports: [MatSelectModule,RouterLink, FormsModule, ReactiveFormsModule,
+    MatFormFieldModule, MatSelectModule, MatError, MatLabel, CommonModule],
   templateUrl: './add-vehicle.component.html',
   styleUrl: './add-vehicle.component.scss',
   standalone: true
