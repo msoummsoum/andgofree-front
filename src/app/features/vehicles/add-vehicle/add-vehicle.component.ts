@@ -6,11 +6,19 @@ import { VehicleConfigurationResponse, VehicleRequest } from '../../../shared/ba
 import { VehicleService } from '../vehicle-service';
 import { FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { forkJoin } from 'rxjs';
+import { MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete'
+import { MatOptionModule } from '@angular/material/core';
 
 @Component({
   selector: 'app-add-vehicle',
   imports: [MatSelectModule,RouterLink, FormsModule, ReactiveFormsModule,
-    MatFormFieldModule, MatSelectModule],
+    MatFormFieldModule, MatSelectModule, 
+   MatInputModule,
+    MatAutocompleteModule,
+    MatOptionModule,
+    ],
   templateUrl: './add-vehicle.component.html',
   styleUrl: './add-vehicle.component.scss',
   standalone: true
@@ -21,6 +29,8 @@ export class AddVehicleComponent implements OnInit {
   addVehicleForm!: FormGroup;
 
   vehicleConfiguration?: VehicleConfigurationResponse;
+  photoConfigs: any[] = [];
+  popularBrands: string[] = ['Toyota', 'Mercedes', 'Audi', 'BMW', 'Peugeot'];
 
 routes=routes
   tabs = [
@@ -62,14 +72,22 @@ routes=routes
 
 
   ngOnInit() {
-    this.vehicleService.getVehiclesConfiguration().subscribe({
-      next: (vehicleConfiguration: VehicleConfigurationResponse) => {
-        this.vehicleConfiguration = vehicleConfiguration;
-        const specsArray = this.vehicleConfiguration.specifications.map(() => this.fb.control(false));
-        this.addVehicleForm.setControl('specifications', this.fb.array(specsArray));
-      }
-    });
-     this.addVehicleForm = this.fb.group({
+
+  forkJoin({
+    vehicleConf: this.vehicleService.getVehiclesConfiguration(),
+    photoConf: this.vehicleService.getPhotosConfiguration()
+  }).subscribe({
+    next: ({ vehicleConf, photoConf }) => {
+      this.vehicleConfiguration = vehicleConf;
+      this.photoConfigs = photoConf;
+      const specsArray = this.vehicleConfiguration.specifications.map(() => this.fb.control(false));
+      this.addVehicleForm.setControl('specifications', this.fb.array(specsArray));
+      this.initPhotos()
+      this.addVehicleForm.setControl('photos', this.photosArray);
+    }
+  });
+
+  this.addVehicleForm = this.fb.group({
            title: ['', Validators.required],
            condition: ['', Validators.required],
            year: ['', Validators.required],
@@ -82,13 +100,93 @@ routes=routes
            mileage: ['', Validators.required],
            doors: ['', Validators.required],
            seats: ['', Validators.required],
-           specifications: this.fb.array([])
+           specifications: this.fb.array([]),
+           photos: this.fb.array([])
          });
   }
 
- get specificationsArray(): FormArray {
+  get specificationsArray(): FormArray {
     return this.addVehicleForm.get('specifications') as FormArray;
   }
+
+  get photosArray(): FormArray {
+    return this.addVehicleForm.get('photos') as FormArray;
+  }
+
+   private initPhotos(): void {
+    this.photoConfigs.forEach(cfg => {
+      const group = this.fb.group({
+        type: [cfg.type],
+        files: this.fb.array([])
+      });
+
+      // Ajout des inputs obligatoires
+      for (let i = 0; i < cfg.min; i++) {
+        (group.get('files') as FormArray).push(
+          this.fb.control(null, Validators.required)
+        );
+      }
+
+      this.photosArray.push(group);
+    });
+  }
+
+  addOptionalFile(photoIndex: number): void {
+    const cfg = this.photoConfigs[photoIndex];
+    const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
+    if (filesArray.length < cfg.max) {
+      filesArray.push(this.fb.control(null)); // pas required car optionnel
+    }
+  }
+
+ onFileChange(event: Event, photoIndex: number, fileIndex: number): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      const file = input.files[0];
+      const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
+      filesArray.at(fileIndex).setValue(file);
+    }
+  }
+
+  getFilesArray(photoIndex: number): FormArray {
+  return this.photosArray.at(photoIndex).get('files') as FormArray;
+}
+
+canAddMoreFiles(photoIndex: number): boolean {
+  const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
+  return filesArray.length < this.photoConfigs[photoIndex].max;
+}
+
+// ajoute un input file optionnel pour le bloc photoIndex
+addFileInput(photoIndex: number): void {
+  const cfg = this.photoConfigs[photoIndex];
+  const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
+
+  // protection : n'ajoute pas au-delà du max
+  if (filesArray.length >= cfg.max) {
+    return;
+  }
+
+  // input optionnel -> pas de Validators.required
+  filesArray.push(this.fb.control(null));
+}
+
+// supprime un input file (ne supprime pas les inputs obligatoires index < min)
+removeFileInput(photoIndex: number, fileIndex: number): void {
+  const cfg = this.photoConfigs[photoIndex];
+  const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
+
+  // Empêcher la suppression d'un input obligatoire
+  if (fileIndex < cfg.min) {
+    console.warn('Cannot remove a required file input');
+    return;
+  }
+
+  // protection : index valide
+  if (fileIndex >= 0 && fileIndex < filesArray.length) {
+    filesArray.removeAt(fileIndex);
+  }
+}
 
  onSubmit() {
     if (this.addVehicleForm.invalid) return;
@@ -117,7 +215,7 @@ routes=routes
     vehicleCategory: formValue.category,
     fuelType: formValue.fuelType,
     transmission: formValue.transmission,
-    specifications: selectedSpecifications
+    specifications: selectedSpecifications,
   };
 
   this.vehicleService.createVehicle(vehicleRequest).subscribe({

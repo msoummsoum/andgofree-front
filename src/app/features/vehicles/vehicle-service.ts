@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { VehicleConfigurationResponse, VehicleRequest } from '../../shared/backDto';
+import { PhotoTypeConfigResponse, VehicleConfigurationResponse, VehicleRequest } from '../../shared/backDto';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -25,4 +25,7 @@ export class VehicleService {
       return this.http.get<VehicleConfigurationResponse>(this.apiUrlConfig);
     }
     
+    getPhotosConfiguration(): Observable<PhotoTypeConfigResponse[]> {
+      return this.http.get<PhotoTypeConfigResponse[]>(`${environment.apiUrl}/config/photos`);
+    }
 }

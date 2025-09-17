@@ -37,6 +37,44 @@
                            formControlName="title">
                   </div>
                 </div>
+<div class="col-lg-6 col-md-12">
+  <div class="mb-3">
+    <label class="form-label">Marque <span class="text-danger">*</span></label>
+
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Cliquez pour choisir ou saisir une marque"
+      formControlName="brand"
+      [matAutocomplete]="auto"
+    />
+
+    <mat-autocomplete #auto="matAutocomplete" class="brand-autocomplete">
+      <mat-optgroup label="Marques populaires">
+        @for(brand of popularBrands; track brand) {
+          <mat-option [value]="brand">{{ brand }}</mat-option>
+        }
+      </mat-optgroup>
+
+      <!--mat-optgroup label="Toutes les marques">
+        @for(brand of filteredBrands | async; track brand) {
+          <mat-option [value]="brand">{{ brand }}</mat-option>
+        }
+      </mat-optgroup-->
+    </mat-autocomplete>
+  </div>
+</div>
+
+                <div class="col-lg-6 col-md-12">
+                  <div class="mb-3">
+                    <label class="form-label">Model<span class="text-danger"> *</span></label>
+                    <mat-select class="custom-mat-select select" placeholder="Sélectionnez" formControlName="model">
+                      <mat-option value="A8">A8</mat-option>
+                      <mat-option value="A7">A7</mat-option>
+                      <mat-option value="Q3">Q3</mat-option>
+                    </mat-select>
+                  </div>
+                </div>
                 <div class="col-lg-6 col-12">
                   <div class="mb-3">
                     <label class="form-label">État du véhicule<span class="text-danger"> *</span></label>
@@ -74,23 +112,6 @@
                       @for(color of vehicleConfiguration?.colors ;track color.key) {
                       <mat-option [value]="color.key">{{ color.value }}</mat-option>
                       }
-                    </mat-select>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="mb-3">
-                    <label class="form-label">Marque<span class="text-danger"> *</span></label>
-                    <input type="text" class="form-control" placeholder="Cliquez pour choisir ou saisir une marque"
-                           formControlName="brand">
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="mb-3">
-                    <label class="form-label">Model<span class="text-danger"> *</span></label>
-                    <mat-select class="custom-mat-select select" placeholder="Sélectionnez" formControlName="model">
-                      <mat-option value="A8">A8</mat-option>
-                      <mat-option value="A7">A7</mat-option>
-                      <mat-option value="Q3">Q3</mat-option>
                     </mat-select>
                   </div>
                 </div>
@@ -202,7 +223,7 @@
         </div>
       </div>
 
-      <div class="row" id="gallery ">
+      <div class="row" id="gallery">
         <div class="col-lg-4 col-md-12">
           <div class="heading-lising">
             <h4>Photos</h4>
@@ -212,25 +233,51 @@
           <div class="card">
             <div class="card-body">
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="upload-div">
-                    <input type="file">
-                    <div class="upload-photo-drag">
-                      <span><i class="fa fa-upload me-2"></i> Upload Photo</span>
-                      <h6>or Drag Photos</h6>
+                <div class="col-lg-12" formArrayName="photos">
+                  @for(photoGroup of photosArray.controls; let i = $index; track i) {
+                  <div [formGroupName]="i" class="mb-3">
+                    <label class="form-label">
+                      {{ photoConfigs[i].label }}
+                      @if(photoConfigs[i].min > 0) {
+                      <span class="text-danger">*</span>
+                      }
+                    </label>
+
+                    <div formArrayName="files" class="d-flex gap-2 flex-wrap">
+                      @for(fileCtrl of getFilesArray(i).controls; let j = $index; track j) {
+                      <input
+                        type="file"
+                        class="form-control w-auto"
+                        [formControlName]="j"
+                        (change)="onFileChange($event, i, j)"
+                      />
+                      }
                     </div>
+                    @if(canAddMoreFiles(i)) {
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary ms-2"
+                      (click)="addFileInput(i)"
+                    >
+                      + Ajouter une photo
+                    </button>
+                    }
+
                   </div>
-                  <div class="upload-list">
-                    <ul>
-                      <li>La taille maximale est de 10MB. Formats: jpeg, jpg, png.</li>
-                    </ul>
-                  </div>
+                  }
                 </div>
+              </div>
+
+              <div class="upload-list">
+                <ul>
+                  <li>La taille maximale est de 10MB. Formats: jpeg, jpg, png.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <div class="booking-info-btns d-flex justify-content-end">
         <a [routerLink]="routes.bookingCheckout" class="btn btn-secondary">Preview</a>

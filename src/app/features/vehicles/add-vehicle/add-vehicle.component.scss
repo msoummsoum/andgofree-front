@@ -11,3 +11,8 @@ mat-select.ng-dirty.ng-valid {
 .mat-mdc-form-field.ng-invalid.ng-touched .mdc-notched-outline {
   border-color: red !important;
 }
+
+::ng-deep .mat-autocomplete-panel.brand-autocomplete {
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}

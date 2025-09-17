@@ -1,6 +1,6 @@
 /* tslint:disable */
 /* eslint-disable */
-// Generated using typescript-generator version 3.2.1263 on 2025-09-13 21:57:09.
+// Generated using typescript-generator version 3.2.1263 on 2025-09-14 10:22:41.
 
 export interface AvailabilityDTO {
     id: number;
@@ -120,6 +120,7 @@ export interface EnumDTO {
 export interface PhotoTypeConfigResponse {
     type: string;
     owner: string;
+    label: string;
     min: number;
     max: number;
 }
