@@ -1,6 +1,13 @@
 /* tslint:disable */
 /* eslint-disable */
-// Generated using typescript-generator version 3.2.1263 on 2025-09-14 10:22:41.
+// Generated using typescript-generator version 3.2.1263 on 2025-09-18 20:37:03.
+
+export interface AttachmentDTO {
+    fileName: string;
+    contentType: string;
+    fileUrl: string;
+    size: number;
+}
 
 export interface AvailabilityDTO {
     id: number;
@@ -39,6 +46,18 @@ export interface FileInfo {
     fileName: string;
     size: number;
     contentType: string;
+}
+
+export interface MessageDTO {
+    id: number;
+    body: string;
+    sentAt: Date;
+    attachments: AttachmentDTO[];
+}
+
+export interface MessageThreadDTO {
+    conversations: Conversation[];
+    recentConversations: RecentConversationDTO[];
 }
 
 export interface PhotoRequest {
@@ -128,6 +147,7 @@ export interface PhotoTypeConfigResponse {
 export interface VehicleBrand {
     id: number;
     brandName: string;
+    count: number;
 }
 
 export interface VehicleConfigurationResponse {
@@ -157,6 +177,26 @@ export interface Feedback {
     authorLastName: string;
     creationDate: Date;
     replies: Feedback[];
+}
+
+export interface Conversation {
+    interlocutor: Interlocutor;
+    lastMessage: string;
+    lastMessageDate: Date;
+}
+
+export interface RecentConversationDTO {
+    message: string;
+    sentAt: Date;
+    interlocutor: Interlocutor;
+    attachments: AttachmentDTO[];
+}
+
+export interface Interlocutor {
+    id: number;
+    fullName: string;
+    photoUrl: string;
+    online: boolean;
 }
 
 export type Brake = "DISC" | "DRUM" | "REGENERATIVE" | "ABS";

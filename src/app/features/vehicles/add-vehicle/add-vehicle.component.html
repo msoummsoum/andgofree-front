@@ -41,27 +41,37 @@
   <div class="mb-3">
     <label class="form-label">Marque <span class="text-danger">*</span></label>
 
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Cliquez pour choisir ou saisir une marque"
-      formControlName="brand"
-      [matAutocomplete]="auto"
-    />
+<input
+  type="text"
+  class="form-control"
+  placeholder="Cliquez pour choisir ou saisir une marque"
+  formControlName="brand"
+  [matAutocomplete]="auto"
+/>
 
-    <mat-autocomplete #auto="matAutocomplete" class="brand-autocomplete">
-      <mat-optgroup label="Marques populaires">
-        @for(brand of popularBrands; track brand) {
-          <mat-option [value]="brand">{{ brand }}</mat-option>
-        }
-      </mat-optgroup>
+<mat-autocomplete 
+  #auto="matAutocomplete"
+  [displayWith]="displayBrand">
+  @if ((filteredPopularBrands$ | async)?.length) {
+    <mat-optgroup label="Populaires">
+      @for (brand of filteredPopularBrands$ | async; track brand.id) {
+        <mat-option [value]="brand.id">
+          {{ brand.brandName }}
+        </mat-option>
+      }
+    </mat-optgroup>
+  }
 
-      <!--mat-optgroup label="Toutes les marques">
-        @for(brand of filteredBrands | async; track brand) {
-          <mat-option [value]="brand">{{ brand }}</mat-option>
-        }
-      </mat-optgroup-->
-    </mat-autocomplete>
+  @if ((filteredOtherBrands$ | async)?.length) {
+    <mat-optgroup label="Autres">
+      @for (brand of filteredOtherBrands$ | async; track brand.id) {
+        <mat-option [value]="brand.id">
+          {{ brand.brandName }}
+        </mat-option>
+      }
+    </mat-optgroup>
+  }
+</mat-autocomplete>
   </div>
 </div>
 
