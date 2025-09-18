@@ -1,8 +1,8 @@
-import { Component, HostListener, inject, OnInit } from '@angular/core';
+import { Component, effect, HostListener, inject, OnInit, signal } from '@angular/core';
 import { routes } from '../../../shared/routes';
 import { MatSelectModule } from '@angular/material/select';
 import { RouterLink } from '@angular/router';
-import { VehicleBrand, VehicleConfigurationResponse, VehicleRequest } from '../../../shared/backDto';
+import { VehicleBrand, VehicleConfigurationResponse, VehicleModelResponse, VehicleRequest } from '../../../shared/backDto';
 import { VehicleService } from '../vehicle-service';
 import { FormArray, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,6 +28,8 @@ import { AsyncPipe, CommonModule } from '@angular/common';
 export class AddVehicleComponent implements OnInit {
   private readonly vehicleService = inject(VehicleService);
   private readonly fb = inject(FormBuilder);
+  filteredModels= signal<VehicleModelResponse[]>([]);
+
   addVehicleForm!: FormGroup;
 
   vehicleConfiguration?: VehicleConfigurationResponse;
@@ -38,6 +40,7 @@ export class AddVehicleComponent implements OnInit {
   filteredBrands$!: Observable<VehicleBrand[]>;
    filteredPopularBrands$!: Observable<VehicleBrand[]>;
   filteredOtherBrands$!: Observable<VehicleBrand[]>;
+
 
 routes=routes
   tabs = [
@@ -124,6 +127,17 @@ routes=routes
       distinctUntilChanged(),
     map(value => this._filterBrands(this.otherBrands, value))
   );
+
+  this.addVehicleForm.get('brand')!.valueChanges.subscribe(brandId => {
+    if (brandId != null) {
+      this.vehicleService.getModelsByBrand(brandId!).subscribe({
+      next: values => this.filteredModels.set(values)
+    })
+      this.addVehicleForm.get('model')!.setValue(null);
+    } else {
+      this.filteredModels.set([])
+    }
+  });
 
   }
 
@@ -254,5 +268,8 @@ private _filterBrands(brands: VehicleBrand[], value: string | number): VehicleBr
 displayBrand = (id: number): string => {
   const brand = this.allBrands.find(b => b.id === id);
   return brand ? brand.brandName : '';
+}
+setSelectedBrand(value: number) {
+  console.log(value)
 }
 }

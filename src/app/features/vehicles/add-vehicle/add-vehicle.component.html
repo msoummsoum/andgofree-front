@@ -79,9 +79,9 @@
                   <div class="mb-3">
                     <label class="form-label">Model<span class="text-danger"> *</span></label>
                     <mat-select class="custom-mat-select select" placeholder="Sélectionnez" formControlName="model">
-                      <mat-option value="A8">A8</mat-option>
-                      <mat-option value="A7">A7</mat-option>
-                      <mat-option value="Q3">Q3</mat-option>
+                      @for(model of filteredModels() ;track model.modelId) {
+                      <mat-option [value]="model.modelId">{{ model?.name }}</mat-option>
+                      }
                     </mat-select>
                   </div>
                 </div>

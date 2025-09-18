@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { PhotoTypeConfigResponse, VehicleConfigurationResponse, VehicleRequest } from '../../shared/backDto';
+import { PhotoTypeConfigResponse, VehicleConfigurationResponse, VehicleModelResponse, VehicleRequest } from '../../shared/backDto';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 export class VehicleService {
     private apiUrl = `${environment.apiUrl}/vehicles`;
     private apiUrlConfig = `${environment.apiUrl}/config/vehicles`;
+    private apiUrlConfigPhotos = `${environment.apiUrl}/config/photos`;
 
     constructor(private http: HttpClient) {}
 
@@ -26,6 +27,10 @@ export class VehicleService {
     }
     
     getPhotosConfiguration(): Observable<PhotoTypeConfigResponse[]> {
-      return this.http.get<PhotoTypeConfigResponse[]>(`${environment.apiUrl}/config/photos`);
+      return this.http.get<PhotoTypeConfigResponse[]>(`${this.apiUrlConfigPhotos}`);
+    }
+
+    getModelsByBrand(modelId: number): Observable<VehicleModelResponse[]> {
+        return this.http.get<VehicleModelResponse[]>(`${this.apiUrlConfig}/${modelId}/models`);
     }
 }
