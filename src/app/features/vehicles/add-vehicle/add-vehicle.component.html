@@ -53,7 +53,7 @@
   #auto="matAutocomplete"
   [displayWith]="displayBrand">
   @if ((filteredPopularBrands$ | async)?.length) {
-    <mat-optgroup label="Populaires">
+    <mat-optgroup label="Les plus populaires">
       @for (brand of filteredPopularBrands$ | async; track brand.id) {
         <mat-option [value]="brand.id">
           {{ brand.brandName }}
