@@ -255,13 +255,23 @@
 
                     <div formArrayName="files" class="d-flex gap-2 flex-wrap">
                       @for(fileCtrl of getFilesArray(i).controls; let j = $index; track j) {
-                      <input
-                        type="file"
-                        class="form-control w-auto"
-                        [formControlName]="j"
-                        (change)="onFileChange($event, i, j)"
-                      />
-                      }
+  <div class="d-flex align-items-center gap-2">
+    <input
+      type="file"
+      class="form-control w-auto"
+      [formControlName]="j"
+      (change)="onFileChange($event, i, j)"
+    />
+
+    @if (uploadProgress[i + '-' + j] && uploadProgress[i + '-' + j] < 100) {
+      <span>{{ uploadProgress[i + '-' + j] }}%</span>
+    }
+    @if (uploadedUrls[i + '-' + j]) {
+      <img [src]="uploadedUrls[i + '-' + j]" alt="preview" width="60" />
+    }
+  </div>
+}
+
                     </div>
                     @if(canAddMoreFiles(i)) {
                     <button

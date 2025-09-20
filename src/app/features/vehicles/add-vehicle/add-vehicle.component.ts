@@ -79,6 +79,36 @@ routes=routes
     }
   }
 
+  uploadProgress: { [key: string]: number } = {}; // clé = "photoIndex-fileIndex"
+uploadedUrls: { [key: string]: string } = {};   // stocke les URLs finales
+
+onFileChange(event: Event, photoIndex: number, fileIndex: number): void {
+  const input = event.target as HTMLInputElement;
+  console.log('ici '+photoIndex+ ' et '+fileIndex)
+  if (input.files && input.files.length > 0) {
+    const file = input.files[0];
+
+    // démarre upload
+    const key = `${photoIndex}-${fileIndex}`;
+    this.vehicleService.uploadPhoto(1,file).subscribe({
+      next: (val) => {
+        if (typeof val === 'number') {
+          // progression
+          this.uploadProgress[key] = val;
+        } else {
+          // URL finale
+          this.uploadedUrls[key] = val;
+          this.uploadProgress[key] = 100;
+        }
+      },
+      error: (err) => {
+        console.error('Erreur upload', err);
+        this.uploadProgress[key] = 0;
+      }
+    });
+  }
+}
+
   ngOnInit() {
   forkJoin({
     vehicleConf: this.vehicleService.getVehiclesConfiguration(),
@@ -175,14 +205,14 @@ routes=routes
     }
   }
 
-  onFileChange(event: Event, photoIndex: number, fileIndex: number): void {
+  /*onFileChange(event: Event, photoIndex: number, fileIndex: number): void {
     const input = event.target as HTMLInputElement;
     if (input.files && input.files.length > 0) {
       const file = input.files[0];
       const filesArray = this.photosArray.at(photoIndex).get('files') as FormArray;
       filesArray.at(fileIndex).setValue(file);
     }
-  }
+  }*/
 
   getFilesArray(photoIndex: number): FormArray {
     return this.photosArray.at(photoIndex).get('files') as FormArray;
@@ -224,41 +254,31 @@ routes=routes
     }
 }
 
-  onSubmit() {
-    if (this.addVehicleForm.invalid) return;
+onSubmit() {
+  if (this.addVehicleForm.invalid) return;
 
-    const formValue = this.addVehicleForm.value;
+  const formValue = this.addVehicleForm.value;
+  const selectedSpecifications = formValue.specifications
+    .map((checked: boolean, i: number) =>
+      checked ? this.vehicleConfiguration!.specifications[i].key : null
+    )
+    .filter((v: string | null) => v !== null);
 
-    const selectedSpecifications = formValue.specifications
-      .map((checked: boolean, i: number) =>
-        checked ? this.vehicleConfiguration!.specifications[i].key : null
-      )
-      .filter((v: string | null) => v !== null);
+  // récupérer toutes les URLs uploadées
+  const photos: string[] = Object.values(this.uploadedUrls);
 
-    console.log({
-      ...formValue,
-      specifications: selectedSpecifications
-    });
-     const vehicleRequest: VehicleRequest = {
-    id: 0,
-    title: formValue.title,
-    brand: formValue.brand,
-    model: formValue.model,
-    licensePlateNumber: formValue.licensePlateNumber,
-    year: formValue.year,
-    color: formValue.color,
-    seats: formValue.seats,
-    vehicleCategory: formValue.category,
-    fuelType: formValue.fuelType,
-    transmission: formValue.transmission,
+  const vehicleRequest: VehicleRequest = {
+    ...formValue,
     specifications: selectedSpecifications,
+    photos // ajoute les URLs finales
   };
 
   this.vehicleService.createVehicle(vehicleRequest).subscribe({
     next: (res) => console.log('Véhicule créé', res),
     error: (err) => console.error(err)
   });
-  }
+}
+
   
 private _filterBrands(brands: VehicleBrand[], value: string | number): VehicleBrand[] {
   const filterValue = typeof value === 'string' ? value.toLowerCase() : '';
